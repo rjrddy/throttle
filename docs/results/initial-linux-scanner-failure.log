@@ -1,0 +1,1471 @@
+﻿2026-10-23T01:06:14.9589131Z Current runner version: '2.338.0'
+2026-10-23T01:06:14.9616346Z ##[group]Runner Image Provisioner
+2026-10-23T01:06:14.9617166Z Hosted Compute Agent
+2026-10-23T01:06:14.9617863Z Version: 20261012.601
+2026-10-23T01:06:14.9618838Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-23T01:06:14.9620124Z Build Date: 2026-10-12T17:48:21Z
+2026-10-23T01:06:14.9620892Z Worker ID: {47954954-2143-4c13-99aa-27b28f87861d}
+2026-10-23T01:06:14.9621586Z Region: eastus2
+2026-10-23T01:06:14.9622196Z Cloud: Azure
+2026-10-23T01:06:14.9622737Z ##[endgroup]
+2026-10-23T01:06:14.9624380Z ##[group]Operating System
+2026-10-23T01:06:14.9625041Z Ubuntu
+2026-10-23T01:06:14.9625554Z 24.04.5
+2026-10-23T01:06:14.9626119Z LTS
+2026-10-23T01:06:14.9626640Z ##[endgroup]
+2026-10-23T01:06:14.9627212Z ##[group]Runner Image
+2026-10-23T01:06:14.9627910Z Image: ubuntu-24.04
+2026-10-23T01:06:14.9628782Z Version: 20261012.334.1
+2026-10-23T01:06:14.9630148Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-23T01:06:14.9631779Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-23T01:06:14.9632768Z ##[endgroup]
+2026-10-23T01:06:14.9633831Z ##[group]GITHUB_TOKEN Permissions
+2026-10-23T01:06:14.9636057Z Contents: read
+2026-10-23T01:06:14.9636704Z Metadata: read
+2026-10-23T01:06:14.9637355Z ##[endgroup]
+2026-10-23T01:06:14.9639746Z Secret source: Actions
+2026-10-23T01:06:14.9640787Z Cache mode: write
+2026-10-23T01:06:14.9641726Z Prepare workflow directory
+2026-10-23T01:06:14.9969487Z Prepare all required actions
+2026-10-23T01:06:15.0017748Z Getting action download info
+2026-10-23T01:06:15.8418936Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-23T01:06:15.9370326Z Download action repository 'actions/setup-go@v5' (SHA:40f1582b2485089dde7abd97c1529aa768e1baff)
+2026-10-23T01:06:16.1608939Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-23T01:06:16.2906581Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-23T01:06:16.3785976Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-23T01:06:16.5937306Z Complete job name: verify
+2026-10-23T01:06:16.6682772Z ##[group]Run actions/checkout@v4
+2026-10-23T01:06:16.6683493Z with:
+2026-10-23T01:06:16.6683839Z   repository: rjrddy/throttle
+2026-10-23T01:06:16.6686512Z   token: ***
+2026-10-23T01:06:16.6686843Z   ssh-strict: true
+2026-10-23T01:06:16.6687172Z   ssh-user: git
+2026-10-23T01:06:16.6687499Z   persist-credentials: true
+2026-10-23T01:06:16.6687852Z   clean: true
+2026-10-23T01:06:16.6688199Z   sparse-checkout-cone-mode: true
+2026-10-23T01:06:16.6688807Z   fetch-depth: 1
+2026-10-23T01:06:16.6689136Z   fetch-tags: false
+2026-10-23T01:06:16.6689459Z   show-progress: true
+2026-10-23T01:06:16.6689779Z   lfs: false
+2026-10-23T01:06:16.6690076Z   submodules: false
+2026-10-23T01:06:16.6690427Z   set-safe-directory: true
+2026-10-23T01:06:16.6690796Z   allow-unsafe-pr-checkout: false
+2026-10-23T01:06:16.6691423Z ##[endgroup]
+2026-10-23T01:06:16.7687661Z Syncing repository: rjrddy/throttle
+2026-10-23T01:06:16.7690429Z ##[group]Getting Git version info
+2026-10-23T01:06:16.7691505Z Working directory is '/home/runner/work/throttle/throttle'
+2026-10-23T01:06:16.7692952Z [command]/usr/bin/git version
+2026-10-23T01:06:16.7799764Z git version 2.55.0
+2026-10-23T01:06:16.7826714Z ##[endgroup]
+2026-10-23T01:06:16.7845499Z Temporarily overriding HOME='/home/runner/work/_temp/439e1c34-e541-42ce-8929-344ab34002ca' before making global git config changes
+2026-10-23T01:06:16.7847382Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-23T01:06:16.7851325Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/throttle/throttle
+2026-10-23T01:06:16.7910904Z Deleting the contents of '/home/runner/work/throttle/throttle'
+2026-10-23T01:06:16.7916620Z ##[group]Initializing the repository
+2026-10-23T01:06:16.7921969Z [command]/usr/bin/git init /home/runner/work/throttle/throttle
+2026-10-23T01:06:16.8050500Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-23T01:06:16.8051889Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-23T01:06:16.8053106Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-23T01:06:16.8054006Z hint: call:
+2026-10-23T01:06:16.8054491Z hint:
+2026-10-23T01:06:16.8055149Z hint: 	git config --global init.defaultBranch <name>
+2026-10-23T01:06:16.8055888Z hint:
+2026-10-23T01:06:16.8056586Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-23T01:06:16.8057712Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-23T01:06:16.8058926Z hint:
+2026-10-23T01:06:16.8059478Z hint: 	git branch -m <name>
+2026-10-23T01:06:16.8060050Z hint:
+2026-10-23T01:06:16.8060824Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-23T01:06:16.8062132Z Initialized empty Git repository in /home/runner/work/throttle/throttle/.git/
+2026-10-23T01:06:16.8070771Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/throttle
+2026-10-23T01:06:16.8125371Z ##[endgroup]
+2026-10-23T01:06:16.8126044Z ##[group]Disabling automatic garbage collection
+2026-10-23T01:06:16.8129829Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-23T01:06:16.8163458Z ##[endgroup]
+2026-10-23T01:06:16.8164065Z ##[group]Setting up auth
+2026-10-23T01:06:16.8171842Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-23T01:06:16.8206965Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-23T01:06:16.8634163Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-23T01:06:16.8674796Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-23T01:06:16.8901879Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-23T01:06:16.8939052Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-23T01:06:16.9163217Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-23T01:06:16.9206548Z ##[endgroup]
+2026-10-23T01:06:16.9207393Z ##[group]Fetching the repository
+2026-10-23T01:06:16.9216946Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +fc019f1668cd12dbe295efe83edab2017f7d2688:refs/remotes/origin/main
+2026-10-23T01:06:17.3716659Z From https://github.com/rjrddy/throttle
+2026-10-23T01:06:17.3717518Z  * [new ref]         fc019f1668cd12dbe295efe83edab2017f7d2688 -> origin/main
+2026-10-23T01:06:17.3721392Z ##[endgroup]
+2026-10-23T01:06:17.3722265Z ##[group]Determining the checkout info
+2026-10-23T01:06:17.3724009Z ##[endgroup]
+2026-10-23T01:06:17.3729982Z [command]/usr/bin/git sparse-checkout disable
+2026-10-23T01:06:17.3782852Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-23T01:06:17.3813939Z ##[group]Checking out the ref
+2026-10-23T01:06:17.3818221Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-23T01:06:17.4766488Z Switched to a new branch 'main'
+2026-10-23T01:06:17.4770782Z branch 'main' set up to track 'origin/main'.
+2026-10-23T01:06:17.4784684Z ##[endgroup]
+2026-10-23T01:06:17.4832148Z [command]/usr/bin/git log -1 --format=%H
+2026-10-23T01:06:17.4859240Z fc019f1668cd12dbe295efe83edab2017f7d2688
+2026-10-23T01:06:17.5136387Z ##[group]Run actions/setup-go@v5
+2026-10-23T01:06:17.5137024Z with:
+2026-10-23T01:06:17.5137345Z   go-version-file: go.mod
+2026-10-23T01:06:17.5137699Z   cache: false
+2026-10-23T01:06:17.5138013Z   check-latest: false
+2026-10-23T01:06:17.5140912Z   token: ***
+2026-10-23T01:06:17.5141238Z ##[endgroup]
+2026-10-23T01:06:17.6423908Z Setup go version spec 1.27.3
+2026-10-23T01:06:17.6434065Z Attempting to download 1.27.3...
+2026-10-23T01:06:17.6545543Z (node:2222) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-23T01:06:17.6546657Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-23T01:06:18.2268011Z matching 1.27.3...
+2026-10-23T01:06:18.2294291Z Acquiring 1.27.3 from https://github.com/actions/go-versions/releases/download/1.27.3-39437817176/go-1.27.3-linux-x64.tar.gz
+2026-10-23T01:06:18.7773648Z Extracting Go...
+2026-10-23T01:06:18.7902565Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/2ad6ae85-d025-4852-9f2c-3d6c44d4def0 -f /home/runner/work/_temp/af24aa3c-a5fb-4be0-82dd-b03ca6569cf1
+2026-10-23T01:06:20.5333363Z Successfully extracted go to /home/runner/work/_temp/2ad6ae85-d025-4852-9f2c-3d6c44d4def0
+2026-10-23T01:06:20.5334726Z Adding to the cache ...
+2026-10-23T01:06:27.4979325Z Successfully cached go to /opt/hostedtoolcache/go/1.27.3/x64
+2026-10-23T01:06:27.4982401Z Added go to the path
+2026-10-23T01:06:27.4985493Z Successfully set up Go version 1.27.3
+2026-10-23T01:06:27.5237815Z go version go1.27.3 linux/amd64
+2026-10-23T01:06:27.5238195Z 
+2026-10-23T01:06:27.5238943Z ##[group]go env
+2026-10-23T01:06:27.6670458Z AR='ar'
+2026-10-23T01:06:27.6670959Z CC='gcc'
+2026-10-23T01:06:27.6671495Z CGO_CFLAGS='-O2 -g'
+2026-10-23T01:06:27.6672079Z CGO_CPPFLAGS=''
+2026-10-23T01:06:27.6672646Z CGO_CXXFLAGS='-O2 -g'
+2026-10-23T01:06:27.6673241Z CGO_ENABLED='1'
+2026-10-23T01:06:27.6673752Z CGO_FFLAGS='-O2 -g'
+2026-10-23T01:06:27.6674400Z CGO_LDFLAGS='-O2 -g'
+2026-10-23T01:06:27.6674925Z CXX='g++'
+2026-10-23T01:06:27.6675382Z GCCGO='gccgo'
+2026-10-23T01:06:27.6675918Z GO111MODULE=''
+2026-10-23T01:06:27.6676395Z GOAMD64='v1'
+2026-10-23T01:06:27.6676934Z GOARCH='amd64'
+2026-10-23T01:06:27.6677496Z GOAUTH='netrc'
+2026-10-23T01:06:27.6678017Z GOBIN='/home/runner/go/bin'
+2026-10-23T01:06:27.6678865Z GOCACHE='/home/runner/.cache/go-build'
+2026-10-23T01:06:27.6679326Z GOCACHEPROG=''
+2026-10-23T01:06:27.6679650Z GODEBUG=''
+2026-10-23T01:06:27.6679990Z GOENV='/home/runner/.config/go/env'
+2026-10-23T01:06:27.6680378Z GOEXE=''
+2026-10-23T01:06:27.6680681Z GOEXPERIMENT=''
+2026-10-23T01:06:27.6681030Z GOFIPS140='off'
+2026-10-23T01:06:27.6681336Z GOFLAGS=''
+2026-10-23T01:06:27.6682246Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build1986207273=/tmp/go-build -gno-record-gcc-switches'
+2026-10-23T01:06:27.6682971Z GOHOSTARCH='amd64'
+2026-10-23T01:06:27.6683216Z GOHOSTOS='linux'
+2026-10-23T01:06:27.6683448Z GOINSECURE=''
+2026-10-23T01:06:27.6683747Z GOMOD='/home/runner/work/throttle/throttle/go.mod'
+2026-10-23T01:06:27.6684112Z GOMODCACHE='/home/runner/go/pkg/mod'
+2026-10-23T01:06:27.6684393Z GONOPROXY=''
+2026-10-23T01:06:27.6684596Z GONOSUMDB=''
+2026-10-23T01:06:27.6684795Z GOOS='linux'
+2026-10-23T01:06:27.6685006Z GOPACKAGESDRIVER=''
+2026-10-23T01:06:27.6685244Z GOPATH='/home/runner/go'
+2026-10-23T01:06:27.6685482Z GOPRIVATE=''
+2026-10-23T01:06:27.6685760Z GOPROXY='https://proxy.golang.org,direct'
+2026-10-23T01:06:27.6686150Z GOROOT='/opt/hostedtoolcache/go/1.27.3/x64'
+2026-10-23T01:06:27.6686485Z GOSUMDB='sum.golang.org'
+2026-10-23T01:06:27.6686751Z GOTELEMETRY='local'
+2026-10-23T01:06:27.6687052Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+2026-10-23T01:06:27.6687381Z GOTMPDIR=''
+2026-10-23T01:06:27.6687589Z GOTOOLCHAIN='auto'
+2026-10-23T01:06:27.6687921Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.3/x64/pkg/tool/linux_amd64'
+2026-10-23T01:06:27.6688287Z GOVCS=''
+2026-10-23T01:06:27.6688753Z GOVERSION='go1.27.3'
+2026-10-23T01:06:27.6689553Z GOWORK=''
+2026-10-23T01:06:27.6689866Z PKG_CONFIG='pkg-config'
+2026-10-23T01:06:27.6690237Z 
+2026-10-23T01:06:27.6690775Z ##[endgroup]
+2026-10-23T01:06:27.6933382Z ##[group]Run actions/setup-node@v4
+2026-10-23T01:06:27.6933707Z with:
+2026-10-23T01:06:27.6933918Z   node-version: 22
+2026-10-23T01:06:27.6934137Z   cache: npm
+2026-10-23T01:06:27.6934400Z   cache-dependency-path: apps/web/package-lock.json
+2026-10-23T01:06:27.6934730Z   always-auth: false
+2026-10-23T01:06:27.6934963Z   check-latest: false
+2026-10-23T01:06:27.6937292Z   token: ***
+2026-10-23T01:06:27.6937511Z ##[endgroup]
+2026-10-23T01:06:27.8356823Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+2026-10-23T01:06:27.8360328Z (node:2314) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-23T01:06:27.8361671Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-23T01:06:27.8363102Z ##[group]Environment details
+2026-10-23T01:06:28.2834362Z node: v22.23.3
+2026-10-23T01:06:28.2834679Z npm: 10.9.9
+2026-10-23T01:06:28.2834923Z yarn: 1.22.22
+2026-10-23T01:06:28.2835539Z ##[endgroup]
+2026-10-23T01:06:28.2856638Z [command]/opt/hostedtoolcache/node/22.23.3/x64/bin/npm config get cache
+2026-10-23T01:06:28.4118341Z /home/runner/.npm
+2026-10-23T01:06:28.4943877Z npm cache is not found
+2026-10-23T01:06:28.5156555Z ##[group]Run actions/setup-python@v5
+2026-10-23T01:06:28.5156863Z with:
+2026-10-23T01:06:28.5157076Z   python-version: 3.13
+2026-10-23T01:06:28.5157317Z   check-latest: false
+2026-10-23T01:06:28.5159868Z   token: ***
+2026-10-23T01:06:28.5160096Z   update-environment: true
+2026-10-23T01:06:28.5160351Z   allow-prereleases: false
+2026-10-23T01:06:28.5160594Z   freethreaded: false
+2026-10-23T01:06:28.5160815Z ##[endgroup]
+2026-10-23T01:06:28.6454638Z ##[group]Installed versions
+2026-10-23T01:06:28.6563006Z (node:2357) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-23T01:06:28.6565208Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-23T01:06:28.6566524Z Successfully set up CPython (3.13.16)
+2026-10-23T01:06:28.6567574Z ##[endgroup]
+2026-10-23T01:06:28.6799497Z ##[group]Run make setup build lint test scan
+2026-10-23T01:06:28.6800127Z [36;1mmake setup build lint test scan[0m
+2026-10-23T01:06:28.7184926Z shell: /usr/bin/bash -e {0}
+2026-10-23T01:06:28.7185257Z env:
+2026-10-23T01:06:28.7185604Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:06:28.7186167Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-23T01:06:28.7186720Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:06:28.7187212Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:06:28.7187700Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:06:28.7188191Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-23T01:06:28.7188891Z ##[endgroup]
+2026-10-23T01:06:28.7339505Z python3 -m venv .venv
+2026-10-23T01:06:33.1850259Z .venv/bin/python -m pip install -r requirements-dev.txt
+2026-10-23T01:06:34.2842402Z Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 1))
+2026-10-23T01:06:34.3489829Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+2026-10-23T01:06:34.3946573Z Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.4026234Z   Downloading pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+2026-10-23T01:06:34.4417933Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.4490801Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+2026-10-23T01:06:34.5169600Z Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.5278289Z   Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+2026-10-23T01:06:34.5642359Z Collecting packaging>=23.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.5755048Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-10-23T01:06:34.6095264Z Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.6170421Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+2026-10-23T01:06:34.6511343Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.6627858Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+2026-10-23T01:06:34.7040556Z Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.7109150Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+2026-10-23T01:06:34.7588299Z Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.7658836Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-10-23T01:06:34.7978219Z Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.8063120Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+2026-10-23T01:06:34.8486599Z Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.8556445Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+2026-10-23T01:06:34.8991873Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.9063296Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+2026-10-23T01:06:34.9457692Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.9524989Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+2026-10-23T01:06:34.9892868Z Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:34.9959742Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+2026-10-23T01:06:35.0300268Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.0367436Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+2026-10-23T01:06:35.0701449Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.0844504Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+2026-10-23T01:06:35.1180075Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.1246501Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+2026-10-23T01:06:35.2330243Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.2650530Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+2026-10-23T01:06:35.3107374Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.3177043Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+2026-10-23T01:06:35.3225438Z Requirement already satisfied: pip in ./.venv/lib/python3.13/site-packages (from pip-api>=0.0.28->pip-audit==2.9.0->-r requirements-dev.txt (line 2)) (26.2.1)
+2026-10-23T01:06:35.3624830Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.3693393Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-10-23T01:06:35.5055865Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.5141169Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+2026-10-23T01:06:35.5506982Z Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.5576540Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+2026-10-23T01:06:35.5982279Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.6050017Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+2026-10-23T01:06:35.6427909Z Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.6499125Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+2026-10-23T01:06:35.6855589Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.6961325Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+2026-10-23T01:06:35.7350149Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.7416875Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-10-23T01:06:35.7724587Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 2))
+2026-10-23T01:06:35.7790690Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-10-23T01:06:35.7933485Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+2026-10-23T01:06:35.8678412Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 163.4 MB/s  0:00:00
+2026-10-23T01:06:35.8776982Z Downloading pip_audit-2.9.0-py3-none-any.whl (58 kB)
+2026-10-23T01:06:35.9104018Z Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+2026-10-23T01:06:35.9214003Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+2026-10-23T01:06:35.9300325Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+2026-10-23T01:06:35.9391717Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+2026-10-23T01:06:35.9481025Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+2026-10-23T01:06:35.9567787Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+2026-10-23T01:06:35.9653358Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+2026-10-23T01:06:35.9740184Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+2026-10-23T01:06:35.9826450Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+2026-10-23T01:06:35.9924501Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+2026-10-23T01:06:36.0016362Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-23T01:06:36.0148313Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+2026-10-23T01:06:36.0242813Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+2026-10-23T01:06:36.0327011Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+2026-10-23T01:06:36.0417900Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+2026-10-23T01:06:36.0504870Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+2026-10-23T01:06:36.0595695Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+2026-10-23T01:06:36.0684536Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+2026-10-23T01:06:36.0771815Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+2026-10-23T01:06:36.0857717Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-10-23T01:06:36.0955777Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-10-23T01:06:36.1022197Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 231.8 MB/s  0:00:00
+2026-10-23T01:06:36.1094300Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-10-23T01:06:36.1179395Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-10-23T01:06:36.1274908Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2026-10-23T01:06:36.1360651Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-10-23T01:06:36.2699190Z Installing collected packages: sortedcontainers, boolean.py, urllib3, toml, ruff, pyparsing, pygments, platformdirs, pip-api, packaging, packageurl-python, msgpack, mdurl, license-expression, idna, filelock, defusedxml, charset_normalizer, certifi, requests, py-serializable, pip-requirements-parser, markdown-it-py, rich, cyclonedx-python-lib, CacheControl, pip-audit
+2026-10-23T01:06:38.3419961Z 
+2026-10-23T01:06:38.3456575Z Successfully installed CacheControl-0.14.4 boolean.py-5.0 certifi-2026.10.19 charset_normalizer-3.5.2 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 idna-3.20 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 toml-0.10.2 urllib3-2.8.0
+2026-10-23T01:06:38.3465082Z 
+2026-10-23T01:06:38.3465689Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+2026-10-23T01:06:38.3467028Z [notice] To update, run: /home/runner/work/throttle/throttle/.venv/bin/python -m pip install --upgrade pip
+2026-10-23T01:06:38.4463709Z go mod download
+2026-10-23T01:06:38.4495947Z go: no module dependencies to download
+2026-10-23T01:06:38.4498310Z npm ci --prefix apps/web
+2026-10-23T01:06:40.1586832Z 
+2026-10-23T01:06:40.1587704Z added 23 packages, and audited 24 packages in 2s
+2026-10-23T01:06:40.1588002Z 
+2026-10-23T01:06:40.1588193Z 6 packages are looking for funding
+2026-10-23T01:06:40.1588777Z   run `npm fund` for details
+2026-10-23T01:06:40.1597929Z 
+2026-10-23T01:06:40.1598279Z found 0 vulnerabilities
+2026-10-23T01:06:40.2019009Z go build -trimpath -o bin/throttle ./cmd/throttle
+2026-10-23T01:06:52.7119201Z npm run build --prefix apps/web
+2026-10-23T01:06:52.8126940Z 
+2026-10-23T01:06:52.8127587Z > throttle-console@0.1.0 build
+2026-10-23T01:06:52.8128019Z > tsc --noEmit && vite build
+2026-10-23T01:06:52.8128681Z 
+2026-10-23T01:06:54.3611365Z [36mvite v6.4.4 [32mbuilding for production...[36m[39m
+2026-10-23T01:06:54.4430247Z transforming...
+2026-10-23T01:06:55.2147230Z [32m✓[39m 28 modules transformed.
+2026-10-23T01:06:55.3344593Z rendering chunks...
+2026-10-23T01:06:55.3410798Z computing gzip size...
+2026-10-23T01:06:55.3510660Z [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.41 kB[22m[1m[22m[2m │ gzip:  0.29 kB[22m
+2026-10-23T01:06:55.3511720Z [2mdist/[22m[2massets/[22m[35mindex-qUnvX9io.css  [39m[1m[2m 14.13 kB[22m[1m[22m[2m │ gzip:  3.49 kB[22m
+2026-10-23T01:06:55.3512761Z [2mdist/[22m[2massets/[22m[36mindex-5CpXuAuI.js   [39m[1m[2m208.14 kB[22m[1m[22m[2m │ gzip: 65.29 kB[22m
+2026-10-23T01:06:55.3513874Z [32m✓ built in 965ms[39m
+2026-10-23T01:06:55.3777289Z python3 scripts/check_go_format.py
+2026-10-23T01:06:55.4170386Z go vet ./...
+2026-10-23T01:07:09.1269885Z .venv/bin/ruff check scripts
+2026-10-23T01:07:09.1342427Z All checks passed!
+2026-10-23T01:07:09.1349416Z .venv/bin/ruff format --check scripts
+2026-10-23T01:07:09.1416332Z 5 files already formatted
+2026-10-23T01:07:09.1421272Z npm run lint --prefix apps/web
+2026-10-23T01:07:09.2348071Z 
+2026-10-23T01:07:09.2348983Z > throttle-console@0.1.0 lint
+2026-10-23T01:07:09.2349411Z > tsc --noEmit
+2026-10-23T01:07:09.2349579Z 
+2026-10-23T01:07:10.5066968Z npm exec --prefix apps/web -- prettier --check apps/web/src
+2026-10-23T01:07:10.8667951Z Checking formatting...
+2026-10-23T01:07:11.2487163Z All matched files use Prettier code style!
+2026-10-23T01:07:11.2870840Z go test -race -count=1 -json ./... > docs/results/tests.jsonl
+2026-10-23T01:07:34.4036474Z python3 scripts/summarize_tests.py
+2026-10-23T01:07:34.4289135Z {"passed_tests_including_subtests": 24, "failed": [], "tests": ["github.com/rjrddy/throttle/internal/gateway/TestBreakerFencesStaleCompletionsAndSingleProbe", "github.com/rjrddy/throttle/internal/gateway/TestCancelledHalfOpenProbeCanBeRetried", "github.com/rjrddy/throttle/internal/gateway/TestBurstAloneNeverTriggersPenalty", "github.com/rjrddy/throttle/internal/gateway/TestExplainablePenaltyAndHealthyRecovery", "github.com/rjrddy/throttle/internal/gateway/TestServerErrorsDoNotBlameClient", "github.com/rjrddy/throttle/internal/gateway/TestHealthyUnclassifiedEndpointPenaltyIsVisible", "github.com/rjrddy/throttle/internal/gateway/TestFixedModeAndPolicyValidation", "github.com/rjrddy/throttle/internal/gateway/TestConcurrentHotIdentityNeverOvershootsBurst", "github.com/rjrddy/throttle/internal/gateway/TestRegistryAndMetricsBounds", "github.com/rjrddy/throttle/internal/gateway/TestTokenBucketBoundaries", "github.com/rjrddy/throttle/internal/gateway/TestSlidingWindowBoundaryAndReducedLimit", "github.com/rjrddy/throttle/internal/gateway/TestGCRABurstAndDebt", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope/token", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope/sliding", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope/gcra", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope", "github.com/rjrddy/throttle/internal/gateway/TestLimiterRejectNegativeControl", "github.com/rjrddy/throttle/internal/gateway/TestRealProxyAuthenticationHeadersAndBodyBounds", "github.com/rjrddy/throttle/internal/campaign/TestSeededPlanAndRealHTTPReconciliation", "github.com/rjrddy/throttle/internal/gateway/TestRealProxyTimeoutCircuitAndRecovery", "github.com/rjrddy/throttle/internal/gateway/TestRealCapacityBoundAndRejection", "github.com/rjrddy/throttle/internal/gateway/TestRealRateLimitAndValidatedControl", "github.com/rjrddy/throttle/internal/gateway/TestServerConfigurationRejectsUnsafeOriginsAndSecrets", "github.com/rjrddy/throttle/internal/gateway/TestTruncatedOriginBodyReleasesHalfOpenProbe"]}
+2026-10-23T01:07:34.4314406Z go run golang.org/x/vuln/cmd/govulncheck@v1.1.4 ./...
+2026-10-23T01:07:34.4741612Z go: downloading golang.org/x/vuln v1.1.4
+2026-10-23T01:07:34.7023515Z go: downloading golang.org/x/telemetry v0.0.0-20240522233618-39ace7a40ae7
+2026-10-23T01:07:34.7109549Z go: downloading golang.org/x/mod v0.22.0
+2026-10-23T01:07:34.7116252Z go: downloading golang.org/x/tools v0.29.0
+2026-10-23T01:07:34.8935971Z go: downloading golang.org/x/sync v0.10.0
+2026-10-23T01:07:41.4694194Z panic: unexpected expr: *ast.KeyValueExpr
+2026-10-23T01:07:41.4694645Z 
+2026-10-23T01:07:41.4695154Z goroutine 1802 gp=0x2476db5af680 m=3 mp=0x2476db5b3808 [running]:
+2026-10-23T01:07:41.4695920Z panic({0xd76d60?, 0x2476fd3a6ea0?})
+2026-10-23T01:07:41.4697129Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/panic.go:878 +0x159 fp=0x2476db5ccdf8 sp=0x2476db5ccd50 pc=0x487bb9
+2026-10-23T01:07:41.4699241Z golang.org/x/tools/go/ssa.(*builder).expr0(0x2476fcd43aa0?, 0x2476e9b0e600?, {0xdee1a8?, 0x2476ded52ba0?}, {0x0, {0x0, 0x0}, {0x0, 0x0}})
+2026-10-23T01:07:41.4701410Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:958 +0x206e fp=0x2476db5cd110 sp=0x2476db5ccdf8 pc=0x81e6ce
+2026-10-23T01:07:41.4703330Z golang.org/x/tools/go/ssa.(*builder).expr(0x2476fcd43aa0, 0x2476e9b0e600, {0xdee1a8, 0x2476ded52ba0})
+2026-10-23T01:07:41.4705238Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:633 +0x13b fp=0x2476db5cd1a0 sp=0x2476db5cd110 pc=0x81c57b
+2026-10-23T01:07:41.4707478Z golang.org/x/tools/go/ssa.(*builder).assign(0xdec2b0?, 0x2476e9b0e600, {0xdef128, 0x2476fd3b2a50}, {0xdee1a8?, 0x2476ded52ba0?}, 0x58?, 0x2476db5cd598)
+2026-10-23T01:07:41.4709907Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:606 +0x3a5 fp=0x2476db5cd260 sp=0x2476db5cd1a0 pc=0x81c1e5
+2026-10-23T01:07:41.4712128Z golang.org/x/tools/go/ssa.(*builder).compLit(0x2476fcd43aa0, 0x2476e9b0e600, {0xdf08d0, 0x2476fd3b17a0}, 0x2476df2ea4c0, 0x1, 0x2476db5cd598)
+2026-10-23T01:07:41.4714351Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:1304 +0x1252 fp=0x2476db5cd498 sp=0x2476db5cd260 pc=0x822072
+2026-10-23T01:07:41.4716824Z golang.org/x/tools/go/ssa.(*builder).addr(0x2476fcd43aa0, 0x2476e9b0e600, {0xdee178?, 0x2476df2ea4c0}, 0x1)
+2026-10-23T01:07:41.4719030Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:453 +0xc7b fp=0x2476db5cd638 sp=0x2476db5cd498 pc=0x81bbfb
+2026-10-23T01:07:41.4721319Z golang.org/x/tools/go/ssa.(*builder).expr0(0x2476fcd43aa0, 0x2476e9b0e600, {0xdee298?, 0x2476df41b740}, {0x7, {0xdec288, 0x2476e2474ba0}, {0x0, 0x0}})
+2026-10-23T01:07:41.4723547Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:723 +0xce fp=0x2476db5cd950 sp=0x2476db5cd638 pc=0x81c72e
+2026-10-23T01:07:41.4725957Z golang.org/x/tools/go/ssa.(*builder).expr(0x2476fcd43aa0, 0x2476e9b0e600, {0xdee298, 0x2476df41b740})
+2026-10-23T01:07:41.4727926Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:633 +0x13b fp=0x2476db5cd9e0 sp=0x2476db5cd950 pc=0x81c57b
+2026-10-23T01:07:41.4729967Z golang.org/x/tools/go/ssa.(*builder).returnStmt(0x2476fcd43aa0, 0x2476e9b0e600, 0x2476df41b760)
+2026-10-23T01:07:41.4731889Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2839 +0x15a fp=0x2476db5cdb08 sp=0x2476db5cd9e0 pc=0x82e69a
+2026-10-23T01:07:41.4733796Z golang.org/x/tools/go/ssa.(*builder).stmt(0x2476fcd43aa0, 0x2476e9b0e600, {0xdee3e8?, 0x2476df41b760?})
+2026-10-23T01:07:41.4735770Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2739 +0x53e fp=0x2476db5cdc38 sp=0x2476db5cdb08 pc=0x82d09e
+2026-10-23T01:07:41.4737288Z golang.org/x/tools/go/ssa.(*builder).stmtList(...)
+2026-10-23T01:07:41.4738721Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:964
+2026-10-23T01:07:41.4740397Z golang.org/x/tools/go/ssa.(*builder).stmt(0x2476fcd43aa0, 0x2476e9b0e600, {0xdee448?, 0x2476ded52c90?})
+2026-10-23T01:07:41.4742683Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2745 +0x10f1 fp=0x2476db5cdd68 sp=0x2476db5cdc38 pc=0x82dc51
+2026-10-23T01:07:41.4744489Z golang.org/x/tools/go/ssa.(*builder).buildFromSyntax(0x2476fcd43aa0, 0x2476e9b0e600)
+2026-10-23T01:07:41.4746380Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2951 +0x25a fp=0x2476db5cdde0 sp=0x2476db5cdd68 pc=0x82f69a
+2026-10-23T01:07:41.4748173Z golang.org/x/tools/go/ssa.(*builder).buildFunction(0xffffffffffffffff?, 0x2476e9b0e600)
+2026-10-23T01:07:41.4751115Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2904 +0x185 fp=0x2476db5cdea0 sp=0x2476db5cdde0 pc=0x82f2e5
+2026-10-23T01:07:41.4752694Z golang.org/x/tools/go/ssa.(*builder).iterate(0x2476fcd43aa0)
+2026-10-23T01:07:41.4754419Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2889 +0x25 fp=0x2476db5cdec0 sp=0x2476db5cdea0 pc=0x82f105
+2026-10-23T01:07:41.4755998Z golang.org/x/tools/go/ssa.(*Package).build(0x2476ec878600)
+2026-10-23T01:07:41.4757661Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3172 +0xdc fp=0x2476db5cdf20 sp=0x2476db5cdec0 pc=0x830dbc
+2026-10-23T01:07:41.4759336Z golang.org/x/tools/go/ssa.(*Package).build-fm()
+2026-10-23T01:07:41.4760253Z 	<autogenerated>:1 +0x17 fp=0x2476db5cdf38 sp=0x2476db5cdf20 pc=0x859ef7
+2026-10-23T01:07:41.4761203Z sync.(*Once).doSlow(0x2476fb16fc08?, 0x2476fb16fb88?)
+2026-10-23T01:07:41.4762422Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:78 +0xab fp=0x2476db5cdf90 sp=0x2476db5cdf38 pc=0x49410b
+2026-10-23T01:07:41.4763380Z sync.(*Once).Do(...)
+2026-10-23T01:07:41.4764011Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:69
+2026-10-23T01:07:41.4765043Z golang.org/x/tools/go/ssa.(*Package).Build(...)
+2026-10-23T01:07:41.4766323Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3161
+2026-10-23T01:07:41.4767603Z golang.org/x/tools/go/ssa.(*Program).Build.func1(0x2476ddc54f98?)
+2026-10-23T01:07:41.4769566Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3140 +0x45 fp=0x2476db5cdfc8 sp=0x2476db5cdf90 pc=0x854fa5
+2026-10-23T01:07:41.4771076Z golang.org/x/tools/go/ssa.(*Program).Build.gowrap1()
+2026-10-23T01:07:41.4772761Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3143 +0x1b fp=0x2476db5cdfe0 sp=0x2476db5cdfc8 pc=0x854f3b
+2026-10-23T01:07:41.4774084Z runtime.goexit({})
+2026-10-23T01:07:41.4775197Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5cdfe8 sp=0x2476db5cdfe0 pc=0x48ed21
+2026-10-23T01:07:41.4776572Z created by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 1490
+2026-10-23T01:07:41.4778052Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3139 +0x1b4
+2026-10-23T01:07:41.4779353Z 
+2026-10-23T01:07:41.4779753Z goroutine 1 gp=0x2476db5901e0 m=nil [chan receive]:
+2026-10-23T01:07:41.4780711Z runtime.gopark(0x423089?, 0xb000000000027?, 0x7e?, 0x0?, 0x7f44f3c4cbf0?)
+2026-10-23T01:07:41.4782078Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5f4d80 sp=0x2476db5f4d60 pc=0x4880ea
+2026-10-23T01:07:41.4783233Z runtime.chanrecv(0x2476db692690, 0x0, 0x1)
+2026-10-23T01:07:41.4784439Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/chan.go:667 +0x4ae fp=0x2476db5f4df8 sp=0x2476db5f4d80 pc=0x41a14e
+2026-10-23T01:07:41.4785550Z runtime.chanrecv1(0x2476db6ec2d0?, 0x0?)
+2026-10-23T01:07:41.4786740Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/chan.go:509 +0x12 fp=0x2476db5f4e20 sp=0x2476db5f4df8 pc=0x419c72
+2026-10-23T01:07:41.4787820Z golang.org/x/vuln/scan.(*Cmd).Wait(...)
+2026-10-23T01:07:41.4789365Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/scan/scan.go:97
+2026-10-23T01:07:41.4790333Z main.main()
+2026-10-23T01:07:41.4791858Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/cmd/govulncheck/main.go:24 +0xfa fp=0x2476db5f4eb8 sp=0x2476db5f4e20 pc=0x88c01a
+2026-10-23T01:07:41.4793179Z runtime.main()
+2026-10-23T01:07:41.4794252Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:302 +0x427 fp=0x2476db5f4fe0 sp=0x2476db5f4eb8 pc=0x451407
+2026-10-23T01:07:41.4795243Z runtime.goexit({})
+2026-10-23T01:07:41.4796356Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5f4fe8 sp=0x2476db5f4fe0 pc=0x48ed21
+2026-10-23T01:07:41.4797248Z 
+2026-10-23T01:07:41.4797666Z goroutine 2 gp=0x2476db590d20 m=nil [force gc (idle)]:
+2026-10-23T01:07:41.4798632Z runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+2026-10-23T01:07:41.4799888Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e6fa8 sp=0x2476db5e6f88 pc=0x4880ea
+2026-10-23T01:07:41.4800908Z runtime.goparkunlock(...)
+2026-10-23T01:07:41.4801609Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:480
+2026-10-23T01:07:41.4802277Z runtime.forcegchelper()
+2026-10-23T01:07:41.4803353Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:387 +0xb3 fp=0x2476db5e6fe0 sp=0x2476db5e6fa8 pc=0x4516d3
+2026-10-23T01:07:41.4804303Z runtime.goexit({})
+2026-10-23T01:07:41.4805361Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e6fe8 sp=0x2476db5e6fe0 pc=0x48ed21
+2026-10-23T01:07:41.4806450Z created by runtime.init.7 in goroutine 1
+2026-10-23T01:07:41.4807262Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:375 +0x1a
+2026-10-23T01:07:41.4807764Z 
+2026-10-23T01:07:41.4808144Z goroutine 3 gp=0x2476db5912c0 m=nil [GC sweep wait]:
+2026-10-23T01:07:41.4809084Z runtime.gopark(0x1?, 0x0?, 0x0?, 0x0?, 0x0?)
+2026-10-23T01:07:41.4810294Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e7788 sp=0x2476db5e7768 pc=0x4880ea
+2026-10-23T01:07:41.4811529Z runtime.goparkunlock(...)
+2026-10-23T01:07:41.4812350Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:480
+2026-10-23T01:07:41.4813103Z runtime.bgsweep(0x2476db5c4100)
+2026-10-23T01:07:41.4814322Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgcsweep.go:324 +0x151 fp=0x2476db5e77c8 sp=0x2476db5e7788 pc=0x43c2f1
+2026-10-23T01:07:41.4815385Z runtime.gcenable.gowrap1()
+2026-10-23T01:07:41.4816500Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:214 +0x17 fp=0x2476db5e77e0 sp=0x2476db5e77c8 pc=0x47eef7
+2026-10-23T01:07:41.4817462Z runtime.goexit({})
+2026-10-23T01:07:41.4818774Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e77e8 sp=0x2476db5e77e0 pc=0x48ed21
+2026-10-23T01:07:41.4819916Z created by runtime.gcenable in goroutine 1
+2026-10-23T01:07:41.4820728Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:214 +0x66
+2026-10-23T01:07:41.4821218Z 
+2026-10-23T01:07:41.4821628Z goroutine 4 gp=0x2476db5914a0 m=nil [GC scavenge wait]:
+2026-10-23T01:07:41.4822437Z runtime.gopark(0x10000?, 0x3b9aca00?, 0x0?, 0x0?, 0x0?)
+2026-10-23T01:07:41.4823671Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e7f78 sp=0x2476db5e7f58 pc=0x4880ea
+2026-10-23T01:07:41.4824649Z runtime.goparkunlock(...)
+2026-10-23T01:07:41.4825335Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:480
+2026-10-23T01:07:41.4826085Z runtime.(*scavengerState).park(0xe5a020)
+2026-10-23T01:07:41.4827319Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgcscavenge.go:425 +0x49 fp=0x2476db5e7fa8 sp=0x2476db5e7f78 pc=0x439e09
+2026-10-23T01:07:41.4828415Z runtime.bgscavenge(0x2476db5c4100)
+2026-10-23T01:07:41.4829853Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgcscavenge.go:658 +0x59 fp=0x2476db5e7fc8 sp=0x2476db5e7fa8 pc=0x43a379
+2026-10-23T01:07:41.4830931Z runtime.gcenable.gowrap2()
+2026-10-23T01:07:41.4832043Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:215 +0x17 fp=0x2476db5e7fe0 sp=0x2476db5e7fc8 pc=0x47eeb7
+2026-10-23T01:07:41.4833015Z runtime.goexit({})
+2026-10-23T01:07:41.4834299Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e7fe8 sp=0x2476db5e7fe0 pc=0x48ed21
+2026-10-23T01:07:41.4835507Z created by runtime.gcenable in goroutine 1
+2026-10-23T01:07:41.4836344Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:215 +0xa5
+2026-10-23T01:07:41.4836837Z 
+2026-10-23T01:07:41.4837237Z goroutine 18 gp=0x2476db684780 m=nil [finalizer wait]:
+2026-10-23T01:07:41.4837984Z runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+2026-10-23T01:07:41.4839345Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e2620 sp=0x2476db5e2600 pc=0x4880ea
+2026-10-23T01:07:41.4840292Z runtime.runFinalizers()
+2026-10-23T01:07:41.4841366Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mfinal.go:210 +0x107 fp=0x2476db5e27e0 sp=0x2476db5e2620 pc=0x42d567
+2026-10-23T01:07:41.4842309Z runtime.goexit({})
+2026-10-23T01:07:41.4843338Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e27e8 sp=0x2476db5e27e0 pc=0x48ed21
+2026-10-23T01:07:41.4844432Z created by runtime.createfing in goroutine 1
+2026-10-23T01:07:41.4845263Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mfinal.go:172 +0x3d
+2026-10-23T01:07:41.4845756Z 
+2026-10-23T01:07:41.4846123Z goroutine 19 gp=0x2476db684960 m=nil [cleanup wait]:
+2026-10-23T01:07:41.4846821Z runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+2026-10-23T01:07:41.4847965Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e2f68 sp=0x2476db5e2f48 pc=0x4880ea
+2026-10-23T01:07:41.4849088Z runtime.goparkunlock(...)
+2026-10-23T01:07:41.4849761Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:480
+2026-10-23T01:07:41.4850499Z runtime.(*cleanupQueue).dequeue(0xe5a3a0)
+2026-10-23T01:07:41.4851669Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mcleanup.go:522 +0xd3 fp=0x2476db5e2fa0 sp=0x2476db5e2f68 pc=0x42a293
+2026-10-23T01:07:41.4852647Z runtime.runCleanups()
+2026-10-23T01:07:41.4854001Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mcleanup.go:718 +0x45 fp=0x2476db5e2fe0 sp=0x2476db5e2fa0 pc=0x42a905
+2026-10-23T01:07:41.4854957Z runtime.goexit({})
+2026-10-23T01:07:41.4855981Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e2fe8 sp=0x2476db5e2fe0 pc=0x48ed21
+2026-10-23T01:07:41.4857165Z created by runtime.(*cleanupQueue).createGs in goroutine 1
+2026-10-23T01:07:41.4858081Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mcleanup.go:672 +0xa5
+2026-10-23T01:07:41.4858913Z 
+2026-10-23T01:07:41.4859395Z goroutine 20 gp=0x2476db684b40 m=4 mp=0x2476db610008 [syscall]:
+2026-10-23T01:07:41.4860417Z syscall.Syscall6(0xf7, 0x3, 0xd, 0x2476db5e3650, 0x4, 0x2476db780000, 0x0)
+2026-10-23T01:07:41.4861858Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/syscall/syscall_linux.go:96 +0x39 fp=0x2476db5e35c8 sp=0x2476db5e3568 pc=0x4a0ad9
+2026-10-23T01:07:41.4863133Z internal/syscall/unix.Waitid(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+2026-10-23T01:07:41.4864590Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/internal/syscall/unix/waitid_linux.go:18 +0x39 fp=0x2476db5e3620 sp=0x2476db5e35c8 pc=0x4e05b9
+2026-10-23T01:07:41.4865820Z os.(*Process).pidfdWait.func1(...)
+2026-10-23T01:07:41.4866592Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/os/pidfd_linux.go:108
+2026-10-23T01:07:41.4867263Z os.ignoringEINTR(...)
+2026-10-23T01:07:41.4867942Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/os/file_posix.go:263
+2026-10-23T01:07:41.4868941Z os.(*Process).pidfdWait(0x2476db6ba840)
+2026-10-23T01:07:41.4870151Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/os/pidfd_linux.go:107 +0x1cf fp=0x2476db5e3730 sp=0x2476db5e3620 pc=0x4ebe6f
+2026-10-23T01:07:41.4871152Z os.(*Process).wait(0x0?)
+2026-10-23T01:07:41.4872216Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/os/exec_unix.go:25 +0x1a fp=0x2476db5e3748 sp=0x2476db5e3730 pc=0x4e7a9a
+2026-10-23T01:07:41.4873228Z os.(*Process).Wait(...)
+2026-10-23T01:07:41.4873859Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/os/exec.go:347
+2026-10-23T01:07:41.4874557Z os/exec.(*Cmd).Wait(0x2476db6aa820)
+2026-10-23T01:07:41.4875951Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/os/exec/exec.go:944 +0x45 fp=0x2476db5e37b8 sp=0x2476db5e3748 pc=0x5365c5
+2026-10-23T01:07:41.4879494Z golang.org/x/telemetry.parent.func1()
+2026-10-23T01:07:41.4881332Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/telemetry@v0.0.0-20240522233618-39ace7a40ae7/start.go:224 +0x25 fp=0x2476db5e37e0 sp=0x2476db5e37b8 pc=0x6fc6c5
+2026-10-23T01:07:41.4882760Z runtime.goexit({})
+2026-10-23T01:07:41.4883841Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e37e8 sp=0x2476db5e37e0 pc=0x48ed21
+2026-10-23T01:07:41.4885040Z created by golang.org/x/telemetry.parent in goroutine 1
+2026-10-23T01:07:41.4886522Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/telemetry@v0.0.0-20240522233618-39ace7a40ae7/start.go:223 +0x4e6
+2026-10-23T01:07:41.4887477Z 
+2026-10-23T01:07:41.4887941Z goroutine 21 gp=0x2476db684d20 m=nil [sync.WaitGroup.Wait]:
+2026-10-23T01:07:41.4889184Z runtime.gopark(0xe64000?, 0x2476dfe618e0?, 0xd0?, 0x19?, 0x2476ef871570?)
+2026-10-23T01:07:41.4890536Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476f51d1868 sp=0x2476f51d1848 pc=0x4880ea
+2026-10-23T01:07:41.4891544Z runtime.goparkunlock(...)
+2026-10-23T01:07:41.4892246Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:480
+2026-10-23T01:07:41.4893113Z runtime.semacquire1(0x2476e869b010, 0x0, 0x1, 0x0, 0x19)
+2026-10-23T01:07:41.4894354Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/sema.go:192 +0x232 fp=0x2476f51d18d0 sp=0x2476f51d1868 pc=0x4642d2
+2026-10-23T01:07:41.4895486Z sync.runtime_SemacquireWaitGroup(0x538d05?, 0x40?)
+2026-10-23T01:07:41.4896698Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/sema.go:114 +0x2e fp=0x2476f51d1908 sp=0x2476f51d18d0 pc=0x48982e
+2026-10-23T01:07:41.4897749Z sync.(*WaitGroup).Wait(0x2476e869b008)
+2026-10-23T01:07:41.4899071Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/waitgroup.go:206 +0x85 fp=0x2476f51d1930 sp=0x2476f51d1908 pc=0x495325
+2026-10-23T01:07:41.4900725Z golang.org/x/sync/errgroup.(*Group).Wait(0x2476e869b000)
+2026-10-23T01:07:41.4902434Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:56 +0x1e fp=0x2476f51d1950 sp=0x2476f51d1930 pc=0x538c1e
+2026-10-23T01:07:41.4904581Z golang.org/x/vuln/internal/client.(*Client).ByModules(0x2476db6a8870, {0xdeeb78, 0x2476e758e820}, {0x2476e99a0070, 0x2, 0x2})
+2026-10-23T01:07:41.4906783Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:199 +0x27f fp=0x2476f51d19f8 sp=0x2476f51d1950 pc=0x81473f
+2026-10-23T01:07:41.4909206Z golang.org/x/vuln/internal/vulncheck.FetchVulnerabilities({0xdeeb78, 0x2476e758e820}, 0x2476db6a8870, {0x2476e99a0060, 0x2, 0x0?})
+2026-10-23T01:07:41.4911431Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/vulncheck/fetch.go:27 +0x156 fp=0x2476f51d1ae0 sp=0x2476f51d19f8 pc=0x869d96
+2026-10-23T01:07:41.4913703Z golang.org/x/vuln/internal/vulncheck.source({0xdeeb08?, 0xe7b820?}, {0xdef3f0, 0x2476db622100}, 0x2476db6ee6c0, 0x2476db6a8870, 0x2476db6f6cf0)
+2026-10-23T01:07:41.4915967Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/vulncheck/source.go:68 +0x51b fp=0x2476f51d1cb8 sp=0x2476f51d1ae0 pc=0x86c0fb
+2026-10-23T01:07:41.4918240Z golang.org/x/vuln/internal/vulncheck.Source({0xdeeb08?, 0xe7b820?}, {0xdef3f0, 0x2476db622100}, 0x2476db6ee6c0, 0x2476db69e070?, 0x2476db701d78?)
+2026-10-23T01:07:41.4920698Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/vulncheck/source.go:21 +0x2c fp=0x2476f51d1d00 sp=0x2476f51d1cb8 pc=0x86bb2c
+2026-10-23T01:07:41.4922882Z golang.org/x/vuln/internal/scan.runSource({0xdeeb08, 0xe7b820}, {0xdef3f0, 0x2476db622100}, 0x2476db6ee6c0, 0x2476db6a8870, {0x0, 0x0})
+2026-10-23T01:07:41.4925017Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/scan/source.go:48 +0x30f fp=0x2476f51d1e70 sp=0x2476f51d1d00 pc=0x88398f
+2026-10-23T01:07:41.4927712Z golang.org/x/vuln/internal/scan.RunGovulncheck({0xdeeb08, 0xe7b820}, {0x2476db717808, 0x7e, 0x7e}, {0xde9c68, 0x2476db682030}, {0xde9bc8, 0x2476db682038}, {0xde9bc8, ...}, ...)
+2026-10-23T01:07:41.4930300Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/scan/run.go:63 +0x67b fp=0x2476f51d1f18 sp=0x2476f51d1e70 pc=0x8826db
+2026-10-23T01:07:41.4931750Z golang.org/x/vuln/scan.(*Cmd).scan(0x2476db6ec2d0)
+2026-10-23T01:07:41.4933309Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/scan/scan.go:105 +0x99 fp=0x2476f51d1fa0 sp=0x2476f51d1f18 pc=0x88b399
+2026-10-23T01:07:41.4934674Z golang.org/x/vuln/scan.(*Cmd).Start.func1()
+2026-10-23T01:07:41.4936182Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/scan/scan.go:84 +0x50 fp=0x2476f51d1fe0 sp=0x2476f51d1fa0 pc=0x88b410
+2026-10-23T01:07:41.4937395Z runtime.goexit({})
+2026-10-23T01:07:41.4938653Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476f51d1fe8 sp=0x2476f51d1fe0 pc=0x48ed21
+2026-10-23T01:07:41.4940041Z created by golang.org/x/vuln/scan.(*Cmd).Start in goroutine 1
+2026-10-23T01:07:41.4941346Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/scan/scan.go:82 +0x178
+2026-10-23T01:07:41.4942137Z 
+2026-10-23T01:07:41.4942571Z goroutine 10 gp=0x2476db6703c0 m=nil [GC worker (idle)]:
+2026-10-23T01:07:41.4943395Z runtime.gopark(0x1b795f450e?, 0x3?, 0xea?, 0x4a?, 0x0?)
+2026-10-23T01:07:41.4944621Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e8740 sp=0x2476db5e8720 pc=0x4880ea
+2026-10-23T01:07:41.4945688Z runtime.gcBgMarkWorker(0x2476db9ec540)
+2026-10-23T01:07:41.4946829Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1807 +0xeb fp=0x2476db5e87c8 sp=0x2476db5e8740 pc=0x4307ab
+2026-10-23T01:07:41.4947899Z runtime.gcBgMarkStartWorkers.gowrap1()
+2026-10-23T01:07:41.4949222Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0x17 fp=0x2476db5e87e0 sp=0x2476db5e87c8 pc=0x47f3f7
+2026-10-23T01:07:41.4950459Z runtime.goexit({})
+2026-10-23T01:07:41.4951539Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e87e8 sp=0x2476db5e87e0 pc=0x48ed21
+2026-10-23T01:07:41.4952729Z created by runtime.gcBgMarkStartWorkers in goroutine 9
+2026-10-23T01:07:41.4953620Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0xfc
+2026-10-23T01:07:41.4954145Z 
+2026-10-23T01:07:41.4954559Z goroutine 11 gp=0x2476db670780 m=nil [GC worker (idle)]:
+2026-10-23T01:07:41.4955379Z runtime.gopark(0x1ba84fab37?, 0x3?, 0x56?, 0x34?, 0x0?)
+2026-10-23T01:07:41.4956601Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e8f40 sp=0x2476db5e8f20 pc=0x4880ea
+2026-10-23T01:07:41.4957676Z runtime.gcBgMarkWorker(0x2476db9ec540)
+2026-10-23T01:07:41.4959008Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1807 +0xeb fp=0x2476db5e8fc8 sp=0x2476db5e8f40 pc=0x4307ab
+2026-10-23T01:07:41.4960096Z runtime.gcBgMarkStartWorkers.gowrap1()
+2026-10-23T01:07:41.4961270Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0x17 fp=0x2476db5e8fe0 sp=0x2476db5e8fc8 pc=0x47f3f7
+2026-10-23T01:07:41.4962234Z runtime.goexit({})
+2026-10-23T01:07:41.4963314Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e8fe8 sp=0x2476db5e8fe0 pc=0x48ed21
+2026-10-23T01:07:41.4964509Z created by runtime.gcBgMarkStartWorkers in goroutine 9
+2026-10-23T01:07:41.4965405Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0xfc
+2026-10-23T01:07:41.4965899Z 
+2026-10-23T01:07:41.4966303Z goroutine 12 gp=0x2476db670960 m=nil [GC worker (idle)]:
+2026-10-23T01:07:41.4967091Z runtime.gopark(0xe7cf20?, 0x1?, 0xf0?, 0x55?, 0x0?)
+2026-10-23T01:07:41.4968388Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e9740 sp=0x2476db5e9720 pc=0x4880ea
+2026-10-23T01:07:41.4969614Z runtime.gcBgMarkWorker(0x2476db9ec540)
+2026-10-23T01:07:41.4970959Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1807 +0xeb fp=0x2476db5e97c8 sp=0x2476db5e9740 pc=0x4307ab
+2026-10-23T01:07:41.4972067Z runtime.gcBgMarkStartWorkers.gowrap1()
+2026-10-23T01:07:41.4973251Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0x17 fp=0x2476db5e97e0 sp=0x2476db5e97c8 pc=0x47f3f7
+2026-10-23T01:07:41.4974196Z runtime.goexit({})
+2026-10-23T01:07:41.4975252Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e97e8 sp=0x2476db5e97e0 pc=0x48ed21
+2026-10-23T01:07:41.4976451Z created by runtime.gcBgMarkStartWorkers in goroutine 9
+2026-10-23T01:07:41.4977349Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0xfc
+2026-10-23T01:07:41.4977843Z 
+2026-10-23T01:07:41.4978258Z goroutine 13 gp=0x2476db670b40 m=nil [GC worker (idle)]:
+2026-10-23T01:07:41.4979280Z runtime.gopark(0x1b9cba5e45?, 0x3?, 0x47?, 0x1f?, 0x0?)
+2026-10-23T01:07:41.4980521Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5e9f40 sp=0x2476db5e9f20 pc=0x4880ea
+2026-10-23T01:07:41.4981592Z runtime.gcBgMarkWorker(0x2476db9ec540)
+2026-10-23T01:07:41.4982745Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1807 +0xeb fp=0x2476db5e9fc8 sp=0x2476db5e9f40 pc=0x4307ab
+2026-10-23T01:07:41.4983861Z runtime.gcBgMarkStartWorkers.gowrap1()
+2026-10-23T01:07:41.4985038Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0x17 fp=0x2476db5e9fe0 sp=0x2476db5e9fc8 pc=0x47f3f7
+2026-10-23T01:07:41.4985982Z runtime.goexit({})
+2026-10-23T01:07:41.4987044Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5e9fe8 sp=0x2476db5e9fe0 pc=0x48ed21
+2026-10-23T01:07:41.4988250Z created by runtime.gcBgMarkStartWorkers in goroutine 9
+2026-10-23T01:07:41.4989345Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/mgc.go:1711 +0xfc
+2026-10-23T01:07:41.4989836Z 
+2026-10-23T01:07:41.4990185Z goroutine 15 gp=0x2476db786780 m=nil [IO wait]:
+2026-10-23T01:07:41.4991037Z runtime.gopark(0x2476db705898?, 0x8a13d8?, 0x30?, 0x2e?, 0x34a?)
+2026-10-23T01:07:41.4992594Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db705820 sp=0x2476db705800 pc=0x4880ea
+2026-10-23T01:07:41.4993864Z runtime.netpollblock(0xffffffffffffffff?, 0xdb7058a0?, 0x76?)
+2026-10-23T01:07:41.4995209Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/netpoll.go:575 +0xf7 fp=0x2476db705858 sp=0x2476db705820 pc=0x44a3f7
+2026-10-23T01:07:41.4996399Z internal/poll.runtime_pollWait(0x7f44aae17c00, 0x72)
+2026-10-23T01:07:41.4997675Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/netpoll.go:351 +0x85 fp=0x2476db705878 sp=0x2476db705858 pc=0x4872e5
+2026-10-23T01:07:41.4999179Z internal/poll.(*pollDesc).wait(0x2476db622200?, 0x2476db802000?, 0x0)
+2026-10-23T01:07:41.5000661Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0x2476db7058b0 sp=0x2476db705878 pc=0x4e1507
+2026-10-23T01:07:41.5001835Z internal/poll.(*pollDesc).waitRead(...)
+2026-10-23T01:07:41.5002725Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/internal/poll/fd_poll_runtime.go:89
+2026-10-23T01:07:41.5003847Z internal/poll.(*FD).Read(0x2476db622200, {0x2476db802000, 0x1500, 0x1500})
+2026-10-23T01:07:41.5005271Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/internal/poll/fd_unix.go:170 +0x2a8 fp=0x2476db705948 sp=0x2476db7058b0 pc=0x4e1f08
+2026-10-23T01:07:41.5006742Z net.(*netFD).Read(0x2476db622200, {0x2476db802000?, 0x2476db7059d0?, 0x2476db7059d8?})
+2026-10-23T01:07:41.5008138Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/fd_posix.go:68 +0x25 fp=0x2476db705990 sp=0x2476db705948 pc=0x5f79a5
+2026-10-23T01:07:41.5009615Z net.(*conn).Read(0x2476db58e088, {0x2476db802000?, 0x2476db705a00?, 0x0?})
+2026-10-23T01:07:41.5010914Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/net.go:196 +0x45 fp=0x2476db7059d8 sp=0x2476db705990 pc=0x6001a5
+2026-10-23T01:07:41.5012356Z crypto/tls.(*Conn).readFromUntil(0x2476db630808, {0xdeaca8, 0x2476db58e088}, 0x2476db705c20?)
+2026-10-23T01:07:41.5013847Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/crypto/tls/conn.go:820 +0xf4 fp=0x2476db705a48 sp=0x2476db7059d8 pc=0x653e34
+2026-10-23T01:07:41.5014997Z crypto/tls.(*Conn).readRecordOrCCS(0x2476db630808, 0x0)
+2026-10-23T01:07:41.5016393Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/crypto/tls/conn.go:626 +0x3fb fp=0x2476db705c30 sp=0x2476db705a48 pc=0x650e9b
+2026-10-23T01:07:41.5017464Z crypto/tls.(*Conn).readRecord(...)
+2026-10-23T01:07:41.5018199Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/crypto/tls/conn.go:588
+2026-10-23T01:07:41.5019407Z crypto/tls.(*Conn).Read(0x2476db630808, {0x2476db79c000, 0x1000, 0x47e380?})
+2026-10-23T01:07:41.5020813Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/crypto/tls/conn.go:1392 +0x148 fp=0x2476db705c98 sp=0x2476db705c30 pc=0x657648
+2026-10-23T01:07:41.5022154Z bufio.(*Reader).Read(0x2476dba0f800, {0x2476db810044, 0x9, 0xde9be8?})
+2026-10-23T01:07:41.5023482Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/bufio/bufio.go:245 +0x193 fp=0x2476db705cd0 sp=0x2476db705c98 pc=0x6897f3
+2026-10-23T01:07:41.5024812Z io.ReadAtLeast({0xdea5e8, 0x2476dba0f800}, {0x2476db810044, 0x9, 0x9}, 0x9)
+2026-10-23T01:07:41.5026119Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/io/io.go:335 +0x83 fp=0x2476db705d18 sp=0x2476db705cd0 pc=0x4d9343
+2026-10-23T01:07:41.5026995Z io.ReadFull(...)
+2026-10-23T01:07:41.5027584Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/io/io.go:354
+2026-10-23T01:07:41.5028941Z net/http/internal/http2.readFrameHeader({0x2476db810044, 0x9, 0x0?}, {0xdea5e8?, 0x2476dba0f800?})
+2026-10-23T01:07:41.5030644Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/frame.go:252 +0x65 fp=0x2476db705d68 sp=0x2476db705d18 pc=0x6af8c5
+2026-10-23T01:07:41.5031995Z net/http/internal/http2.(*Framer).ReadFrameHeader(0x2476db810000)
+2026-10-23T01:07:41.5033413Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/frame.go:525 +0x67 fp=0x2476db705de0 sp=0x2476db705d68 pc=0x6afe67
+2026-10-23T01:07:41.5034684Z net/http/internal/http2.(*Framer).ReadFrame(0x2476db810000)
+2026-10-23T01:07:41.5036046Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/frame.go:584 +0x18 fp=0x2476db705e18 sp=0x2476db705de0 pc=0x6b05f8
+2026-10-23T01:07:41.5037585Z net/http/internal/http2.(*clientConnReadLoop).run(0x2476db705fa8)
+2026-10-23T01:07:41.5039236Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:2076 +0xdb fp=0x2476db705f60 sp=0x2476db705e18 pc=0x6be93b
+2026-10-23T01:07:41.5040601Z net/http/internal/http2.(*ClientConn).readLoop(0x2476db7208c0)
+2026-10-23T01:07:41.5042036Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1942 +0x52 fp=0x2476db705fc8 sp=0x2476db705f60 pc=0x6bdef2
+2026-10-23T01:07:41.5043380Z net/http/internal/http2.(*Transport).newClientConn.gowrap1()
+2026-10-23T01:07:41.5044809Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:701 +0x17 fp=0x2476db705fe0 sp=0x2476db705fc8 pc=0x6c4e77
+2026-10-23T01:07:41.5045886Z runtime.goexit({})
+2026-10-23T01:07:41.5046914Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db705fe8 sp=0x2476db705fe0 pc=0x48ed21
+2026-10-23T01:07:41.5048254Z created by net/http/internal/http2.(*Transport).newClientConn in goroutine 14
+2026-10-23T01:07:41.5049653Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:701 +0xd87
+2026-10-23T01:07:41.5050308Z 
+2026-10-23T01:07:41.5050667Z goroutine 1808 gp=0x2476db786b40 m=nil [select]:
+2026-10-23T01:07:41.5051555Z runtime.gopark(0x2476ddcabe30?, 0x6?, 0x0?, 0xc6?, 0x2476ddcabd80?)
+2026-10-23T01:07:41.5052882Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ddcabc00 sp=0x2476ddcabbe0 pc=0x4880ea
+2026-10-23T01:07:41.5054237Z runtime.selectgo(0x2476ddcabe30, 0x2476ddcabd74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5055649Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ddcabd40 sp=0x2476ddcabc00 pc=0x463537
+2026-10-23T01:07:41.5057153Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fbd1b708, 0x2476fbd1b688, 0x0)
+2026-10-23T01:07:41.5059035Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476ddcabf90 sp=0x2476ddcabd40 pc=0x6bb2ae
+2026-10-23T01:07:41.5060988Z net/http/internal/http2.(*clientStream).doRequest(0x2476fbd1b708, 0x854f3b?, 0x2476ddc54f98?)
+2026-10-23T01:07:41.5062749Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476ddcabfb8 sp=0x2476ddcabf90 pc=0x6ba618
+2026-10-23T01:07:41.5064155Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5065648Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476ddcabfe0 sp=0x2476ddcabfb8 pc=0x6c515f
+2026-10-23T01:07:41.5066782Z runtime.goexit({})
+2026-10-23T01:07:41.5067857Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ddcabfe8 sp=0x2476ddcabfe0 pc=0x48ed21
+2026-10-23T01:07:41.5069415Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1807
+2026-10-23T01:07:41.5070628Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5071274Z 
+2026-10-23T01:07:41.5071632Z goroutine 1827 gp=0x2476db786f00 m=nil [select]:
+2026-10-23T01:07:41.5072529Z runtime.gopark(0x2476ddcafe30?, 0x6?, 0x0?, 0xc6?, 0x2476ddcafd80?)
+2026-10-23T01:07:41.5073871Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ddcafc00 sp=0x2476ddcafbe0 pc=0x4880ea
+2026-10-23T01:07:41.5075225Z runtime.selectgo(0x2476ddcafe30, 0x2476ddcafd74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5076628Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ddcafd40 sp=0x2476ddcafc00 pc=0x463537
+2026-10-23T01:07:41.5078121Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fceea588, 0x2476fceea508, 0x0)
+2026-10-23T01:07:41.5080005Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476ddcaff90 sp=0x2476ddcafd40 pc=0x6bb2ae
+2026-10-23T01:07:41.5081700Z net/http/internal/http2.(*clientStream).doRequest(0x2476fceea588, 0x854f3b?, 0x2476ddc56798?)
+2026-10-23T01:07:41.5083422Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476ddcaffb8 sp=0x2476ddcaff90 pc=0x6ba618
+2026-10-23T01:07:41.5085021Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5086514Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476ddcaffe0 sp=0x2476ddcaffb8 pc=0x6c515f
+2026-10-23T01:07:41.5087653Z runtime.goexit({})
+2026-10-23T01:07:41.5088936Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ddcaffe8 sp=0x2476ddcaffe0 pc=0x48ed21
+2026-10-23T01:07:41.5090336Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1826
+2026-10-23T01:07:41.5091546Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5092183Z 
+2026-10-23T01:07:41.5092532Z goroutine 1714 gp=0x2476db6854a0 m=nil [runnable]:
+2026-10-23T01:07:41.5093342Z runtime.ifaceeq(0xdf0888?, 0x2476fd2e9140?, 0x2476fd2e9140?)
+2026-10-23T01:07:41.5094552Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/alg.go:334 +0x9e fp=0x2476dfe657d0 sp=0x2476dfe657c8 pc=0x41723e
+2026-10-23T01:07:41.5095957Z golang.org/x/tools/go/ssa.replaceAll({0xdf0888, 0x2476fd2e9140}, {0xdf0960, 0x2476fd2e6690})
+2026-10-23T01:07:41.5097742Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/lift.go:526 +0x138 fp=0x2476dfe65878 sp=0x2476dfe657d0 pc=0x83f998
+2026-10-23T01:07:41.5099662Z golang.org/x/tools/go/ssa.rename(0x2476fd2e2fd0, {0x2476fd2ec990, 0x3, 0x3}, 0x2476dfe65d00)
+2026-10-23T01:07:41.5101425Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/lift.go:609 +0x4d6 fp=0x2476dfe65958 sp=0x2476dfe65878 pc=0x840136
+2026-10-23T01:07:41.5103146Z golang.org/x/tools/go/ssa.rename(0x2476fd2e2dc0, {0x2476fd2ec990, 0x3, 0x3}, 0x2476dfe65d00)
+2026-10-23T01:07:41.5104931Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/lift.go:671 +0x9a5 fp=0x2476dfe65a38 sp=0x2476dfe65958 pc=0x840605
+2026-10-23T01:07:41.5106809Z golang.org/x/tools/go/ssa.rename(0x2476fd2e2d10, {0x2476fd2ec960, 0x3, 0x3}, 0x2476dfe65d00)
+2026-10-23T01:07:41.5108783Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/lift.go:671 +0x9a5 fp=0x2476dfe65b18 sp=0x2476dfe65a38 pc=0x840605
+2026-10-23T01:07:41.5110146Z golang.org/x/tools/go/ssa.lift(0x2476e8e7f600)
+2026-10-23T01:07:41.5111649Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/lift.go:234 +0x4b8 fp=0x2476dfe65d50 sp=0x2476dfe65b18 pc=0x83e338
+2026-10-23T01:07:41.5113125Z golang.org/x/tools/go/ssa.(*Function).finishBody(0x2476e8e7f600)
+2026-10-23T01:07:41.5114727Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/func.go:382 +0x1a7 fp=0x2476dfe65d68 sp=0x2476dfe65d50 pc=0x83b287
+2026-10-23T01:07:41.5116348Z golang.org/x/tools/go/ssa.(*builder).buildFromSyntax(0x2476f9673a70, 0x2476e8e7f600)
+2026-10-23T01:07:41.5118126Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2963 +0x309 fp=0x2476dfe65de0 sp=0x2476dfe65d68 pc=0x82f749
+2026-10-23T01:07:41.5120021Z golang.org/x/tools/go/ssa.(*builder).buildFunction(0x2476f9673a70?, 0x2476e8e7f600)
+2026-10-23T01:07:41.5121857Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2904 +0x185 fp=0x2476dfe65ea0 sp=0x2476dfe65de0 pc=0x82f2e5
+2026-10-23T01:07:41.5123401Z golang.org/x/tools/go/ssa.(*builder).iterate(0x2476f9673a70)
+2026-10-23T01:07:41.5125099Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2889 +0x25 fp=0x2476dfe65ec0 sp=0x2476dfe65ea0 pc=0x82f105
+2026-10-23T01:07:41.5126629Z golang.org/x/tools/go/ssa.(*Package).build(0x2476ec1d7300)
+2026-10-23T01:07:41.5128298Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3172 +0xdc fp=0x2476dfe65f20 sp=0x2476dfe65ec0 pc=0x830dbc
+2026-10-23T01:07:41.5130206Z golang.org/x/tools/go/ssa.(*Package).build-fm()
+2026-10-23T01:07:41.5131105Z 	<autogenerated>:1 +0x17 fp=0x2476dfe65f38 sp=0x2476dfe65f20 pc=0x859ef7
+2026-10-23T01:07:41.5132017Z sync.(*Once).doSlow(0x2476e759c308?, 0x2476e759c288?)
+2026-10-23T01:07:41.5133213Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:78 +0xab fp=0x2476dfe65f90 sp=0x2476dfe65f38 pc=0x49410b
+2026-10-23T01:07:41.5134157Z sync.(*Once).Do(...)
+2026-10-23T01:07:41.5134775Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:69
+2026-10-23T01:07:41.5135562Z golang.org/x/tools/go/ssa.(*Package).Build(...)
+2026-10-23T01:07:41.5136794Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3161
+2026-10-23T01:07:41.5138082Z golang.org/x/tools/go/ssa.(*Program).Build.func1(0x2476ddc55f98?)
+2026-10-23T01:07:41.5139990Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3140 +0x45 fp=0x2476dfe65fc8 sp=0x2476dfe65f90 pc=0x854fa5
+2026-10-23T01:07:41.5141480Z golang.org/x/tools/go/ssa.(*Program).Build.gowrap1()
+2026-10-23T01:07:41.5143134Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3143 +0x1b fp=0x2476dfe65fe0 sp=0x2476dfe65fc8 pc=0x854f3b
+2026-10-23T01:07:41.5144423Z runtime.goexit({})
+2026-10-23T01:07:41.5145503Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476dfe65fe8 sp=0x2476dfe65fe0 pc=0x48ed21
+2026-10-23T01:07:41.5146839Z created by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 1490
+2026-10-23T01:07:41.5148248Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3139 +0x1b4
+2026-10-23T01:07:41.5149254Z 
+2026-10-23T01:07:41.5149620Z goroutine 1821 gp=0x2476db671680 m=nil [select]:
+2026-10-23T01:07:41.5150509Z runtime.gopark(0x2476f51cbe30?, 0x6?, 0x0?, 0xc6?, 0x2476f51cbd80?)
+2026-10-23T01:07:41.5151839Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476f51cbc00 sp=0x2476f51cbbe0 pc=0x4880ea
+2026-10-23T01:07:41.5153437Z runtime.selectgo(0x2476f51cbe30, 0x2476f51cbd74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5154890Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476f51cbd40 sp=0x2476f51cbc00 pc=0x463537
+2026-10-23T01:07:41.5156370Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fb64bc08, 0x2476fb64bb88, 0x0)
+2026-10-23T01:07:41.5158052Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476f51cbf90 sp=0x2476f51cbd40 pc=0x6bb2ae
+2026-10-23T01:07:41.5159905Z net/http/internal/http2.(*clientStream).doRequest(0x2476fb64bc08, 0x854f3b?, 0x2476ddc56798?)
+2026-10-23T01:07:41.5161605Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476f51cbfb8 sp=0x2476f51cbf90 pc=0x6ba618
+2026-10-23T01:07:41.5162952Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5164427Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476f51cbfe0 sp=0x2476f51cbfb8 pc=0x6c515f
+2026-10-23T01:07:41.5165560Z runtime.goexit({})
+2026-10-23T01:07:41.5166615Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476f51cbfe8 sp=0x2476f51cbfe0 pc=0x48ed21
+2026-10-23T01:07:41.5167988Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1820
+2026-10-23T01:07:41.5169381Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5170038Z 
+2026-10-23T01:07:41.5170388Z goroutine 1806 gp=0x2476db671a40 m=nil [select]:
+2026-10-23T01:07:41.5171278Z runtime.gopark(0x2476f51cde30?, 0x6?, 0x0?, 0xc6?, 0x2476f51cdd80?)
+2026-10-23T01:07:41.5172602Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476f51cdc00 sp=0x2476f51cdbe0 pc=0x4880ea
+2026-10-23T01:07:41.5174100Z runtime.selectgo(0x2476f51cde30, 0x2476f51cdd74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5175492Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476f51cdd40 sp=0x2476f51cdc00 pc=0x463537
+2026-10-23T01:07:41.5177254Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fbd1b488, 0x2476fbd1b408, 0x0)
+2026-10-23T01:07:41.5179192Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476f51cdf90 sp=0x2476f51cdd40 pc=0x6bb2ae
+2026-10-23T01:07:41.5181000Z net/http/internal/http2.(*clientStream).doRequest(0x2476fbd1b488, 0x854f3b?, 0x2476ddc54f98?)
+2026-10-23T01:07:41.5182777Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476f51cdfb8 sp=0x2476f51cdf90 pc=0x6ba618
+2026-10-23T01:07:41.5184201Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5185745Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476f51cdfe0 sp=0x2476f51cdfb8 pc=0x6c515f
+2026-10-23T01:07:41.5186920Z runtime.goexit({})
+2026-10-23T01:07:41.5188051Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476f51cdfe8 sp=0x2476f51cdfe0 pc=0x48ed21
+2026-10-23T01:07:41.5189765Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1805
+2026-10-23T01:07:41.5191041Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5191718Z 
+2026-10-23T01:07:41.5192098Z goroutine 1842 gp=0x2476dba00f00 m=nil [select]:
+2026-10-23T01:07:41.5193030Z runtime.gopark(0x2476fbaefe30?, 0x6?, 0x0?, 0xc6?, 0x2476fbaefd80?)
+2026-10-23T01:07:41.5194433Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476fbaefc00 sp=0x2476fbaefbe0 pc=0x4880ea
+2026-10-23T01:07:41.5196103Z runtime.selectgo(0x2476fbaefe30, 0x2476fbaefd74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5196878Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476fbaefd40 sp=0x2476fbaefc00 pc=0x463537
+2026-10-23T01:07:41.5197711Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fbd1b988, 0x2476fbd1b908, 0x0)
+2026-10-23T01:07:41.5199056Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476fbaeff90 sp=0x2476fbaefd40 pc=0x6bb2ae
+2026-10-23T01:07:41.5200009Z net/http/internal/http2.(*clientStream).doRequest(0x2476fbd1b988, 0x854f3b?, 0x2476ddc54f98?)
+2026-10-23T01:07:41.5200921Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476fbaeffb8 sp=0x2476fbaeff90 pc=0x6ba618
+2026-10-23T01:07:41.5201670Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5202467Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476fbaeffe0 sp=0x2476fbaeffb8 pc=0x6c515f
+2026-10-23T01:07:41.5203096Z runtime.goexit({})
+2026-10-23T01:07:41.5203683Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476fbaeffe8 sp=0x2476fbaeffe0 pc=0x48ed21
+2026-10-23T01:07:41.5204431Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1809
+2026-10-23T01:07:41.5205088Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5205433Z 
+2026-10-23T01:07:41.5205640Z goroutine 1825 gp=0x2476dba0a3c0 m=nil [select]:
+2026-10-23T01:07:41.5206124Z runtime.gopark(0x2476fbab1e30?, 0x6?, 0x0?, 0xc6?, 0x2476fbab1d80?)
+2026-10-23T01:07:41.5206837Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476fbab1c00 sp=0x2476fbab1be0 pc=0x4880ea
+2026-10-23T01:07:41.5207555Z runtime.selectgo(0x2476fbab1e30, 0x2476fbab1d74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5208300Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476fbab1d40 sp=0x2476fbab1c00 pc=0x463537
+2026-10-23T01:07:41.5209413Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fceea308, 0x2476fceea288, 0x0)
+2026-10-23T01:07:41.5210342Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476fbab1f90 sp=0x2476fbab1d40 pc=0x6bb2ae
+2026-10-23T01:07:41.5211451Z net/http/internal/http2.(*clientStream).doRequest(0x2476fceea308, 0x854f3b?, 0x2476ddc56798?)
+2026-10-23T01:07:41.5212353Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476fbab1fb8 sp=0x2476fbab1f90 pc=0x6ba618
+2026-10-23T01:07:41.5213088Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5213878Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476fbab1fe0 sp=0x2476fbab1fb8 pc=0x6c515f
+2026-10-23T01:07:41.5214492Z runtime.goexit({})
+2026-10-23T01:07:41.5215066Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476fbab1fe8 sp=0x2476fbab1fe0 pc=0x48ed21
+2026-10-23T01:07:41.5215800Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1824
+2026-10-23T01:07:41.5216449Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5216802Z 
+2026-10-23T01:07:41.5216993Z goroutine 1823 gp=0x2476dbb04000 m=nil [select]:
+2026-10-23T01:07:41.5217495Z runtime.gopark(0x2476fbaf3e30?, 0x6?, 0x0?, 0xc6?, 0x2476fbaf3d80?)
+2026-10-23T01:07:41.5218317Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476fbaf3c00 sp=0x2476fbaf3be0 pc=0x4880ea
+2026-10-23T01:07:41.5219535Z runtime.selectgo(0x2476fbaf3e30, 0x2476fbaf3d74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5220572Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476fbaf3d40 sp=0x2476fbaf3c00 pc=0x463537
+2026-10-23T01:07:41.5221483Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fceea088, 0x2476fceea008, 0x0)
+2026-10-23T01:07:41.5222463Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476fbaf3f90 sp=0x2476fbaf3d40 pc=0x6bb2ae
+2026-10-23T01:07:41.5223607Z net/http/internal/http2.(*clientStream).doRequest(0x2476fceea088, 0x854f3b?, 0x2476ddc56798?)
+2026-10-23T01:07:41.5224600Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476fbaf3fb8 sp=0x2476fbaf3f90 pc=0x6ba618
+2026-10-23T01:07:41.5225747Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5226632Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476fbaf3fe0 sp=0x2476fbaf3fb8 pc=0x6c515f
+2026-10-23T01:07:41.5227399Z runtime.goexit({})
+2026-10-23T01:07:41.5228126Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476fbaf3fe8 sp=0x2476fbaf3fe0 pc=0x48ed21
+2026-10-23T01:07:41.5229330Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1822
+2026-10-23T01:07:41.5230159Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5230582Z 
+2026-10-23T01:07:41.5230841Z goroutine 1818 gp=0x2476db967680 m=nil [select]:
+2026-10-23T01:07:41.5231441Z runtime.gopark(0x2476df373298?, 0x4?, 0x40?, 0xa6?, 0x2476df3731b0?)
+2026-10-23T01:07:41.5246672Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476df373010 sp=0x2476df372ff0 pc=0x4880ea
+2026-10-23T01:07:41.5247706Z runtime.selectgo(0x2476df373298, 0x2476df3731a8, 0x8f597f?, 0x0, 0x2476e6b6a700?, 0x1)
+2026-10-23T01:07:41.5248841Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476df373150 sp=0x2476df373010 pc=0x463537
+2026-10-23T01:07:41.5249938Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fb64b908, 0x0)
+2026-10-23T01:07:41.5250995Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476df3734d8 sp=0x2476df373150 pc=0x6b9fef
+2026-10-23T01:07:41.5251743Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5252611Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5253494Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fb64b908, {0xc?})
+2026-10-23T01:07:41.5254553Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476df3735f8 sp=0x2476df3734d8 pc=0x6b6c51
+2026-10-23T01:07:41.5255652Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5256271Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5257009Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5257545Z 	<autogenerated>:1 +0x1f fp=0x2476df373620 sp=0x2476df3735f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5258198Z net/http.http2RoundTrip(0x2476fc839540, 0x2476e5e706b8)
+2026-10-23T01:07:41.5259171Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476df373688 sp=0x2476df373620 pc=0x6d2322
+2026-10-23T01:07:41.5260008Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5260917Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476df3736d8 sp=0x2476df373688 pc=0x6d2819
+2026-10-23T01:07:41.5261756Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc839540?)
+2026-10-23T01:07:41.5262355Z 	<autogenerated>:1 +0x27 fp=0x2476df373700 sp=0x2476df3736d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5263050Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc839540)
+2026-10-23T01:07:41.5263943Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476df3738a8 sp=0x2476df373700 pc=0x6de285
+2026-10-23T01:07:41.5265048Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5266114Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476df3738c8 sp=0x2476df3738a8 pc=0x6ef798
+2026-10-23T01:07:41.5266911Z net/http.send(0x2476fc839540, {0xdea728, 0xe50390}, {0x2476e5e70b18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5267711Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476df373a90 sp=0x2476df3738c8 pc=0x6cb794
+2026-10-23T01:07:41.5268960Z net/http.(*Client).send(0xe59910, 0x2476fc839540, {0xdd6440?, 0x2476fc900a20?, 0x0?})
+2026-10-23T01:07:41.5269813Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476df373b28 sp=0x2476df373a90 pc=0x6cafd0
+2026-10-23T01:07:41.5270627Z net/http.(*Client).do(0xe59910, 0x2476fc839540)
+2026-10-23T01:07:41.5271301Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476df373d20 sp=0x2476df373b28 pc=0x6cd097
+2026-10-23T01:07:41.5271869Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5272315Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5273085Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fc848590, 0xf})
+2026-10-23T01:07:41.5274226Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476df373e68 sp=0x2476df373d20 pc=0x816165
+2026-10-23T01:07:41.5275322Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc53f0, 0xc})
+2026-10-23T01:07:41.5276430Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476df373f28 sp=0x2476df373e68 pc=0x815493
+2026-10-23T01:07:41.5277280Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5278199Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476df373f78 sp=0x2476df373f28 pc=0x816d26
+2026-10-23T01:07:41.5279242Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5280113Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476df373fe0 sp=0x2476df373f78 pc=0x538ef0
+2026-10-23T01:07:41.5280807Z runtime.goexit({})
+2026-10-23T01:07:41.5281400Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476df373fe8 sp=0x2476df373fe0 pc=0x48ed21
+2026-10-23T01:07:41.5282102Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5282844Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5283433Z 
+2026-10-23T01:07:41.5283639Z goroutine 1804 gp=0x2476db6401e0 m=nil [select]:
+2026-10-23T01:07:41.5284148Z runtime.gopark(0x2476ddcade30?, 0x6?, 0x0?, 0xc6?, 0x2476ddcadd80?)
+2026-10-23T01:07:41.5284951Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ddcadc00 sp=0x2476ddcadbe0 pc=0x4880ea
+2026-10-23T01:07:41.5285675Z runtime.selectgo(0x2476ddcade30, 0x2476ddcadd74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5286438Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ddcadd40 sp=0x2476ddcadc00 pc=0x463537
+2026-10-23T01:07:41.5287231Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fbd1b208, 0x2476fbd1b188, 0x0)
+2026-10-23T01:07:41.5288136Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476ddcadf90 sp=0x2476ddcadd40 pc=0x6bb2ae
+2026-10-23T01:07:41.5289249Z net/http/internal/http2.(*clientStream).doRequest(0x2476fbd1b208, 0x854f3b?, 0x2476ddc54f98?)
+2026-10-23T01:07:41.5290167Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476ddcadfb8 sp=0x2476ddcadf90 pc=0x6ba618
+2026-10-23T01:07:41.5290908Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5291693Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476ddcadfe0 sp=0x2476ddcadfb8 pc=0x6c515f
+2026-10-23T01:07:41.5292307Z runtime.goexit({})
+2026-10-23T01:07:41.5292880Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ddcadfe8 sp=0x2476ddcadfe0 pc=0x48ed21
+2026-10-23T01:07:41.5293617Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1803
+2026-10-23T01:07:41.5294264Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5294616Z 
+2026-10-23T01:07:41.5294812Z goroutine 1826 gp=0x2476db72d0e0 m=nil [select]:
+2026-10-23T01:07:41.5295301Z runtime.gopark(0x2476ddcb1298?, 0x4?, 0xae?, 0x75?, 0x2476ddcb11b0?)
+2026-10-23T01:07:41.5296157Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ddcb1010 sp=0x2476ddcb0ff0 pc=0x4880ea
+2026-10-23T01:07:41.5296925Z runtime.selectgo(0x2476ddcb1298, 0x2476ddcb11a8, 0x8f597f?, 0x0, 0x2476e6b6a700?, 0x1)
+2026-10-23T01:07:41.5297700Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ddcb1150 sp=0x2476ddcb1010 pc=0x463537
+2026-10-23T01:07:41.5298710Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fceea508, 0x0)
+2026-10-23T01:07:41.5299616Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476ddcb14d8 sp=0x2476ddcb1150 pc=0x6b9fef
+2026-10-23T01:07:41.5300326Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5300871Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5301558Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fceea508, {0xc?})
+2026-10-23T01:07:41.5302461Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476ddcb15f8 sp=0x2476ddcb14d8 pc=0x6b6c51
+2026-10-23T01:07:41.5303174Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5303707Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5304271Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5304797Z 	<autogenerated>:1 +0x1f fp=0x2476ddcb1620 sp=0x2476ddcb15f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5305302Z net/http.http2RoundTrip(0x2476fc839a40, 0x2476e5e706b8)
+2026-10-23T01:07:41.5305977Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476ddcb1688 sp=0x2476ddcb1620 pc=0x6d2322
+2026-10-23T01:07:41.5306684Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5307405Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476ddcb16d8 sp=0x2476ddcb1688 pc=0x6d2819
+2026-10-23T01:07:41.5308261Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc839a40?)
+2026-10-23T01:07:41.5309048Z 	<autogenerated>:1 +0x27 fp=0x2476ddcb1700 sp=0x2476ddcb16d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5309571Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc839a40)
+2026-10-23T01:07:41.5310284Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476ddcb18a8 sp=0x2476ddcb1700 pc=0x6de285
+2026-10-23T01:07:41.5310954Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5311636Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476ddcb18c8 sp=0x2476ddcb18a8 pc=0x6ef798
+2026-10-23T01:07:41.5312411Z net/http.send(0x2476fc839a40, {0xdea728, 0xe50390}, {0x2476e5e70b18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5313186Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476ddcb1a90 sp=0x2476ddcb18c8 pc=0x6cb794
+2026-10-23T01:07:41.5313939Z net/http.(*Client).send(0xe59910, 0x2476fc839a40, {0xdd6440?, 0x2476fc900a70?, 0x0?})
+2026-10-23T01:07:41.5314709Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476ddcb1b28 sp=0x2476ddcb1a90 pc=0x6cafd0
+2026-10-23T01:07:41.5315322Z net/http.(*Client).do(0xe59910, 0x2476fc839a40)
+2026-10-23T01:07:41.5315986Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476ddcb1d20 sp=0x2476ddcb1b28 pc=0x6cd097
+2026-10-23T01:07:41.5316539Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5316943Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5317703Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fcecf300, 0xf})
+2026-10-23T01:07:41.5319057Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476ddcb1e68 sp=0x2476ddcb1d20 pc=0x816165
+2026-10-23T01:07:41.5320177Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc5450, 0xc})
+2026-10-23T01:07:41.5321447Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476ddcb1f28 sp=0x2476ddcb1e68 pc=0x815493
+2026-10-23T01:07:41.5322307Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5323233Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476ddcb1f78 sp=0x2476ddcb1f28 pc=0x816d26
+2026-10-23T01:07:41.5324037Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5324923Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476ddcb1fe0 sp=0x2476ddcb1f78 pc=0x538ef0
+2026-10-23T01:07:41.5325625Z runtime.goexit({})
+2026-10-23T01:07:41.5326213Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ddcb1fe8 sp=0x2476ddcb1fe0 pc=0x48ed21
+2026-10-23T01:07:41.5326916Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5327673Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5328122Z 
+2026-10-23T01:07:41.5328330Z goroutine 1490 gp=0x2476db72d4a0 m=nil [chan send]:
+2026-10-23T01:07:41.5329092Z runtime.gopark(0x7f44f3c4c2f8?, 0x2476fd1fe438?, 0x8?, 0x20?, 0x7f44a2dfdc10?)
+2026-10-23T01:07:41.5329849Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db5f2c30 sp=0x2476db5f2c10 pc=0x4880ea
+2026-10-23T01:07:41.5330531Z runtime.chansend(0x2476db6920e0, 0x927908, 0x1, 0x2476db5f2d10?)
+2026-10-23T01:07:41.5331235Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/chan.go:283 +0x3fc fp=0x2476db5f2ca0 sp=0x2476db5f2c30 pc=0x41921c
+2026-10-23T01:07:41.5331816Z runtime.chansend1(0x2476e74f27e0?, 0x1?)
+2026-10-23T01:07:41.5332429Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/chan.go:161 +0x17 fp=0x2476db5f2cd0 sp=0x2476db5f2ca0 pc=0x418e17
+2026-10-23T01:07:41.5333219Z golang.org/x/tools/go/ssa.(*Program).Build(0x2476e729f680)
+2026-10-23T01:07:41.5334147Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3138 +0x110 fp=0x2476db5f2d88 sp=0x2476db5f2cd0 pc=0x830bf0
+2026-10-23T01:07:41.5335164Z golang.org/x/vuln/internal/vulncheck.buildSSA({0x2476e74c68c0, 0x3, 0x2476e731e4c8?}, 0x2476db6f6e70)
+2026-10-23T01:07:41.5336261Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/vulncheck/utils.go:58 +0x470 fp=0x2476db5f2f50 sp=0x2476db5f2d88 pc=0x86e070
+2026-10-23T01:07:41.5337090Z golang.org/x/vuln/internal/vulncheck.source.func1()
+2026-10-23T01:07:41.5338014Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/vulncheck/source.go:54 +0x8c fp=0x2476db5f2fe0 sp=0x2476db5f2f50 pc=0x873eec
+2026-10-23T01:07:41.5338955Z runtime.goexit({})
+2026-10-23T01:07:41.5339549Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db5f2fe8 sp=0x2476db5f2fe0 pc=0x48ed21
+2026-10-23T01:07:41.5340269Z created by golang.org/x/vuln/internal/vulncheck.source in goroutine 21
+2026-10-23T01:07:41.5341064Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/vulncheck/source.go:52 +0x26d
+2026-10-23T01:07:41.5341545Z 
+2026-10-23T01:07:41.5341744Z goroutine 1809 gp=0x2476db8965a0 m=nil [select]:
+2026-10-23T01:07:41.5342225Z runtime.gopark(0x2476ecde5298?, 0x4?, 0x80?, 0x51?, 0x2476ecde51b0?)
+2026-10-23T01:07:41.5342933Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ecde5010 sp=0x2476ecde4ff0 pc=0x4880ea
+2026-10-23T01:07:41.5343708Z runtime.selectgo(0x2476ecde5298, 0x2476ecde51a8, 0x8f597f?, 0x0, 0x2476f7405240?, 0x1)
+2026-10-23T01:07:41.5344498Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ecde5150 sp=0x2476ecde5010 pc=0x463537
+2026-10-23T01:07:41.5345264Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fbd1b908, 0x0)
+2026-10-23T01:07:41.5346277Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476ecde54d8 sp=0x2476ecde5150 pc=0x6b9fef
+2026-10-23T01:07:41.5347012Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5347560Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5348249Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fbd1b908, {0xc?})
+2026-10-23T01:07:41.5349450Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476ecde55f8 sp=0x2476ecde54d8 pc=0x6b6c51
+2026-10-23T01:07:41.5350154Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5350695Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5351259Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5351784Z 	<autogenerated>:1 +0x1f fp=0x2476ecde5620 sp=0x2476ecde55f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5352301Z net/http.http2RoundTrip(0x2476fc8c7680, 0x2476deaaa6b8)
+2026-10-23T01:07:41.5352986Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476ecde5688 sp=0x2476ecde5620 pc=0x6d2322
+2026-10-23T01:07:41.5353694Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5354425Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476ecde56d8 sp=0x2476ecde5688 pc=0x6d2819
+2026-10-23T01:07:41.5355120Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc8c7680?)
+2026-10-23T01:07:41.5355658Z 	<autogenerated>:1 +0x27 fp=0x2476ecde5700 sp=0x2476ecde56d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5356179Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc8c7680)
+2026-10-23T01:07:41.5356907Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476ecde58a8 sp=0x2476ecde5700 pc=0x6de285
+2026-10-23T01:07:41.5357572Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5358609Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476ecde58c8 sp=0x2476ecde58a8 pc=0x6ef798
+2026-10-23T01:07:41.5359422Z net/http.send(0x2476fc8c7680, {0xdea728, 0xe50390}, {0x2476deaaab18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5360200Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476ecde5a90 sp=0x2476ecde58c8 pc=0x6cb794
+2026-10-23T01:07:41.5360961Z net/http.(*Client).send(0xe59910, 0x2476fc8c7680, {0xdd6440?, 0x2476fc8f0ac0?, 0x0?})
+2026-10-23T01:07:41.5361715Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476ecde5b28 sp=0x2476ecde5a90 pc=0x6cafd0
+2026-10-23T01:07:41.5362329Z net/http.(*Client).do(0xe59910, 0x2476fc8c7680)
+2026-10-23T01:07:41.5362985Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476ecde5d20 sp=0x2476ecde5b28 pc=0x6cd097
+2026-10-23T01:07:41.5363531Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5363929Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5364693Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fcd6d1d0, 0xf})
+2026-10-23T01:07:41.5365817Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476ecde5e68 sp=0x2476ecde5d20 pc=0x816165
+2026-10-23T01:07:41.5366900Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc54a0, 0xc})
+2026-10-23T01:07:41.5368011Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476ecde5f28 sp=0x2476ecde5e68 pc=0x815493
+2026-10-23T01:07:41.5369066Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5369985Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476ecde5f78 sp=0x2476ecde5f28 pc=0x816d26
+2026-10-23T01:07:41.5370777Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5371792Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476ecde5fe0 sp=0x2476ecde5f78 pc=0x538ef0
+2026-10-23T01:07:41.5372499Z runtime.goexit({})
+2026-10-23T01:07:41.5373077Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ecde5fe8 sp=0x2476ecde5fe0 pc=0x48ed21
+2026-10-23T01:07:41.5373784Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5374537Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5374981Z 
+2026-10-23T01:07:41.5375190Z goroutine 1525 gp=0x2476db8970e0 m=nil [chan send]:
+2026-10-23T01:07:41.5375707Z runtime.gopark(0x2476dbf98700?, 0x2476fcf02d68?, 0x28?, 0x7a?, 0x2d0?)
+2026-10-23T01:07:41.5376433Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476e5e6cc40 sp=0x2476e5e6cc20 pc=0x4880ea
+2026-10-23T01:07:41.5377083Z runtime.chansend(0x2476ef871650, 0x927908, 0x1, 0x538d05?)
+2026-10-23T01:07:41.5377774Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/chan.go:283 +0x3fc fp=0x2476e5e6ccb0 sp=0x2476e5e6cc40 pc=0x41921c
+2026-10-23T01:07:41.5378361Z runtime.chansend1(0x2476e869b088?, 0x1?)
+2026-10-23T01:07:41.5379308Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/chan.go:161 +0x17 fp=0x2476e5e6cce0 sp=0x2476e5e6ccb0 pc=0x418e17
+2026-10-23T01:07:41.5380015Z golang.org/x/sync/errgroup.(*Group).Go(0x2476e869b080, 0x2476fcf29680)
+2026-10-23T01:07:41.5380971Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:71 +0x34 fp=0x2476e5e6cd10 sp=0x2476e5e6cce0 pc=0x538c94
+2026-10-23T01:07:41.5382094Z golang.org/x/vuln/internal/client.(*Client).byIDs(0x2476db6a8870, {0xdeeb78, 0x2476eb247770}, {0x2476ec123308, 0xbb, 0x4e97ea?})
+2026-10-23T01:07:41.5383242Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:301 +0xca fp=0x2476e5e6cd80 sp=0x2476e5e6cd10 pc=0x81524a
+2026-10-23T01:07:41.5384527Z golang.org/x/vuln/internal/client.(*Client).byModule(0x2476db6a8870, {0xdeeb78, 0x2476eb247770}, 0x2476e74c69c0, 0x2476df2b5768?)
+2026-10-23T01:07:41.5385684Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:261 +0x3ed fp=0x2476e5e6cf08 sp=0x2476e5e6cd80 pc=0x814dcd
+2026-10-23T01:07:41.5386550Z golang.org/x/vuln/internal/client.(*Client).ByModules.func1()
+2026-10-23T01:07:41.5387488Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:187 +0x5c fp=0x2476e5e6cf78 sp=0x2476e5e6cf08 pc=0x816b5c
+2026-10-23T01:07:41.5388275Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5389521Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476e5e6cfe0 sp=0x2476e5e6cf78 pc=0x538ef0
+2026-10-23T01:07:41.5390224Z runtime.goexit({})
+2026-10-23T01:07:41.5390816Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476e5e6cfe8 sp=0x2476e5e6cfe0 pc=0x48ed21
+2026-10-23T01:07:41.5391508Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 21
+2026-10-23T01:07:41.5392250Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5392697Z 
+2026-10-23T01:07:41.5392890Z goroutine 1803 gp=0x2476dde7f0e0 m=nil [select]:
+2026-10-23T01:07:41.5393375Z runtime.gopark(0x2476df371298?, 0x4?, 0x40?, 0x10?, 0x2476df3711b0?)
+2026-10-23T01:07:41.5394079Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476df371010 sp=0x2476df370ff0 pc=0x4880ea
+2026-10-23T01:07:41.5394839Z runtime.selectgo(0x2476df371298, 0x2476df3711a8, 0x8f597f?, 0x0, 0x2476f4ea1100?, 0x1)
+2026-10-23T01:07:41.5395623Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476df371150 sp=0x2476df371010 pc=0x463537
+2026-10-23T01:07:41.5396390Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fbd1b188, 0x0)
+2026-10-23T01:07:41.5397400Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476df3714d8 sp=0x2476df371150 pc=0x6b9fef
+2026-10-23T01:07:41.5398122Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5398902Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5399611Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fbd1b188, {0xc?})
+2026-10-23T01:07:41.5400508Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476df3715f8 sp=0x2476df3714d8 pc=0x6b6c51
+2026-10-23T01:07:41.5401210Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5401746Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5402313Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5402834Z 	<autogenerated>:1 +0x1f fp=0x2476df371620 sp=0x2476df3715f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5403345Z net/http.http2RoundTrip(0x2476fc8c72c0, 0x2476deaaa6b8)
+2026-10-23T01:07:41.5404023Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476df371688 sp=0x2476df371620 pc=0x6d2322
+2026-10-23T01:07:41.5404731Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5405458Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476df3716d8 sp=0x2476df371688 pc=0x6d2819
+2026-10-23T01:07:41.5406146Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc8c72c0?)
+2026-10-23T01:07:41.5406678Z 	<autogenerated>:1 +0x27 fp=0x2476df371700 sp=0x2476df3716d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5407181Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc8c72c0)
+2026-10-23T01:07:41.5407903Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476df3718a8 sp=0x2476df371700 pc=0x6de285
+2026-10-23T01:07:41.5408790Z net/http.(*Transport).RoundTrip(0x2476deaaa938?, 0xdea728?)
+2026-10-23T01:07:41.5409707Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476df3718c8 sp=0x2476df3718a8 pc=0x6ef798
+2026-10-23T01:07:41.5410516Z net/http.send(0x2476fc8c72c0, {0xdea728, 0xe50390}, {0x2476deaaab18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5411330Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476df371a90 sp=0x2476df3718c8 pc=0x6cb794
+2026-10-23T01:07:41.5412091Z net/http.(*Client).send(0xe59910, 0x2476fc8c72c0, {0xdd6440?, 0x2476fc8f0a20?, 0x0?})
+2026-10-23T01:07:41.5412856Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476df371b28 sp=0x2476df371a90 pc=0x6cafd0
+2026-10-23T01:07:41.5413469Z net/http.(*Client).do(0xe59910, 0x2476fc8c72c0)
+2026-10-23T01:07:41.5414120Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476df371d20 sp=0x2476df371b28 pc=0x6cd097
+2026-10-23T01:07:41.5414672Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5415067Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5415820Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fcd6cf70, 0xf})
+2026-10-23T01:07:41.5416940Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476df371e68 sp=0x2476df371d20 pc=0x816165
+2026-10-23T01:07:41.5418028Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc5440, 0xc})
+2026-10-23T01:07:41.5419374Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476df371f28 sp=0x2476df371e68 pc=0x815493
+2026-10-23T01:07:41.5420208Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5421768Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476df371f78 sp=0x2476df371f28 pc=0x816d26
+2026-10-23T01:07:41.5422627Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5423654Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476df371fe0 sp=0x2476df371f78 pc=0x538ef0
+2026-10-23T01:07:41.5424374Z runtime.goexit({})
+2026-10-23T01:07:41.5424985Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476df371fe8 sp=0x2476df371fe0 pc=0x48ed21
+2026-10-23T01:07:41.5425723Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5426474Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5426921Z 
+2026-10-23T01:07:41.5427122Z goroutine 1824 gp=0x2476dde7fc20 m=nil [select]:
+2026-10-23T01:07:41.5427654Z runtime.gopark(0x2476ecdd7298?, 0x4?, 0x80?, 0x51?, 0x2476ecdd71b0?)
+2026-10-23T01:07:41.5428368Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ecdd7010 sp=0x2476ecdd6ff0 pc=0x4880ea
+2026-10-23T01:07:41.5429465Z runtime.selectgo(0x2476ecdd7298, 0x2476ecdd71a8, 0x8f597f?, 0x0, 0x2476f7405240?, 0x1)
+2026-10-23T01:07:41.5430260Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ecdd7150 sp=0x2476ecdd7010 pc=0x463537
+2026-10-23T01:07:41.5431045Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fceea288, 0x0)
+2026-10-23T01:07:41.5431963Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476ecdd74d8 sp=0x2476ecdd7150 pc=0x6b9fef
+2026-10-23T01:07:41.5432685Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5433219Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5433937Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fceea288, {0xc?})
+2026-10-23T01:07:41.5434826Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476ecdd75f8 sp=0x2476ecdd74d8 pc=0x6b6c51
+2026-10-23T01:07:41.5435706Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5436238Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5436806Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5437447Z 	<autogenerated>:1 +0x1f fp=0x2476ecdd7620 sp=0x2476ecdd75f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5438146Z net/http.http2RoundTrip(0x2476fc839900, 0x2476e5e706b8)
+2026-10-23T01:07:41.5439130Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476ecdd7688 sp=0x2476ecdd7620 pc=0x6d2322
+2026-10-23T01:07:41.5439853Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5440581Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476ecdd76d8 sp=0x2476ecdd7688 pc=0x6d2819
+2026-10-23T01:07:41.5441278Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc839900?)
+2026-10-23T01:07:41.5441854Z 	<autogenerated>:1 +0x27 fp=0x2476ecdd7700 sp=0x2476ecdd76d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5442378Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc839900)
+2026-10-23T01:07:41.5443091Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476ecdd78a8 sp=0x2476ecdd7700 pc=0x6de285
+2026-10-23T01:07:41.5443745Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5444556Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476ecdd78c8 sp=0x2476ecdd78a8 pc=0x6ef798
+2026-10-23T01:07:41.5446143Z net/http.send(0x2476fc839900, {0xdea728, 0xe50390}, {0x2476e5e70b18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5447201Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476ecdd7a90 sp=0x2476ecdd78c8 pc=0x6cb794
+2026-10-23T01:07:41.5447998Z net/http.(*Client).send(0xe59910, 0x2476fc839900, {0xdd6440?, 0x2476fc900a30?, 0x0?})
+2026-10-23T01:07:41.5449132Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476ecdd7b28 sp=0x2476ecdd7a90 pc=0x6cafd0
+2026-10-23T01:07:41.5449993Z net/http.(*Client).do(0xe59910, 0x2476fc839900)
+2026-10-23T01:07:41.5450678Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476ecdd7d20 sp=0x2476ecdd7b28 pc=0x6cd097
+2026-10-23T01:07:41.5451234Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5451630Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5452388Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fcecf0a0, 0xf})
+2026-10-23T01:07:41.5453524Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476ecdd7e68 sp=0x2476ecdd7d20 pc=0x816165
+2026-10-23T01:07:41.5454617Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc5420, 0xc})
+2026-10-23T01:07:41.5455723Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476ecdd7f28 sp=0x2476ecdd7e68 pc=0x815493
+2026-10-23T01:07:41.5456576Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5457503Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476ecdd7f78 sp=0x2476ecdd7f28 pc=0x816d26
+2026-10-23T01:07:41.5458326Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5459615Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476ecdd7fe0 sp=0x2476ecdd7f78 pc=0x538ef0
+2026-10-23T01:07:41.5460327Z runtime.goexit({})
+2026-10-23T01:07:41.5460921Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ecdd7fe8 sp=0x2476ecdd7fe0 pc=0x48ed21
+2026-10-23T01:07:41.5461627Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5462373Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5462974Z 
+2026-10-23T01:07:41.5463169Z goroutine 1807 gp=0x2476db5aad20 m=nil [select]:
+2026-10-23T01:07:41.5463658Z runtime.gopark(0x2476db701298?, 0x4?, 0x40?, 0xa6?, 0x2476db7011b0?)
+2026-10-23T01:07:41.5464375Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476db701010 sp=0x2476db700ff0 pc=0x4880ea
+2026-10-23T01:07:41.5465140Z runtime.selectgo(0x2476db701298, 0x2476db7011a8, 0x8f597f?, 0x0, 0x2476e6b6a700?, 0x1)
+2026-10-23T01:07:41.5465925Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476db701150 sp=0x2476db701010 pc=0x463537
+2026-10-23T01:07:41.5466699Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fbd1b688, 0x0)
+2026-10-23T01:07:41.5467593Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476db7014d8 sp=0x2476db701150 pc=0x6b9fef
+2026-10-23T01:07:41.5468312Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5469110Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5469807Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fbd1b688, {0xc?})
+2026-10-23T01:07:41.5470706Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476db7015f8 sp=0x2476db7014d8 pc=0x6b6c51
+2026-10-23T01:07:41.5471424Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5471970Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5472541Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5473066Z 	<autogenerated>:1 +0x1f fp=0x2476db701620 sp=0x2476db7015f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5473582Z net/http.http2RoundTrip(0x2476fc8c7540, 0x2476deaaa6b8)
+2026-10-23T01:07:41.5474259Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476db701688 sp=0x2476db701620 pc=0x6d2322
+2026-10-23T01:07:41.5474972Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5475850Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476db7016d8 sp=0x2476db701688 pc=0x6d2819
+2026-10-23T01:07:41.5476552Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc8c7540?)
+2026-10-23T01:07:41.5477105Z 	<autogenerated>:1 +0x27 fp=0x2476db701700 sp=0x2476db7016d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5477614Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc8c7540)
+2026-10-23T01:07:41.5478324Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476db7018a8 sp=0x2476db701700 pc=0x6de285
+2026-10-23T01:07:41.5479283Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5479987Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476db7018c8 sp=0x2476db7018a8 pc=0x6ef798
+2026-10-23T01:07:41.5480761Z net/http.send(0x2476fc8c7540, {0xdea728, 0xe50390}, {0x2476deaaab18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5481554Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476db701a90 sp=0x2476db7018c8 pc=0x6cb794
+2026-10-23T01:07:41.5482310Z net/http.(*Client).send(0xe59910, 0x2476fc8c7540, {0xdd6440?, 0x2476fc8f0a80?, 0x0?})
+2026-10-23T01:07:41.5483072Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476db701b28 sp=0x2476db701a90 pc=0x6cafd0
+2026-10-23T01:07:41.5483681Z net/http.(*Client).do(0xe59910, 0x2476fc8c7540)
+2026-10-23T01:07:41.5484347Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476db701d20 sp=0x2476db701b28 pc=0x6cd097
+2026-10-23T01:07:41.5484891Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5485291Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5486053Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fcd6d100, 0xf})
+2026-10-23T01:07:41.5487178Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476db701e68 sp=0x2476db701d20 pc=0x816165
+2026-10-23T01:07:41.5488635Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc5490, 0xc})
+2026-10-23T01:07:41.5489789Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476db701f28 sp=0x2476db701e68 pc=0x815493
+2026-10-23T01:07:41.5490697Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5491903Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476db701f78 sp=0x2476db701f28 pc=0x816d26
+2026-10-23T01:07:41.5492699Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5493581Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476db701fe0 sp=0x2476db701f78 pc=0x538ef0
+2026-10-23T01:07:41.5494300Z runtime.goexit({})
+2026-10-23T01:07:41.5494892Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476db701fe8 sp=0x2476db701fe0 pc=0x48ed21
+2026-10-23T01:07:41.5495597Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5496344Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5496801Z 
+2026-10-23T01:07:41.5496997Z goroutine 1819 gp=0x2476db5ac000 m=nil [select]:
+2026-10-23T01:07:41.5497480Z runtime.gopark(0x2476fbaafe30?, 0x6?, 0x0?, 0xc6?, 0x2476fbaafd80?)
+2026-10-23T01:07:41.5498190Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476fbaafc00 sp=0x2476fbaafbe0 pc=0x4880ea
+2026-10-23T01:07:41.5499331Z runtime.selectgo(0x2476fbaafe30, 0x2476fbaafd74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5500113Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476fbaafd40 sp=0x2476fbaafc00 pc=0x463537
+2026-10-23T01:07:41.5500930Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fb64b988, 0x2476fb64b908, 0x0)
+2026-10-23T01:07:41.5502002Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476fbaaff90 sp=0x2476fbaafd40 pc=0x6bb2ae
+2026-10-23T01:07:41.5502915Z net/http/internal/http2.(*clientStream).doRequest(0x2476fb64b988, 0x854f3b?, 0x2476ddc56798?)
+2026-10-23T01:07:41.5503822Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476fbaaffb8 sp=0x2476fbaaff90 pc=0x6ba618
+2026-10-23T01:07:41.5504580Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5505370Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476fbaaffe0 sp=0x2476fbaaffb8 pc=0x6c515f
+2026-10-23T01:07:41.5505986Z runtime.goexit({})
+2026-10-23T01:07:41.5506565Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476fbaaffe8 sp=0x2476fbaaffe0 pc=0x48ed21
+2026-10-23T01:07:41.5507304Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1818
+2026-10-23T01:07:41.5507974Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5508322Z 
+2026-10-23T01:07:41.5508824Z goroutine 1828 gp=0x2476db5acf00 m=nil [runnable]:
+2026-10-23T01:07:41.5509289Z runtime.mallocgcSmallScanNoHeader(0x60?, 0xdb4418?)
+2026-10-23T01:07:41.5509983Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/malloc.go:1509 +0x315 fp=0x2476e5e708f0 sp=0x2476e5e708e8 pc=0x421c95
+2026-10-23T01:07:41.5510580Z runtime.mallocgc(0x60, 0xdb4418, 0x1)
+2026-10-23T01:07:41.5511219Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/malloc.go:1131 +0x105 fp=0x2476e5e70920 sp=0x2476e5e708f0 pc=0x485e25
+2026-10-23T01:07:41.5511788Z runtime.newobject(0xdeefa0?)
+2026-10-23T01:07:41.5512404Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/malloc.go:2141 +0x25 fp=0x2476e5e70948 sp=0x2476e5e70920 pc=0x422585
+2026-10-23T01:07:41.5513417Z golang.org/x/tools/go/ssa.(*builder).compLit(0x2476fd301620, 0x2476ea40c800, {0xdefc70, 0x2476e68e5580}, 0x2476dd6c5680, 0x1, 0x2476e5e70be8)
+2026-10-23T01:07:41.5514755Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:1339 +0xd49 fp=0x2476e5e70b80 sp=0x2476e5e70948 pc=0x821b69
+2026-10-23T01:07:41.5515938Z golang.org/x/tools/go/ssa.(*builder).assign(0x2476fd301620, 0x2476ea40c800, {0xdef128, 0x2476fd3701e0}, {0xdee178?, 0x2476dd6c5680?}, 0x1, 0x0)
+2026-10-23T01:07:41.5517090Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:589 +0x21d fp=0x2476e5e70c40 sp=0x2476e5e70b80 pc=0x81c05d
+2026-10-23T01:07:41.5518022Z golang.org/x/tools/go/ssa.(*builder).buildPackageInit(0x2476fd301620, 0x2476ea40c800)
+2026-10-23T01:07:41.5519406Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3239 +0x945 fp=0x2476e5e70de0 sp=0x2476e5e70c40 pc=0x8317e5
+2026-10-23T01:07:41.5520370Z golang.org/x/tools/go/ssa.(*builder).buildFunction(0xffffffffffffffff?, 0x2476ea40c800)
+2026-10-23T01:07:41.5521392Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2904 +0x185 fp=0x2476e5e70ea0 sp=0x2476e5e70de0 pc=0x82f2e5
+2026-10-23T01:07:41.5522234Z golang.org/x/tools/go/ssa.(*builder).iterate(0x2476fd301620)
+2026-10-23T01:07:41.5523133Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2889 +0x25 fp=0x2476e5e70ec0 sp=0x2476e5e70ea0 pc=0x82f105
+2026-10-23T01:07:41.5523981Z golang.org/x/tools/go/ssa.(*Package).build(0x2476eef92300)
+2026-10-23T01:07:41.5524877Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3172 +0xdc fp=0x2476e5e70f20 sp=0x2476e5e70ec0 pc=0x830dbc
+2026-10-23T01:07:41.5525664Z golang.org/x/tools/go/ssa.(*Package).build-fm()
+2026-10-23T01:07:41.5526149Z 	<autogenerated>:1 +0x17 fp=0x2476e5e70f38 sp=0x2476e5e70f20 pc=0x859ef7
+2026-10-23T01:07:41.5526645Z sync.(*Once).doSlow(0x2476fceea588?, 0x2476fceea508?)
+2026-10-23T01:07:41.5527444Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:78 +0xab fp=0x2476e5e70f90 sp=0x2476e5e70f38 pc=0x49410b
+2026-10-23T01:07:41.5527977Z sync.(*Once).Do(...)
+2026-10-23T01:07:41.5528366Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:69
+2026-10-23T01:07:41.5528944Z golang.org/x/tools/go/ssa.(*Package).Build(...)
+2026-10-23T01:07:41.5529618Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3161
+2026-10-23T01:07:41.5530309Z golang.org/x/tools/go/ssa.(*Program).Build.func1(0x2476ddc56798?)
+2026-10-23T01:07:41.5531241Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3140 +0x45 fp=0x2476e5e70fc8 sp=0x2476e5e70f90 pc=0x854fa5
+2026-10-23T01:07:41.5532047Z golang.org/x/tools/go/ssa.(*Program).Build.gowrap1()
+2026-10-23T01:07:41.5532931Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3143 +0x1b fp=0x2476e5e70fe0 sp=0x2476e5e70fc8 pc=0x854f3b
+2026-10-23T01:07:41.5533627Z runtime.goexit({})
+2026-10-23T01:07:41.5534214Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476e5e70fe8 sp=0x2476e5e70fe0 pc=0x48ed21
+2026-10-23T01:07:41.5534942Z created by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 1490
+2026-10-23T01:07:41.5535713Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3139 +0x1b4
+2026-10-23T01:07:41.5536163Z 
+2026-10-23T01:07:41.5536355Z goroutine 1816 gp=0x2476db5ae5a0 m=nil [select]:
+2026-10-23T01:07:41.5536852Z runtime.gopark(0x2476ecdd9298?, 0x4?, 0x80?, 0x51?, 0x2476ecdd91b0?)
+2026-10-23T01:07:41.5537571Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ecdd9010 sp=0x2476ecdd8ff0 pc=0x4880ea
+2026-10-23T01:07:41.5538336Z runtime.selectgo(0x2476ecdd9298, 0x2476ecdd91a8, 0x8f597f?, 0x0, 0x2476f7405240?, 0x1)
+2026-10-23T01:07:41.5539305Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ecdd9150 sp=0x2476ecdd9010 pc=0x463537
+2026-10-23T01:07:41.5540223Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fb64b688, 0x0)
+2026-10-23T01:07:41.5541098Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476ecdd94d8 sp=0x2476ecdd9150 pc=0x6b9fef
+2026-10-23T01:07:41.5541825Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5542366Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5543049Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fb64b688, {0xc?})
+2026-10-23T01:07:41.5543937Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476ecdd95f8 sp=0x2476ecdd94d8 pc=0x6b6c51
+2026-10-23T01:07:41.5544651Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5545188Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5545765Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5546288Z 	<autogenerated>:1 +0x1f fp=0x2476ecdd9620 sp=0x2476ecdd95f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5546790Z net/http.http2RoundTrip(0x2476fc839400, 0x2476e5e706b8)
+2026-10-23T01:07:41.5547470Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476ecdd9688 sp=0x2476ecdd9620 pc=0x6d2322
+2026-10-23T01:07:41.5548178Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5549092Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476ecdd96d8 sp=0x2476ecdd9688 pc=0x6d2819
+2026-10-23T01:07:41.5549791Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc839400?)
+2026-10-23T01:07:41.5550332Z 	<autogenerated>:1 +0x27 fp=0x2476ecdd9700 sp=0x2476ecdd96d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5550838Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc839400)
+2026-10-23T01:07:41.5551544Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476ecdd98a8 sp=0x2476ecdd9700 pc=0x6de285
+2026-10-23T01:07:41.5552329Z net/http.(*Transport).RoundTrip(0x449347?, 0xdea728?)
+2026-10-23T01:07:41.5553046Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476ecdd98c8 sp=0x2476ecdd98a8 pc=0x6ef798
+2026-10-23T01:07:41.5553826Z net/http.send(0x2476fc839400, {0xdea728, 0xe50390}, {0x2476e5e70b18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5554619Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476ecdd9a90 sp=0x2476ecdd98c8 pc=0x6cb794
+2026-10-23T01:07:41.5555376Z net/http.(*Client).send(0xe59910, 0x2476fc839400, {0xdd6440?, 0x2476fc0d0a60?, 0x0?})
+2026-10-23T01:07:41.5556135Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476ecdd9b28 sp=0x2476ecdd9a90 pc=0x6cafd0
+2026-10-23T01:07:41.5556750Z net/http.(*Client).do(0xe59910, 0x2476fc839400)
+2026-10-23T01:07:41.5557403Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476ecdd9d20 sp=0x2476ecdd9b28 pc=0x6cd097
+2026-10-23T01:07:41.5557970Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5558364Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5559437Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fc8484a0, 0xf})
+2026-10-23T01:07:41.5560572Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476ecdd9e68 sp=0x2476ecdd9d20 pc=0x816165
+2026-10-23T01:07:41.5561661Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc53e0, 0xc})
+2026-10-23T01:07:41.5562779Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476ecdd9f28 sp=0x2476ecdd9e68 pc=0x815493
+2026-10-23T01:07:41.5563625Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5564560Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476ecdd9f78 sp=0x2476ecdd9f28 pc=0x816d26
+2026-10-23T01:07:41.5565528Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5566397Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476ecdd9fe0 sp=0x2476ecdd9f78 pc=0x538ef0
+2026-10-23T01:07:41.5567095Z runtime.goexit({})
+2026-10-23T01:07:41.5567687Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ecdd9fe8 sp=0x2476ecdd9fe0 pc=0x48ed21
+2026-10-23T01:07:41.5568387Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5569306Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5569759Z 
+2026-10-23T01:07:41.5569960Z goroutine 1759 gp=0x2476db5ae960 m=nil [runnable]:
+2026-10-23T01:07:41.5570839Z golang.org/x/tools/go/ssa.(*builder).assign(0x2476fc685440, 0x2476eace0200, {0xdef128, 0x2476fcee73b0}, {0xdee7d8?, 0x2476e546d110?}, 0x1, 0x2476deaadbe8)
+2026-10-23T01:07:41.5572049Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:560 +0x5b7 fp=0x2476deaad948 sp=0x2476deaad940 pc=0x81c3f7
+2026-10-23T01:07:41.5573210Z golang.org/x/tools/go/ssa.(*builder).compLit(0x2476fc685440, 0x2476eace0200, {0xdefc70, 0x2476e69d6b80}, 0x2476df06a140, 0x1, 0x2476deaadbe8)
+2026-10-23T01:07:41.5574383Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:1349 +0xfcb fp=0x2476deaadb80 sp=0x2476deaad948 pc=0x821deb
+2026-10-23T01:07:41.5575564Z golang.org/x/tools/go/ssa.(*builder).assign(0x2476fc685440, 0x2476eace0200, {0xdef128, 0x2476fc692b10}, {0xdee178?, 0x2476df06a140?}, 0x1, 0x0)
+2026-10-23T01:07:41.5576714Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:589 +0x21d fp=0x2476deaadc40 sp=0x2476deaadb80 pc=0x81c05d
+2026-10-23T01:07:41.5577765Z golang.org/x/tools/go/ssa.(*builder).buildPackageInit(0x2476fc685440, 0x2476eace0200)
+2026-10-23T01:07:41.5578896Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3239 +0x945 fp=0x2476deaadde0 sp=0x2476deaadc40 pc=0x8317e5
+2026-10-23T01:07:41.5579865Z golang.org/x/tools/go/ssa.(*builder).buildFunction(0xffffffffffffffff?, 0x2476eace0200)
+2026-10-23T01:07:41.5580880Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2904 +0x185 fp=0x2476deaadea0 sp=0x2476deaadde0 pc=0x82f2e5
+2026-10-23T01:07:41.5581726Z golang.org/x/tools/go/ssa.(*builder).iterate(0x2476fc685440)
+2026-10-23T01:07:41.5582625Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:2889 +0x25 fp=0x2476deaadec0 sp=0x2476deaadea0 pc=0x82f105
+2026-10-23T01:07:41.5583446Z golang.org/x/tools/go/ssa.(*Package).build(0x2476ef395d80)
+2026-10-23T01:07:41.5584359Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3172 +0xdc fp=0x2476deaadf20 sp=0x2476deaadec0 pc=0x830dbc
+2026-10-23T01:07:41.5585141Z golang.org/x/tools/go/ssa.(*Package).build-fm()
+2026-10-23T01:07:41.5585625Z 	<autogenerated>:1 +0x17 fp=0x2476deaadf38 sp=0x2476deaadf20 pc=0x859ef7
+2026-10-23T01:07:41.5586124Z sync.(*Once).doSlow(0x2476f8ecb208?, 0x2476f8ecb188?)
+2026-10-23T01:07:41.5586767Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:78 +0xab fp=0x2476deaadf90 sp=0x2476deaadf38 pc=0x49410b
+2026-10-23T01:07:41.5587290Z sync.(*Once).Do(...)
+2026-10-23T01:07:41.5587629Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/sync/once.go:69
+2026-10-23T01:07:41.5588058Z golang.org/x/tools/go/ssa.(*Package).Build(...)
+2026-10-23T01:07:41.5588862Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3161
+2026-10-23T01:07:41.5589551Z golang.org/x/tools/go/ssa.(*Program).Build.func1(0x2476ddc56798?)
+2026-10-23T01:07:41.5590606Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3140 +0x45 fp=0x2476deaadfc8 sp=0x2476deaadf90 pc=0x854fa5
+2026-10-23T01:07:41.5591401Z golang.org/x/tools/go/ssa.(*Program).Build.gowrap1()
+2026-10-23T01:07:41.5592284Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3143 +0x1b fp=0x2476deaadfe0 sp=0x2476deaadfc8 pc=0x854f3b
+2026-10-23T01:07:41.5592974Z runtime.goexit({})
+2026-10-23T01:07:41.5593554Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476deaadfe8 sp=0x2476deaadfe0 pc=0x48ed21
+2026-10-23T01:07:41.5594274Z created by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 1490
+2026-10-23T01:07:41.5595034Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/tools@v0.29.0/go/ssa/builder.go:3139 +0x1b4
+2026-10-23T01:07:41.5595488Z 
+2026-10-23T01:07:41.5595685Z goroutine 1817 gp=0x2476db95e780 m=nil [select]:
+2026-10-23T01:07:41.5596172Z runtime.gopark(0x2476fbab3e30?, 0x6?, 0x0?, 0xc6?, 0x2476fbab3d80?)
+2026-10-23T01:07:41.5596891Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476fbab3c00 sp=0x2476fbab3be0 pc=0x4880ea
+2026-10-23T01:07:41.5597613Z runtime.selectgo(0x2476fbab3e30, 0x2476fbab3d74, 0x8f5e90?, 0x0, 0x0?, 0x1)
+2026-10-23T01:07:41.5598374Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476fbab3d40 sp=0x2476fbab3c00 pc=0x463537
+2026-10-23T01:07:41.5599492Z net/http/internal/http2.(*clientStream).writeRequest(0x2476fb64b708, 0x2476fb64b688, 0x0)
+2026-10-23T01:07:41.5600410Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1380 +0xc4e fp=0x2476fbab3f90 sp=0x2476fbab3d40 pc=0x6bb2ae
+2026-10-23T01:07:41.5601301Z net/http/internal/http2.(*clientStream).doRequest(0x2476fb64b708, 0x854f3b?, 0x2476ddc56798?)
+2026-10-23T01:07:41.5602211Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1241 +0x18 fp=0x2476fbab3fb8 sp=0x2476fbab3f90 pc=0x6ba618
+2026-10-23T01:07:41.5602954Z net/http/internal/http2.(*ClientConn).roundTrip.gowrap1()
+2026-10-23T01:07:41.5603891Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x1f fp=0x2476fbab3fe0 sp=0x2476fbab3fb8 pc=0x6c515f
+2026-10-23T01:07:41.5604526Z runtime.goexit({})
+2026-10-23T01:07:41.5605106Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476fbab3fe8 sp=0x2476fbab3fe0 pc=0x48ed21
+2026-10-23T01:07:41.5605848Z created by net/http/internal/http2.(*ClientConn).roundTrip in goroutine 1816
+2026-10-23T01:07:41.5606498Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1148 +0x4bb
+2026-10-23T01:07:41.5606856Z 
+2026-10-23T01:07:41.5607053Z goroutine 1820 gp=0x2476dbaea1e0 m=nil [select]:
+2026-10-23T01:07:41.5607547Z runtime.gopark(0x2476ecde1298?, 0x4?, 0x80?, 0x51?, 0x2476ecde11b0?)
+2026-10-23T01:07:41.5608269Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ecde1010 sp=0x2476ecde0ff0 pc=0x4880ea
+2026-10-23T01:07:41.5609182Z runtime.selectgo(0x2476ecde1298, 0x2476ecde11a8, 0x8f597f?, 0x0, 0x2476f7405240?, 0x1)
+2026-10-23T01:07:41.5609967Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ecde1150 sp=0x2476ecde1010 pc=0x463537
+2026-10-23T01:07:41.5610738Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fb64bb88, 0x0)
+2026-10-23T01:07:41.5611622Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476ecde14d8 sp=0x2476ecde1150 pc=0x6b9fef
+2026-10-23T01:07:41.5612341Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5612878Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5613565Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fb64bb88, {0xc?})
+2026-10-23T01:07:41.5614463Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476ecde15f8 sp=0x2476ecde14d8 pc=0x6b6c51
+2026-10-23T01:07:41.5615298Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5615836Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5616406Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5616964Z 	<autogenerated>:1 +0x1f fp=0x2476ecde1620 sp=0x2476ecde15f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5617471Z net/http.http2RoundTrip(0x2476fc839680, 0x2476e5e706b8)
+2026-10-23T01:07:41.5618160Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476ecde1688 sp=0x2476ecde1620 pc=0x6d2322
+2026-10-23T01:07:41.5619013Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5619748Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476ecde16d8 sp=0x2476ecde1688 pc=0x6d2819
+2026-10-23T01:07:41.5620445Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc839680?)
+2026-10-23T01:07:41.5620988Z 	<autogenerated>:1 +0x27 fp=0x2476ecde1700 sp=0x2476ecde16d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5621510Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc839680)
+2026-10-23T01:07:41.5622217Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476ecde18a8 sp=0x2476ecde1700 pc=0x6de285
+2026-10-23T01:07:41.5622873Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5623560Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476ecde18c8 sp=0x2476ecde18a8 pc=0x6ef798
+2026-10-23T01:07:41.5624342Z net/http.send(0x2476fc839680, {0xdea728, 0xe50390}, {0x2476e5e70b18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5625125Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476ecde1a90 sp=0x2476ecde18c8 pc=0x6cb794
+2026-10-23T01:07:41.5625884Z net/http.(*Client).send(0xe59910, 0x2476fc839680, {0xdd6440?, 0x2476fc900ad0?, 0x0?})
+2026-10-23T01:07:41.5626644Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476ecde1b28 sp=0x2476ecde1a90 pc=0x6cafd0
+2026-10-23T01:07:41.5627265Z net/http.(*Client).do(0xe59910, 0x2476fc839680)
+2026-10-23T01:07:41.5628039Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476ecde1d20 sp=0x2476ecde1b28 pc=0x6cd097
+2026-10-23T01:07:41.5628760Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5629157Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5629913Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fc848690, 0xf})
+2026-10-23T01:07:41.5631045Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476ecde1e68 sp=0x2476ecde1d20 pc=0x816165
+2026-10-23T01:07:41.5632125Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc5400, 0xc})
+2026-10-23T01:07:41.5633234Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476ecde1f28 sp=0x2476ecde1e68 pc=0x815493
+2026-10-23T01:07:41.5634086Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5635010Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476ecde1f78 sp=0x2476ecde1f28 pc=0x816d26
+2026-10-23T01:07:41.5635801Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5636666Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476ecde1fe0 sp=0x2476ecde1f78 pc=0x538ef0
+2026-10-23T01:07:41.5637367Z runtime.goexit({})
+2026-10-23T01:07:41.5637943Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ecde1fe8 sp=0x2476ecde1fe0 pc=0x48ed21
+2026-10-23T01:07:41.5638927Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5639687Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5640328Z 
+2026-10-23T01:07:41.5640535Z goroutine 1805 gp=0x2476dbaeaf00 m=nil [select]:
+2026-10-23T01:07:41.5641023Z runtime.gopark(0x2476df375298?, 0x4?, 0xe8?, 0x3?, 0x2476df3751b0?)
+2026-10-23T01:07:41.5641731Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476df375010 sp=0x2476df374ff0 pc=0x4880ea
+2026-10-23T01:07:41.5642488Z runtime.selectgo(0x2476df375298, 0x2476df3751a8, 0x8f597f?, 0x0, 0x2476f7405240?, 0x1)
+2026-10-23T01:07:41.5643259Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476df375150 sp=0x2476df375010 pc=0x463537
+2026-10-23T01:07:41.5644030Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fbd1b408, 0x0)
+2026-10-23T01:07:41.5644915Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476df3754d8 sp=0x2476df375150 pc=0x6b9fef
+2026-10-23T01:07:41.5645626Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5646162Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5646852Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fbd1b408, {0xc?})
+2026-10-23T01:07:41.5647759Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476df3755f8 sp=0x2476df3754d8 pc=0x6b6c51
+2026-10-23T01:07:41.5648619Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5649162Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5649732Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5650254Z 	<autogenerated>:1 +0x1f fp=0x2476df375620 sp=0x2476df3755f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5650758Z net/http.http2RoundTrip(0x2476fc8c7400, 0x2476deaaa6b8)
+2026-10-23T01:07:41.5651438Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476df375688 sp=0x2476df375620 pc=0x6d2322
+2026-10-23T01:07:41.5652141Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5652999Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476df3756d8 sp=0x2476df375688 pc=0x6d2819
+2026-10-23T01:07:41.5653706Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc8c7400?)
+2026-10-23T01:07:41.5654235Z 	<autogenerated>:1 +0x27 fp=0x2476df375700 sp=0x2476df3756d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5654746Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc8c7400)
+2026-10-23T01:07:41.5655460Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476df3758a8 sp=0x2476df375700 pc=0x6de285
+2026-10-23T01:07:41.5656110Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5656794Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476df3758c8 sp=0x2476df3758a8 pc=0x6ef798
+2026-10-23T01:07:41.5657562Z net/http.send(0x2476fc8c7400, {0xdea728, 0xe50390}, {0x2476deaaab18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5658340Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476df375a90 sp=0x2476df3758c8 pc=0x6cb794
+2026-10-23T01:07:41.5659234Z net/http.(*Client).send(0xe59910, 0x2476fc8c7400, {0xdd6440?, 0x2476fc8f0ad0?, 0x0?})
+2026-10-23T01:07:41.5659997Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476df375b28 sp=0x2476df375a90 pc=0x6cafd0
+2026-10-23T01:07:41.5660607Z net/http.(*Client).do(0xe59910, 0x2476fc8c7400)
+2026-10-23T01:07:41.5661256Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476df375d20 sp=0x2476df375b28 pc=0x6cd097
+2026-10-23T01:07:41.5661798Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5662185Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5662940Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fcd6d040, 0xf})
+2026-10-23T01:07:41.5664061Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476df375e68 sp=0x2476df375d20 pc=0x816165
+2026-10-23T01:07:41.5665328Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc5470, 0xc})
+2026-10-23T01:07:41.5666440Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476df375f28 sp=0x2476df375e68 pc=0x815493
+2026-10-23T01:07:41.5667276Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5668187Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476df375f78 sp=0x2476df375f28 pc=0x816d26
+2026-10-23T01:07:41.5669138Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5670434Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476df375fe0 sp=0x2476df375f78 pc=0x538ef0
+2026-10-23T01:07:41.5671159Z runtime.goexit({})
+2026-10-23T01:07:41.5671753Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476df375fe8 sp=0x2476df375fe0 pc=0x48ed21
+2026-10-23T01:07:41.5672451Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5673198Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5673650Z 
+2026-10-23T01:07:41.5673847Z goroutine 1822 gp=0x2476dbaeb680 m=nil [select]:
+2026-10-23T01:07:41.5674330Z runtime.gopark(0x2476ecddb298?, 0x4?, 0x40?, 0xa6?, 0x2476ecddb1b0?)
+2026-10-23T01:07:41.5675057Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/proc.go:474 +0xca fp=0x2476ecddb010 sp=0x2476ecddaff0 pc=0x4880ea
+2026-10-23T01:07:41.5675827Z runtime.selectgo(0x2476ecddb298, 0x2476ecddb1a8, 0x8f597f?, 0x0, 0x2476e6b6a700?, 0x1)
+2026-10-23T01:07:41.5676614Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/select.go:351 +0xa97 fp=0x2476ecddb150 sp=0x2476ecddb010 pc=0x463537
+2026-10-23T01:07:41.5677389Z net/http/internal/http2.(*ClientConn).roundTrip(0x2476db7208c0, 0x2476fceea008, 0x0)
+2026-10-23T01:07:41.5678644Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1211 +0x56f fp=0x2476ecddb4d8 sp=0x2476ecddb150 pc=0x6b9fef
+2026-10-23T01:07:41.5679513Z net/http/internal/http2.(*ClientConn).RoundTrip(...)
+2026-10-23T01:07:41.5680072Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:1125
+2026-10-23T01:07:41.5680786Z net/http/internal/http2.(*Transport).RoundTripOpt(0x2476db5b00c0, 0x2476fceea008, {0xc?})
+2026-10-23T01:07:41.5681694Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:424 +0x151 fp=0x2476ecddb5f8 sp=0x2476ecddb4d8 pc=0x6b6c51
+2026-10-23T01:07:41.5682406Z net/http/internal/http2.(*Transport).RoundTrip(...)
+2026-10-23T01:07:41.5682940Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/internal/http2/transport.go:379
+2026-10-23T01:07:41.5683531Z net/http/internal/http2.(*Transport).RoundTrip-fm(0xd44f70?)
+2026-10-23T01:07:41.5684060Z 	<autogenerated>:1 +0x1f fp=0x2476ecddb620 sp=0x2476ecddb5f8 pc=0x6f3f7f
+2026-10-23T01:07:41.5684576Z net/http.http2RoundTrip(0x2476fc8397c0, 0x2476e5e706b8)
+2026-10-23T01:07:41.5685261Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:321 +0x1c2 fp=0x2476ecddb688 sp=0x2476ecddb620 pc=0x6d2322
+2026-10-23T01:07:41.5685971Z net/http.http2RoundTripper.RoundTrip({0x2476db5b00c0?, 0x40?}, 0x0?)
+2026-10-23T01:07:41.5686709Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/http2.go:438 +0x39 fp=0x2476ecddb6d8 sp=0x2476ecddb688 pc=0x6d2819
+2026-10-23T01:07:41.5687404Z net/http.(*http2RoundTripper).RoundTrip(0xe50390?, 0x2476fc8397c0?)
+2026-10-23T01:07:41.5687943Z 	<autogenerated>:1 +0x27 fp=0x2476ecddb700 sp=0x2476ecddb6d8 pc=0x6f2fc7
+2026-10-23T01:07:41.5688656Z net/http.(*Transport).roundTrip(0xe50390, 0x2476fc8397c0)
+2026-10-23T01:07:41.5689381Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/transport.go:644 +0x525 fp=0x2476ecddb8a8 sp=0x2476ecddb700 pc=0x6de285
+2026-10-23T01:07:41.5690034Z net/http.(*Transport).RoundTrip(0x4b45b9?, 0xdea728?)
+2026-10-23T01:07:41.5690875Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/roundtrip.go:33 +0x18 fp=0x2476ecddb8c8 sp=0x2476ecddb8a8 pc=0x6ef798
+2026-10-23T01:07:41.5691651Z net/http.send(0x2476fc8397c0, {0xdea728, 0xe50390}, {0x2476e5e70b18?, 0x48aa46?, 0x0?})
+2026-10-23T01:07:41.5692435Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:266 +0x654 fp=0x2476ecddba90 sp=0x2476ecddb8c8 pc=0x6cb794
+2026-10-23T01:07:41.5693200Z net/http.(*Client).send(0xe59910, 0x2476fc8397c0, {0xdd6440?, 0x2476fc900a80?, 0x0?})
+2026-10-23T01:07:41.5693966Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:187 +0x250 fp=0x2476ecddbb28 sp=0x2476ecddba90 pc=0x6cafd0
+2026-10-23T01:07:41.5694576Z net/http.(*Client).do(0xe59910, 0x2476fc8397c0)
+2026-10-23T01:07:41.5695230Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:745 +0x9f7 fp=0x2476ecddbd20 sp=0x2476ecddbb28 pc=0x6cd097
+2026-10-23T01:07:41.5695786Z net/http.(*Client).Do(...)
+2026-10-23T01:07:41.5696185Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/net/http/client.go:604
+2026-10-23T01:07:41.5696938Z golang.org/x/vuln/internal/client.(*httpSource).get(0x2476db6a6480, {0xdeeb78, 0x2476eb2477c0}, {0x2476fcecef90, 0xf})
+2026-10-23T01:07:41.5698066Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/source.go:54 +0x1c5 fp=0x2476ecddbe68 sp=0x2476ecddbd20 pc=0x816165
+2026-10-23T01:07:41.5699307Z golang.org/x/vuln/internal/client.(*Client).byID(0x2476db6a8870, {0xdeeb78, 0x2476eb2477c0}, {0x2476ecdc5410, 0xc})
+2026-10-23T01:07:41.5700430Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:322 +0x113 fp=0x2476ecddbf28 sp=0x2476ecddbe68 pc=0x815493
+2026-10-23T01:07:41.5701573Z golang.org/x/vuln/internal/client.(*Client).byIDs.func1()
+2026-10-23T01:07:41.5702505Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/vuln@v1.1.4/internal/client/client.go:302 +0x46 fp=0x2476ecddbf78 sp=0x2476ecddbf28 pc=0x816d26
+2026-10-23T01:07:41.5703322Z golang.org/x/sync/errgroup.(*Group).Go.func1()
+2026-10-23T01:07:41.5704336Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:78 +0x50 fp=0x2476ecddbfe0 sp=0x2476ecddbf78 pc=0x538ef0
+2026-10-23T01:07:41.5705050Z runtime.goexit({})
+2026-10-23T01:07:41.5705639Z 	/opt/hostedtoolcache/go/1.27.3/x64/src/runtime/asm_amd64.s:1264 +0x1 fp=0x2476ecddbfe8 sp=0x2476ecddbfe0 pc=0x48ed21
+2026-10-23T01:07:41.5706342Z created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1525
+2026-10-23T01:07:41.5707088Z 	/home/runner/work/throttle/throttle/.cache/gopath/pkg/mod/golang.org/x/sync@v0.10.0/errgroup/errgroup.go:75 +0xa5
+2026-10-23T01:07:41.5707634Z exit status 2
+2026-10-23T01:07:41.5707949Z make: *** [Makefile:34: scan] Error 1
+2026-10-23T01:07:41.5721222Z ##[error]Process completed with exit code 2.
+2026-10-23T01:07:41.5808826Z ##[group]Run actions/upload-artifact@v4
+2026-10-23T01:07:41.5809165Z with:
+2026-10-23T01:07:41.5809399Z   name: throttle-gate-evidence
+2026-10-23T01:07:41.5809668Z   path: docs/results/
+2026-10-23T01:07:41.5809902Z   if-no-files-found: warn
+2026-10-23T01:07:41.5810140Z   compression-level: 6
+2026-10-23T01:07:41.5810225Z   overwrite: false
+2026-10-23T01:07:41.5810328Z   include-hidden-files: false
+2026-10-23T01:07:41.5810404Z env:
+2026-10-23T01:07:41.5810583Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:07:41.5810786Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-23T01:07:41.5810932Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:07:41.5811091Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:07:41.5811233Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-23T01:07:41.5811394Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-23T01:07:41.5811504Z ##[endgroup]
+2026-10-23T01:07:41.7504410Z (node:10947) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-23T01:07:41.7506404Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-23T01:07:41.7725061Z With the provided path, there will be 72 files uploaded
+2026-10-23T01:07:41.7730928Z Artifact name is valid!
+2026-10-23T01:07:41.7731700Z Root directory input is valid!
+2026-10-23T01:07:42.0072166Z Beginning upload of artifact content to blob storage
+2026-10-23T01:07:42.3139261Z (node:10947) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-23T01:07:42.5358072Z Uploaded bytes 8388608
+2026-10-23T01:07:42.9690239Z Uploaded bytes 16358255
+2026-10-23T01:07:42.9810722Z Finished uploading artifact content to blob storage!
+2026-10-23T01:07:42.9812411Z SHA256 digest of uploaded artifact zip is 9d7fff58929aa5079ab852b423bad4b493c8cfaf1c2fa572e7f2c44d2012fa0e
+2026-10-23T01:07:42.9814253Z Finalizing artifact upload
+2026-10-23T01:07:43.4447437Z Artifact throttle-gate-evidence.zip successfully finalized. Artifact ID 12471246625
+2026-10-23T01:07:43.4449634Z Artifact throttle-gate-evidence has been successfully uploaded! Final size is 16358255 bytes. Artifact ID is 12471246625
+2026-10-23T01:07:43.4455168Z Artifact download URL: https://github.com/rjrddy/throttle/actions/runs/39882065952/artifacts/12471246625
+2026-10-23T01:07:43.4676889Z Post job cleanup.
+2026-10-23T01:07:43.5515258Z [command]/usr/bin/git version
+2026-10-23T01:07:43.5560227Z git version 2.55.0
+2026-10-23T01:07:43.5604764Z Temporarily overriding HOME='/home/runner/work/_temp/49f1e2a8-b748-4361-9e62-832d59a8f8a1' before making global git config changes
+2026-10-23T01:07:43.5606271Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-23T01:07:43.5611330Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/throttle/throttle
+2026-10-23T01:07:43.5650764Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-23T01:07:43.5685935Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-23T01:07:43.5952592Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-23T01:07:43.5976666Z http.https://github.com/.extraheader
+2026-10-23T01:07:43.5989589Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-23T01:07:43.6024034Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-23T01:07:43.6294504Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-23T01:07:43.6334669Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-23T01:07:43.6763220Z Cleaning up orphan processes
+2026-10-23T01:07:43.7165302Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-go@v5, actions/setup-node@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

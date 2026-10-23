@@ -31,7 +31,7 @@ bench: build bench-core
 demo: setup build
 	./bin/throttle --demo --addr "$(DEMO_ADDR)"
 scan:
-	$(GO) run golang.org/x/vuln/cmd/govulncheck@v1.1.4 ./...
+	$(GO) run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
 	npm audit --prefix apps/web --audit-level=high
 	.venv/bin/python -m pip_audit -r requirements-dev.txt -r requirements-browser.txt --progress-spinner off
 container-test:
