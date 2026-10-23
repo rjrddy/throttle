@@ -11,7 +11,7 @@
 | ADRs | PASS: docs/adr/ |
 | INTERVIEW.md and DRILL.md | PASS: code-grounded explanation and explicit unfavorable case |
 | Dependency scan | PASS: Go source reachability scan plus npm advisory audit; final Python helper scan included |
-| CI / Docker | Prepared; GitHub execution pending; Docker unavailable locally |
-| No unmeasured claims | README generated from raw results; core overhead distinguished from HTTP latency and real-world abuse accuracy |
+| CI / Docker | PASS: https://github.com/rjrddy/throttle/actions/runs/39882321169; actual Linux build/lint/race/advisory and nonroot-image auth/rate/fault/recovery smoke; raw logs under docs/results/ci/ |
+| No unmeasured claims | PASS: README generated from raw results; core overhead distinguished from HTTP latency and real-world abuse accuracy |
 
 Redis/distributed mode is optional and not implemented. No deployment/account is created. No production fairness, cross-instance quota, identity federation, fair queue or long-lived voice-turn integration is claimed. Pulse remains unchanged and has a separate integration proposal requiring approval. Not deployed; the Render free-plan file is preparation only.
