@@ -1,0 +1,2 @@
+# Preserve raw receipts while keeping generated artifacts out of source-language statistics/diffs.
+docs/results/** linguist-generated=true

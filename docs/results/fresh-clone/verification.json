@@ -1,0 +1,13 @@
+{
+  "source_commit": "fc019f1668cd12dbe295efe83edab2017f7d2688",
+  "clone": "independent --no-local temporary clone",
+  "setup_build_lint_race_tests": "pass",
+  "one_command_make_demo": "pass",
+  "actual_http_origin_response": {
+    "result": "ok",
+    "source": "synthetic-origin"
+  },
+  "react_assets_served": "pass",
+  "registered_clients": 8,
+  "docker": "not available locally; CI required"
+}

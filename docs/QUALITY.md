@@ -3,7 +3,7 @@
 | Gate | State / evidence |
 |---|---|
 | Hard core written and explained | PASS: internal/gateway; docs/DESIGN.md; local-state/score/circuit ADRs |
-| One-command fresh-clone run | Pending independent clone check |
+| One-command fresh-clone run | PASS: docs/results/fresh-clone/verification.json; setup/build/lint/race tests and actual make demo origin response |
 | Live React behavior | PASS: docs/results/browser/verification.json; actual policy/load/fault/recovery, responsive layouts, keyboard client selection |
 | Unit + integration + property/chaos | PASS: race-test JSON; limiter envelopes, concurrent hot identity, actual HTTP auth/overload/timeout/truncated-body cases |
 | Benchmark numbers saved | PASS: full repeated actual HTTP campaigns and admission-core Go benchmarks; docs/results/report.json and raw files |
