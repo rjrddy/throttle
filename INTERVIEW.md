@@ -34,7 +34,7 @@ Finish with internal/campaign and the React console. The load generator controls
 
 - **Concurrent quota overshoot:** decision/state mutation is locked; a hot-identity test checks an immediate burst under concurrent callers, and randomized tests check accepted envelopes. Race detection is additional finite evidence, not a proof of fairness.
 - **Spoofed identity or malformed request:** the configured key must authenticate; forwarded identity and caller secrets are stripped. Size/shape/origin/host validation rejects malformed traffic before it reaches the trusted backend.
-- **Abuse crowds out legitimate work:** client admission plus adaptive reductions can reduce pressure on the origin, and the semaphore always bounds active work. The measured comparisons expose remaining legitimate capacity losses instead of promising universal fairness.
+- **Abuse crowds out legitimate work:** client admission plus adaptive reductions can reduce pressure on the origin, and the semaphore bounds gateway request leases. An origin that ignores cancellation may continue work after a gateway deadline. The measured comparisons expose remaining legitimate capacity losses instead of promising universal fairness.
 - **Origin hangs or fails:** response-header/overall deadlines and a fenced circuit limit exposure. Half-open probes are serialized, stale completions are ignored, and server failures do not teach that clients are abusive.
 - **Heuristic blames a healthy new route:** the unclassified fixture returns valid results but receives a lower adaptive budget. The test and benchmark retain this harm. Review the catalog or keep fixed mode before any real integration.
 

@@ -10,7 +10,7 @@
 8. **Can an adaptive policy reduce budget for a valid new route?** Yes. The valid preview-route control demonstrates that exact false penalty. Review the endpoint catalog or use fixed mode.
 9. **Could a capacity denial become a 4xx training sample?** No. Only completed origin responses in the relevant non-server-error class update the client-error signal. Gateway denials are separate outcomes.
 10. **What if a request succeeds after its circuit has opened?** Its old generation ticket is ignored. Otherwise an unrelated old request could close a circuit whose probe is still failing.
-11. **What if the half-open caller cancels?** Cancel releases the matching probe without blaming the origin. It can be probed again rather than remaining stuck.
+11. **What if the half-open caller cancels?** Cancel releases the matching probe without blaming the origin. It can be probed again rather than remaining stuck. A downstream origin must cooperate with cancellation; this gateway cannot stop its CPU work by closing a request.
 12. **Why finalize around ReverseProxy's panic path?** A truncated body can abort after headers; normal return-path cleanup would be skipped. Capacity and probe ownership must still terminate.
 13. **Can a recorded failure status always reach the client?** No. A body-stream abort may close a connection after an earlier status was sent. The HTTP contract distinguishes internal failure decisions from delivery guarantees.
 14. **How does the load generator avoid counting partial success?** It reads the complete response body, checks errors and rejects invalid transport/body trials. Offered counts reconcile with actual receipts.
