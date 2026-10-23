@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "/Users/rajreddy/dev/outreach/throttle/scripts/review.py", line 180, in <module>
+    main()
+    ~~~~^^
+  File "/Users/rajreddy/dev/outreach/throttle/scripts/review.py", line 111, in main
+    campaign("fixed", "token")
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/rajreddy/dev/outreach/throttle/scripts/review.py", line 93, in campaign
+    page.get_by_label("Algorithm", exact=True).select_option(algorithm)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/rajreddy/dev/outreach/flagships/relay/.venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 13173, in select_option
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.select_option(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/rajreddy/dev/outreach/flagships/relay/.venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/rajreddy/dev/outreach/flagships/relay/.venv/lib/python3.13/site-packages/playwright/_impl/_locator.py", line 652, in select_option
+    return await self._frame.select_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/rajreddy/dev/outreach/flagships/relay/.venv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 819, in select_option
+    return await self._channel.send("selectOption", self._timeout, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajreddy/dev/outreach/flagships/relay/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/rajreddy/dev/outreach/flagships/relay/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.select_option: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_label("Algorithm", exact=True)
+

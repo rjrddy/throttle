@@ -1,0 +1,15 @@
+go build -trimpath -o bin/throttle ./cmd/throttle
+npm run build --prefix apps/web
+
+> throttle-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-2DO7amma.css   14.13 kB │ gzip:  3.49 kB
+dist/assets/index-BmEFogl3.js   207.91 kB │ gzip: 65.23 kB
+✓ built in 441ms

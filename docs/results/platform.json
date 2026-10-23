@@ -1,0 +1,22 @@
+{
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "go": "go version go1.27.3 darwin/arm64",
+  "binary_build": "bin/throttle: go1.27.3\n\tpath\tgithub.com/rjrddy/throttle/cmd/throttle\n\tmod\tgithub.com/rjrddy/throttle\tv0.0.0-20261023005346-f73f5bcebe9e+dirty\t\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-trimpath=true\n\tbuild\tCGO_ENABLED=1\n\tbuild\tGOARCH=arm64\n\tbuild\tGOOS=darwin\n\tbuild\tGOARM64=v8.0\n\tbuild\tvcs=git\n\tbuild\tvcs.revision=f73f5bcebe9e2bcf8031a273b833249011c0a3a5\n\tbuild\tvcs.time=2026-10-23T00:53:46Z\n\tbuild\tvcs.modified=true\n",
+  "node": "v23.6.1",
+  "npm": "10.9.2",
+  "hardware": "machdep.cpu.brand_string: Apple M2 Pro\nhw.memsize: 17179869184\nhw.logicalcpu: 10\n",
+  "source_sha256": {
+    "cmd/throttle/main.go": "e48565b0ec154fc8f19b21ac120eed88ae9fe176fec6c1d40f9a5ba9c8dcd345",
+    "internal/campaign/campaign_test.go": "8760d52e7a3f0caf202a7b857b26e045fefc1b103e5ca905ce8299485c946d9c",
+    "internal/campaign/campaign.go": "ba7b53e4c35bda94a8c158bc56057fc1f483505f47ef702c75de7aeaedbc4d3a",
+    "internal/gateway/limiter_test.go": "91f913f26e672bf8489917030c5b670a356974558ddc628b1f104ca53fd688a9",
+    "internal/gateway/server.go": "15cb67f1e16b787f10384750951e1d246e5a8834efdf654574ffaddf173559ab",
+    "internal/gateway/engine_test.go": "67784afe1b5401e0d5ef77dafc114f1f6ec41bbfecde2f867d68adb783c72d60",
+    "internal/gateway/breaker.go": "3617a1ad8b3cad5b4d1ea6f0cbce3ef20b837d2adb924fb05d4ae944f92b4ead",
+    "internal/gateway/breaker_test.go": "1dd9981c1ab03828ada1e706e5d7083535b67309864612a7239ba6343ef836e4",
+    "internal/gateway/engine.go": "e4c28703b8f964f1b78d677c66d1c2bca62aab62130c3b999a72e01485587d3f",
+    "internal/gateway/limiter.go": "63fae6889173596b0ba1a20b0cf01e6171371c36392f2ffb0cb6ad861c034f37",
+    "internal/gateway/server_test.go": "979aa9adaeab802e8d5901dcf69e3982a30b6fcdd10b6511232724efc1a5ce14",
+    "internal/gateway/origin.go": "18e2357f53935c1e8fd99035fc8f482a3125b29c0ec61a81dc6693cb848cf260"
+  }
+}

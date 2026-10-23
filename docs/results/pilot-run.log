@@ -1,0 +1,10 @@
+mixed token fixed t0 legitimate success 21/44 peak origin 4
+mixed token adaptive t0 legitimate success 23/44 peak origin 4
+mixed sliding fixed t0 legitimate success 25/44 peak origin 4
+mixed sliding adaptive t0 legitimate success 28/44 peak origin 4
+mixed gcra fixed t0 legitimate success 20/44 peak origin 4
+mixed gcra adaptive t0 legitimate success 25/44 peak origin 4
+healthy-burst token fixed t0 legitimate success 24/40 peak origin 4
+healthy-burst token adaptive t0 legitimate success 24/40 peak origin 4
+unclassified token fixed t0 legitimate success 25/25 peak origin 2
+unclassified token adaptive t0 legitimate success 24/25 peak origin 2

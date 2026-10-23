@@ -1,0 +1,66 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rjrddy/throttle/internal/gateway
+cpu: Apple M2 Pro
+BenchmarkAdmission/fixed/token//v1/read-10         	 2477954	        82.88 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/read-10         	 2909906	        82.69 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/read-10         	 2886402	        82.91 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/read-10         	 2908616	        83.01 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/read-10         	 2904648	        82.56 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/missing-10      	 2750590	        87.31 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/missing-10      	 2750731	        87.54 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/missing-10      	 2743814	        87.63 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/missing-10      	 2322135	        87.28 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/token//v1/missing-10      	 2713868	        87.34 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/read-10       	 3061081	        78.62 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/read-10       	 3077268	        78.34 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/read-10       	 3058501	        80.73 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/read-10       	 3040077	        78.42 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/read-10       	 3035964	        79.08 ns/op	         1.999 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/missing-10    	 3011748	        79.66 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/missing-10    	 3020892	        79.21 ns/op	         1.999 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/missing-10    	 3015552	        79.47 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/missing-10    	 3033313	        81.72 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/sliding//v1/missing-10    	 2887947	        79.13 ns/op	         1.999 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/read-10          	 2773354	        86.28 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/read-10          	 2785570	        86.73 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/read-10          	 2771373	        86.19 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/read-10          	 2769111	        87.00 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/read-10          	 2781032	        86.60 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/missing-10       	 2762047	        86.65 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/missing-10       	 2764824	        87.05 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/missing-10       	 2732894	        87.46 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/missing-10       	 2767363	        86.42 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/fixed/gcra//v1/missing-10       	 2779986	        87.01 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/read-10      	 2848137	        83.92 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/read-10      	 2872123	        84.21 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/read-10      	 2856996	        83.97 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/read-10      	 2871918	        84.34 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/read-10      	 2831865	        83.62 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/missing-10   	 2438202	        98.57 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/missing-10   	 2436393	        98.96 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/missing-10   	 2432588	        99.05 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/missing-10   	 2426007	        98.61 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/token//v1/missing-10   	 2417098	        99.28 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/read-10    	 3067719	        78.33 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/read-10    	 3009339	        80.14 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/read-10    	 2994946	        79.81 ns/op	         1.999 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/read-10    	 3031062	        79.51 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/read-10    	 3038265	        87.35 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/missing-10 	 2614890	        92.88 ns/op	         0.2999 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/missing-10 	 2610103	        91.35 ns/op	         0.3000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/missing-10 	 2612094	        91.37 ns/op	         0.3000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/missing-10 	 2633216	        90.83 ns/op	         0.3000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/sliding//v1/missing-10 	 2637638	        90.45 ns/op	         0.2999 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/read-10       	 2763187	        86.96 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/read-10       	 2745259	        87.84 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/read-10       	 2756509	        86.59 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/read-10       	 2782948	        86.84 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/read-10       	 2744817	        87.03 ns/op	         2.000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/missing-10    	 2434833	        97.45 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/missing-10    	 2466913	        98.04 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/missing-10    	 2452758	       105.1 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/missing-10    	 2407154	        97.21 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+BenchmarkAdmission/adaptive/gcra//v1/missing-10    	 2449518	        98.15 ns/op	         0.2000 allowed_pct	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rjrddy/throttle/internal/gateway	19.973s

@@ -1,4 +1,5 @@
 GO ?= go
+DEMO_ADDR ?= 127.0.0.1:8086
 export GOPATH := $(CURDIR)/.cache/gopath
 export GOCACHE := $(CURDIR)/.cache/gobuild
 export GOTOOLCHAIN := go1.27.3
@@ -28,7 +29,7 @@ bench: build bench-core
 	./bin/throttle --bench --out docs/results/campaign > docs/results/campaign-run.log
 	python3 scripts/render_readme.py
 demo: setup build
-	./bin/throttle --demo
+	./bin/throttle --demo --addr "$(DEMO_ADDR)"
 scan:
 	$(GO) run golang.org/x/vuln/cmd/govulncheck@v1.1.4 ./...
 	npm audit --prefix apps/web --audit-level=high

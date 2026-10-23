@@ -1,0 +1,6284 @@
+{
+  "mode": "adaptive",
+  "algorithm": "token",
+  "scenario": "mixed",
+  "trial": 0,
+  "seed": 52017,
+  "duration_ms": 1000,
+  "elapsed_ms": 1058,
+  "classes": {
+    "abuse": {
+      "offered": 364,
+      "success": 0,
+      "limited": 288,
+      "capacity": 49,
+      "other": 27,
+      "success_rate": 0,
+      "p99_ms": 61.254459
+    },
+    "legitimate": {
+      "offered": 44,
+      "success": 23,
+      "limited": 0,
+      "capacity": 21,
+      "other": 0,
+      "success_rate": 0.5227272727272727,
+      "p99_ms": 62.820458
+    }
+  },
+  "receipts": [
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 9,
+      "started_ms": 11.161333,
+      "latency_ms": 62.366375,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 19,
+      "started_ms": 20.664917,
+      "latency_ms": 61.992291,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 24,
+      "started_ms": 24.584292,
+      "latency_ms": 62.820458,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 27,
+      "started_ms": 27.317625,
+      "latency_ms": 62.698833,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 29,
+      "started_ms": 29.35275,
+      "latency_ms": 0.545125,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 30,
+      "started_ms": 30.049167,
+      "latency_ms": 0.299291,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 39,
+      "started_ms": 39.4365,
+      "latency_ms": 0.495708,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 49,
+      "started_ms": 50.635458,
+      "latency_ms": 0.421167,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 59,
+      "started_ms": 61.120958,
+      "latency_ms": 0.663084,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 64,
+      "started_ms": 64.6375,
+      "latency_ms": 0.434958,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 67,
+      "started_ms": 67.553417,
+      "latency_ms": 0.447166,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 69,
+      "started_ms": 69.422917,
+      "latency_ms": 0.368291,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 70,
+      "started_ms": 70.07625,
+      "latency_ms": 0.155167,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 79,
+      "started_ms": 80.437958,
+      "latency_ms": 61.377625,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 82,
+      "started_ms": 82.267792,
+      "latency_ms": 0.396541,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 89,
+      "started_ms": 89.439875,
+      "latency_ms": 60.790417,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 92,
+      "started_ms": 92.569458,
+      "latency_ms": 60.848834,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 94,
+      "started_ms": 94.3025,
+      "latency_ms": 60.780042,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 97,
+      "started_ms": 97.676125,
+      "latency_ms": 0.538958,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 99,
+      "started_ms": 99.245292,
+      "latency_ms": 0.366708,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 100,
+      "started_ms": 100.150833,
+      "latency_ms": 0.297417,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 102,
+      "started_ms": 102.498917,
+      "latency_ms": 0.498333,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 109,
+      "started_ms": 110.448833,
+      "latency_ms": 0.408292,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 112,
+      "started_ms": 112.320458,
+      "latency_ms": 0.490875,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 117,
+      "started_ms": 118.139,
+      "latency_ms": 0.533958,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 119,
+      "started_ms": 119.156,
+      "latency_ms": 0.289875,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 122,
+      "started_ms": 122.702333,
+      "latency_ms": 0.316084,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 127,
+      "started_ms": 128.037625,
+      "latency_ms": 0.311625,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 129,
+      "started_ms": 129.2355,
+      "latency_ms": 0.303917,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 132,
+      "started_ms": 132.66975,
+      "latency_ms": 0.230458,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 137,
+      "started_ms": 137.975417,
+      "latency_ms": 0.55325,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 139,
+      "started_ms": 139.168708,
+      "latency_ms": 0.313417,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 142,
+      "started_ms": 142.081917,
+      "latency_ms": 60.862958,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 147,
+      "started_ms": 147.877792,
+      "latency_ms": 0.283833,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 149,
+      "started_ms": 149.225,
+      "latency_ms": 0.29175,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 152,
+      "started_ms": 152.620375,
+      "latency_ms": 60.958667,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 154,
+      "started_ms": 154.18425,
+      "latency_ms": 60.960708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 157,
+      "started_ms": 157.565375,
+      "latency_ms": 60.59775,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 157,
+      "started_ms": 157.544458,
+      "latency_ms": 0.340667,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 159,
+      "started_ms": 159.520958,
+      "latency_ms": 0.2525,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 160,
+      "started_ms": 160.165292,
+      "latency_ms": 0.2515,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 162,
+      "started_ms": 162.424042,
+      "latency_ms": 0.29375,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 167,
+      "started_ms": 167.503333,
+      "latency_ms": 0.28475,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 169,
+      "started_ms": 169.329708,
+      "latency_ms": 0.272667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 172,
+      "started_ms": 172.670458,
+      "latency_ms": 0.285334,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 175,
+      "started_ms": 175.116417,
+      "latency_ms": 0.26025,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 177,
+      "started_ms": 177.45,
+      "latency_ms": 0.260792,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 179,
+      "started_ms": 179.39525,
+      "latency_ms": 0.283417,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 182,
+      "started_ms": 182.639083,
+      "latency_ms": 0.313792,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 185,
+      "started_ms": 185.158833,
+      "latency_ms": 0.277084,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 187,
+      "started_ms": 187.444042,
+      "latency_ms": 0.261333,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 189,
+      "started_ms": 189.3555,
+      "latency_ms": 0.279542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 192,
+      "started_ms": 192.618792,
+      "latency_ms": 0.259916,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 195,
+      "started_ms": 195.137292,
+      "latency_ms": 0.274458,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 197,
+      "started_ms": 197.448167,
+      "latency_ms": 0.266166,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 199,
+      "started_ms": 199.369792,
+      "latency_ms": 0.268375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 202,
+      "started_ms": 202.641208,
+      "latency_ms": 0.30425,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 205,
+      "started_ms": 205.574917,
+      "latency_ms": 60.550208,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 207,
+      "started_ms": 207.319958,
+      "latency_ms": 0.256125,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 209,
+      "started_ms": 209.380292,
+      "latency_ms": 0.282666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 212,
+      "started_ms": 212.640375,
+      "latency_ms": 0.253167,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 215,
+      "started_ms": 215.02425,
+      "latency_ms": 60.914042,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 217,
+      "started_ms": 217.502875,
+      "latency_ms": 60.597625,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 219,
+      "started_ms": 219.274917,
+      "latency_ms": 0.275875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 222,
+      "started_ms": 222.658042,
+      "latency_ms": 0.270583,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 225,
+      "started_ms": 225.109833,
+      "latency_ms": 60.687375,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 227,
+      "started_ms": 227.4095,
+      "latency_ms": 0.264667,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 229,
+      "started_ms": 229.388833,
+      "latency_ms": 0.268667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 232,
+      "started_ms": 232.637708,
+      "latency_ms": 0.272084,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 235,
+      "started_ms": 235.597875,
+      "latency_ms": 0.232875,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 237,
+      "started_ms": 237.339583,
+      "latency_ms": 0.243584,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 239,
+      "started_ms": 239.433583,
+      "latency_ms": 0.271667,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 242,
+      "started_ms": 242.607375,
+      "latency_ms": 0.278458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 245,
+      "started_ms": 245.601167,
+      "latency_ms": 0.320416,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 247,
+      "started_ms": 247.297125,
+      "latency_ms": 0.422708,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 249,
+      "started_ms": 249.373667,
+      "latency_ms": 0.228541,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 252,
+      "started_ms": 252.646958,
+      "latency_ms": 0.221959,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 255,
+      "started_ms": 255.427833,
+      "latency_ms": 0.158792,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 257,
+      "started_ms": 257.393375,
+      "latency_ms": 0.169333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 259,
+      "started_ms": 259.415542,
+      "latency_ms": 0.166791,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 262,
+      "started_ms": 262.622,
+      "latency_ms": 0.17225,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 265,
+      "started_ms": 265.595625,
+      "latency_ms": 0.207667,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 267,
+      "started_ms": 267.250708,
+      "latency_ms": 0.197,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 269,
+      "started_ms": 269.422625,
+      "latency_ms": 1.497083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 272,
+      "started_ms": 272.310875,
+      "latency_ms": 0.316542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 275,
+      "started_ms": 275.691458,
+      "latency_ms": 60.589709,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 277,
+      "started_ms": 277.345292,
+      "latency_ms": 0.27275,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 279,
+      "started_ms": 279.278375,
+      "latency_ms": 0.24275,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 282,
+      "started_ms": 282.689417,
+      "latency_ms": 0.2665,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 285,
+      "started_ms": 285.628792,
+      "latency_ms": 60.575458,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 287,
+      "started_ms": 287.324708,
+      "latency_ms": 0.254709,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 289,
+      "started_ms": 289.243167,
+      "latency_ms": 0.269416,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 292,
+      "started_ms": 292.678375,
+      "latency_ms": 60.622042,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 295,
+      "started_ms": 295.577875,
+      "latency_ms": 60.648625,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 297,
+      "started_ms": 297.333042,
+      "latency_ms": 0.266458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 299,
+      "started_ms": 299.380958,
+      "latency_ms": 0.261625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 302,
+      "started_ms": 302.664625,
+      "latency_ms": 0.266083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 305,
+      "started_ms": 305.415583,
+      "latency_ms": 0.268834,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 307,
+      "started_ms": 307.40025,
+      "latency_ms": 0.301625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 309,
+      "started_ms": 309.419,
+      "latency_ms": 0.259833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 312,
+      "started_ms": 315.555708,
+      "latency_ms": 0.574209,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 315,
+      "started_ms": 315.120375,
+      "latency_ms": 0.811917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 317,
+      "started_ms": 317.276792,
+      "latency_ms": 0.316083,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 319,
+      "started_ms": 319.265625,
+      "latency_ms": 0.248083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 322,
+      "started_ms": 322.644375,
+      "latency_ms": 0.149667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 324,
+      "started_ms": 324.334542,
+      "latency_ms": 0.12825,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 325,
+      "started_ms": 325.167083,
+      "latency_ms": 0.157625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 327,
+      "started_ms": 327.466625,
+      "latency_ms": 0.187083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 327,
+      "started_ms": 327.444042,
+      "latency_ms": 0.167333,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 329,
+      "started_ms": 329.366625,
+      "latency_ms": 0.140292,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 330,
+      "started_ms": 330.168625,
+      "latency_ms": 0.143792,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 332,
+      "started_ms": 332.483667,
+      "latency_ms": 0.202083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 335,
+      "started_ms": 335.58525,
+      "latency_ms": 0.237792,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 337,
+      "started_ms": 337.229458,
+      "latency_ms": 0.211875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 339,
+      "started_ms": 339.4495,
+      "latency_ms": 0.242667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 342,
+      "started_ms": 342.639083,
+      "latency_ms": 0.27,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 345,
+      "started_ms": 345.572958,
+      "latency_ms": 0.2615,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 347,
+      "started_ms": 347.243708,
+      "latency_ms": 0.25025,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 349,
+      "started_ms": 349.409417,
+      "latency_ms": 0.233083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 352,
+      "started_ms": 352.630875,
+      "latency_ms": 0.26125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 355,
+      "started_ms": 355.506708,
+      "latency_ms": 0.309625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 357,
+      "started_ms": 357.250417,
+      "latency_ms": 0.160666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 359,
+      "started_ms": 359.482042,
+      "latency_ms": 60.541583,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 362,
+      "started_ms": 362.606125,
+      "latency_ms": 0.174625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 364,
+      "started_ms": 364.352625,
+      "latency_ms": 61.049625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 365,
+      "started_ms": 365.133917,
+      "latency_ms": 0.117791,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 367,
+      "started_ms": 367.521917,
+      "latency_ms": 0.246041,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 367,
+      "started_ms": 367.488833,
+      "latency_ms": 60.637209,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 369,
+      "started_ms": 369.379458,
+      "latency_ms": 0.233709,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 370,
+      "started_ms": 370.167667,
+      "latency_ms": 60.666583,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 372,
+      "started_ms": 372.432375,
+      "latency_ms": 0.270708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 375,
+      "started_ms": 375.289,
+      "latency_ms": 0.28125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 377,
+      "started_ms": 377.465875,
+      "latency_ms": 0.284875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 379,
+      "started_ms": 379.346333,
+      "latency_ms": 0.266209,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 382,
+      "started_ms": 382.625,
+      "latency_ms": 0.148083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 385,
+      "started_ms": 385.661417,
+      "latency_ms": 0.23625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 387,
+      "started_ms": 387.208292,
+      "latency_ms": 0.243916,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 389,
+      "started_ms": 389.430875,
+      "latency_ms": 0.251667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 392,
+      "started_ms": 392.626875,
+      "latency_ms": 0.23825,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 394,
+      "started_ms": 394.340708,
+      "latency_ms": 0.211125,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 395,
+      "started_ms": 395.20075,
+      "latency_ms": 0.215625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 397,
+      "started_ms": 397.126667,
+      "latency_ms": 0.103625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 397,
+      "started_ms": 397.113083,
+      "latency_ms": 0.094667,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 399,
+      "started_ms": 399.500583,
+      "latency_ms": 0.293959,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 400,
+      "started_ms": 400.065417,
+      "latency_ms": 0.097375,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 402,
+      "started_ms": 402.489458,
+      "latency_ms": 0.097375,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 405,
+      "started_ms": 405.6515,
+      "latency_ms": 0.262125,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 407,
+      "started_ms": 407.137708,
+      "latency_ms": 0.274959,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 409,
+      "started_ms": 409.428167,
+      "latency_ms": 0.252375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 412,
+      "started_ms": 412.154417,
+      "latency_ms": 0.250041,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 415,
+      "started_ms": 415.667292,
+      "latency_ms": 0.185541,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 417,
+      "started_ms": 417.351833,
+      "latency_ms": 0.105125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 419,
+      "started_ms": 419.44675,
+      "latency_ms": 0.119583,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 422,
+      "started_ms": 422.535458,
+      "latency_ms": 0.224667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 425,
+      "started_ms": 425.050333,
+      "latency_ms": 0.228875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 427,
+      "started_ms": 427.142417,
+      "latency_ms": 0.2495,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 429,
+      "started_ms": 429.255417,
+      "latency_ms": 0.281416,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 432,
+      "started_ms": 432.3375,
+      "latency_ms": 0.244167,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 435,
+      "started_ms": 435.292208,
+      "latency_ms": 0.261834,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 437,
+      "started_ms": 437.405583,
+      "latency_ms": 0.229334,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 439,
+      "started_ms": 439.396958,
+      "latency_ms": 0.230084,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 442,
+      "started_ms": 442.678833,
+      "latency_ms": 0.261125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 445,
+      "started_ms": 445.585542,
+      "latency_ms": 0.250416,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 447,
+      "started_ms": 447.343125,
+      "latency_ms": 0.253083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 449,
+      "started_ms": 449.403875,
+      "latency_ms": 0.236708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 452,
+      "started_ms": 452.645417,
+      "latency_ms": 0.269458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 454,
+      "started_ms": 454.309958,
+      "latency_ms": 61.08625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 455,
+      "started_ms": 455.152875,
+      "latency_ms": 0.249458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 457,
+      "started_ms": 457.504125,
+      "latency_ms": 0.275167,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 457,
+      "started_ms": 457.474917,
+      "latency_ms": 60.533666,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 459,
+      "started_ms": 459.362333,
+      "latency_ms": 0.263667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 460,
+      "started_ms": 460.14025,
+      "latency_ms": 60.740458,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 462,
+      "started_ms": 462.42725,
+      "latency_ms": 0.262833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 465,
+      "started_ms": 465.623,
+      "latency_ms": 0.255292,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 467,
+      "started_ms": 467.338167,
+      "latency_ms": 0.228125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 469,
+      "started_ms": 469.440958,
+      "latency_ms": 0.218292,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 472,
+      "started_ms": 472.691,
+      "latency_ms": 0.294792,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 475,
+      "started_ms": 475.533333,
+      "latency_ms": 0.257125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 477,
+      "started_ms": 477.377583,
+      "latency_ms": 0.250625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 479,
+      "started_ms": 479.390458,
+      "latency_ms": 0.242584,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 482,
+      "started_ms": 482.628167,
+      "latency_ms": 0.227,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 485,
+      "started_ms": 485.5265,
+      "latency_ms": 0.244875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 487,
+      "started_ms": 487.369,
+      "latency_ms": 0.258542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 489,
+      "started_ms": 489.393083,
+      "latency_ms": 60.544792,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 492,
+      "started_ms": 492.633708,
+      "latency_ms": 0.249,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 495,
+      "started_ms": 495.583542,
+      "latency_ms": 0.274833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 497,
+      "started_ms": 497.325458,
+      "latency_ms": 0.257375,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 499,
+      "started_ms": 499.186458,
+      "latency_ms": 0.256542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 502,
+      "started_ms": 502.668708,
+      "latency_ms": 0.24175,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 505,
+      "started_ms": 505.398917,
+      "latency_ms": 0.260958,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 507,
+      "started_ms": 507.382,
+      "latency_ms": 0.231708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 509,
+      "started_ms": 509.405042,
+      "latency_ms": 0.240416,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 512,
+      "started_ms": 512.639292,
+      "latency_ms": 0.255666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 515,
+      "started_ms": 515.125542,
+      "latency_ms": 0.268916,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 517,
+      "started_ms": 517.47025,
+      "latency_ms": 0.2755,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 519,
+      "started_ms": 519.287667,
+      "latency_ms": 0.252708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 522,
+      "started_ms": 522.347958,
+      "latency_ms": 60.510875,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 525,
+      "started_ms": 525.656667,
+      "latency_ms": 0.24775,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 527,
+      "started_ms": 527.332083,
+      "latency_ms": 0.241917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 529,
+      "started_ms": 529.391708,
+      "latency_ms": 0.242375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 532,
+      "started_ms": 532.635375,
+      "latency_ms": 0.24825,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 535,
+      "started_ms": 535.388583,
+      "latency_ms": 61.254459,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 537,
+      "started_ms": 537.365333,
+      "latency_ms": 0.325334,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 539,
+      "started_ms": 539.165625,
+      "latency_ms": 0.25775,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 542,
+      "started_ms": 542.710708,
+      "latency_ms": 0.25175,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 545,
+      "started_ms": 545.5565,
+      "latency_ms": 0.25775,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 547,
+      "started_ms": 547.366542,
+      "latency_ms": 0.2465,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 549,
+      "started_ms": 549.383458,
+      "latency_ms": 0.2435,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 552,
+      "started_ms": 552.570375,
+      "latency_ms": 0.243292,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 555,
+      "started_ms": 555.620333,
+      "latency_ms": 0.245042,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 557,
+      "started_ms": 557.349417,
+      "latency_ms": 0.230875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 559,
+      "started_ms": 559.190333,
+      "latency_ms": 0.261709,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 562,
+      "started_ms": 562.686208,
+      "latency_ms": 0.123792,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 565,
+      "started_ms": 565.60275,
+      "latency_ms": 0.286833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 567,
+      "started_ms": 567.329708,
+      "latency_ms": 0.1405,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 569,
+      "started_ms": 569.426333,
+      "latency_ms": 0.23025,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 572,
+      "started_ms": 572.626542,
+      "latency_ms": 0.134416,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 575,
+      "started_ms": 575.626417,
+      "latency_ms": 0.260041,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 577,
+      "started_ms": 577.3305,
+      "latency_ms": 0.257792,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 579,
+      "started_ms": 579.425208,
+      "latency_ms": 0.241584,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 582,
+      "started_ms": 582.657333,
+      "latency_ms": 0.238709,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 585,
+      "started_ms": 585.57525,
+      "latency_ms": 0.250042,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 587,
+      "started_ms": 587.34025,
+      "latency_ms": 0.266333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 589,
+      "started_ms": 589.391167,
+      "latency_ms": 0.252708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 592,
+      "started_ms": 592.636292,
+      "latency_ms": 0.268291,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 595,
+      "started_ms": 595.576208,
+      "latency_ms": 0.717209,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 597,
+      "started_ms": 597.124542,
+      "latency_ms": 60.483708,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 599,
+      "started_ms": 599.439917,
+      "latency_ms": 0.148416,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 602,
+      "started_ms": 602.43725,
+      "latency_ms": 0.14075,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 605,
+      "started_ms": 605.58475,
+      "latency_ms": 0.179,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 607,
+      "started_ms": 607.347583,
+      "latency_ms": 0.211125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 609,
+      "started_ms": 609.414917,
+      "latency_ms": 0.260666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 612,
+      "started_ms": 612.269042,
+      "latency_ms": 0.247916,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 615,
+      "started_ms": 615.683917,
+      "latency_ms": 0.240625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 617,
+      "started_ms": 617.339,
+      "latency_ms": 0.24425,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 619,
+      "started_ms": 619.393125,
+      "latency_ms": 0.248125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 622,
+      "started_ms": 622.4235,
+      "latency_ms": 0.250333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 624,
+      "started_ms": 624.356292,
+      "latency_ms": 60.896,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 625,
+      "started_ms": 625.119917,
+      "latency_ms": 0.281208,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 627,
+      "started_ms": 627.4665,
+      "latency_ms": 0.263917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 627,
+      "started_ms": 627.444083,
+      "latency_ms": 60.6065,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 629,
+      "started_ms": 629.366042,
+      "latency_ms": 0.263666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 630,
+      "started_ms": 630.141542,
+      "latency_ms": 60.7255,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 632,
+      "started_ms": 632.432583,
+      "latency_ms": 0.25925,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 635,
+      "started_ms": 635.069,
+      "latency_ms": 0.234958,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 637,
+      "started_ms": 637.468833,
+      "latency_ms": 0.241667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 639,
+      "started_ms": 639.395667,
+      "latency_ms": 0.228791,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 642,
+      "started_ms": 642.63275,
+      "latency_ms": 0.2085,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 645,
+      "started_ms": 645.560417,
+      "latency_ms": 0.147958,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 647,
+      "started_ms": 647.361833,
+      "latency_ms": 0.125875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 649,
+      "started_ms": 649.406542,
+      "latency_ms": 0.124958,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 652,
+      "started_ms": 652.663875,
+      "latency_ms": 0.238708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 655,
+      "started_ms": 655.078792,
+      "latency_ms": 0.247458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 657,
+      "started_ms": 657.188333,
+      "latency_ms": 0.233542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 659,
+      "started_ms": 659.280833,
+      "latency_ms": 0.257792,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 662,
+      "started_ms": 662.676917,
+      "latency_ms": 60.482208,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 664,
+      "started_ms": 664.296583,
+      "latency_ms": 0.143042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 665,
+      "started_ms": 665.168417,
+      "latency_ms": 0.140708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 667,
+      "started_ms": 667.485458,
+      "latency_ms": 0.2575,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 667,
+      "started_ms": 667.464583,
+      "latency_ms": 0.210625,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 669,
+      "started_ms": 669.345,
+      "latency_ms": 0.225875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 670,
+      "started_ms": 670.136542,
+      "latency_ms": 0.139208,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 672,
+      "started_ms": 672.457417,
+      "latency_ms": 0.144708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 675,
+      "started_ms": 675.63475,
+      "latency_ms": 0.134625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 677,
+      "started_ms": 677.347292,
+      "latency_ms": 0.134166,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 679,
+      "started_ms": 679.4105,
+      "latency_ms": 0.126458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 682,
+      "started_ms": 682.673,
+      "latency_ms": 0.248917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 685,
+      "started_ms": 685.077125,
+      "latency_ms": 0.224708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 687,
+      "started_ms": 687.535167,
+      "latency_ms": 0.2875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 689,
+      "started_ms": 689.290375,
+      "latency_ms": 0.656583,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 692,
+      "started_ms": 692.352083,
+      "latency_ms": 0.279959,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 694,
+      "started_ms": 694.37375,
+      "latency_ms": 60.494208,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 695,
+      "started_ms": 695.135542,
+      "latency_ms": 60.519416,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 697,
+      "started_ms": 697.477292,
+      "latency_ms": 0.265875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 697,
+      "started_ms": 697.456667,
+      "latency_ms": 60.531333,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 699,
+      "started_ms": 699.338833,
+      "latency_ms": 0.265375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 700,
+      "started_ms": 700.15125,
+      "latency_ms": 0.244833,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 702,
+      "started_ms": 702.444625,
+      "latency_ms": 0.23525,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 705,
+      "started_ms": 705.628667,
+      "latency_ms": 0.270541,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 707,
+      "started_ms": 707.336917,
+      "latency_ms": 0.280708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 709,
+      "started_ms": 709.390167,
+      "latency_ms": 0.247208,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 712,
+      "started_ms": 712.630125,
+      "latency_ms": 0.276792,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 715,
+      "started_ms": 715.556792,
+      "latency_ms": 0.2515,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 717,
+      "started_ms": 717.350667,
+      "latency_ms": 0.282166,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 719,
+      "started_ms": 719.392708,
+      "latency_ms": 0.137209,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 722,
+      "started_ms": 722.679333,
+      "latency_ms": 0.156292,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 725,
+      "started_ms": 725.495083,
+      "latency_ms": 0.192167,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 727,
+      "started_ms": 727.362167,
+      "latency_ms": 0.189791,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 729,
+      "started_ms": 729.4,
+      "latency_ms": 0.292917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 732,
+      "started_ms": 732.618542,
+      "latency_ms": 0.261,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 735,
+      "started_ms": 735.578708,
+      "latency_ms": 0.276167,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 737,
+      "started_ms": 737.336917,
+      "latency_ms": 0.259791,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 739,
+      "started_ms": 739.401667,
+      "latency_ms": 0.250875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 742,
+      "started_ms": 742.661458,
+      "latency_ms": 0.166667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 745,
+      "started_ms": 745.092917,
+      "latency_ms": 0.177,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 747,
+      "started_ms": 747.518292,
+      "latency_ms": 0.384625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 749,
+      "started_ms": 749.33775,
+      "latency_ms": 0.231833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 752,
+      "started_ms": 752.668292,
+      "latency_ms": 0.181333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 754,
+      "started_ms": 754.347458,
+      "latency_ms": 60.892,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 755,
+      "started_ms": 755.061375,
+      "latency_ms": 0.133708,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 757,
+      "started_ms": 757.394417,
+      "latency_ms": 0.129875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 757,
+      "started_ms": 757.3775,
+      "latency_ms": 60.394458,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 759,
+      "started_ms": 759.290708,
+      "latency_ms": 0.138625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 760,
+      "started_ms": 760.169375,
+      "latency_ms": 60.627833,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 762,
+      "started_ms": 762.321917,
+      "latency_ms": 0.135916,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 765,
+      "started_ms": 765.356333,
+      "latency_ms": 0.141209,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 767,
+      "started_ms": 767.468042,
+      "latency_ms": 0.140125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 769,
+      "started_ms": 769.390542,
+      "latency_ms": 0.134,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 772,
+      "started_ms": 772.433,
+      "latency_ms": 0.21375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 775,
+      "started_ms": 775.607208,
+      "latency_ms": 0.190125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 777,
+      "started_ms": 777.327792,
+      "latency_ms": 0.28725,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 779,
+      "started_ms": 779.392417,
+      "latency_ms": 0.246291,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 782,
+      "started_ms": 782.621917,
+      "latency_ms": 0.265625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 785,
+      "started_ms": 785.584625,
+      "latency_ms": 0.255667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 787,
+      "started_ms": 787.319167,
+      "latency_ms": 0.242333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 789,
+      "started_ms": 789.424458,
+      "latency_ms": 0.254417,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 792,
+      "started_ms": 792.613583,
+      "latency_ms": 0.233667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 795,
+      "started_ms": 795.57,
+      "latency_ms": 0.254917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 797,
+      "started_ms": 797.32175,
+      "latency_ms": 0.240833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 799,
+      "started_ms": 799.397167,
+      "latency_ms": 0.260375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 802,
+      "started_ms": 802.423417,
+      "latency_ms": 0.231333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 805,
+      "started_ms": 805.618208,
+      "latency_ms": 0.226917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 807,
+      "started_ms": 807.36625,
+      "latency_ms": 0.278625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 809,
+      "started_ms": 809.395542,
+      "latency_ms": 0.266166,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 812,
+      "started_ms": 812.644542,
+      "latency_ms": 0.223666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 815,
+      "started_ms": 815.051292,
+      "latency_ms": 0.240625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 817,
+      "started_ms": 817.489042,
+      "latency_ms": 0.248208,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 819,
+      "started_ms": 819.350792,
+      "latency_ms": 0.248,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 822,
+      "started_ms": 822.359958,
+      "latency_ms": 0.243542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 825,
+      "started_ms": 825.6225,
+      "latency_ms": 0.255625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 827,
+      "started_ms": 827.325583,
+      "latency_ms": 0.255209,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 829,
+      "started_ms": 829.401292,
+      "latency_ms": 0.250666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 832,
+      "started_ms": 832.64075,
+      "latency_ms": 0.239667,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 835,
+      "started_ms": 835.136167,
+      "latency_ms": 0.295291,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 837,
+      "started_ms": 837.433292,
+      "latency_ms": 0.247833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 839,
+      "started_ms": 839.356875,
+      "latency_ms": 0.237917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 842,
+      "started_ms": 842.547417,
+      "latency_ms": 0.25975,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 845,
+      "started_ms": 845.609542,
+      "latency_ms": 0.237375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 847,
+      "started_ms": 847.344333,
+      "latency_ms": 60.730667,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 849,
+      "started_ms": 849.406625,
+      "latency_ms": 0.237208,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 852,
+      "started_ms": 852.619917,
+      "latency_ms": 60.463625,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 855,
+      "started_ms": 855.571708,
+      "latency_ms": 0.244125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 857,
+      "started_ms": 857.323958,
+      "latency_ms": 0.250459,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 859,
+      "started_ms": 859.401083,
+      "latency_ms": 0.248209,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 862,
+      "started_ms": 862.632875,
+      "latency_ms": 0.232875,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 865,
+      "started_ms": 865.603208,
+      "latency_ms": 0.245584,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 867,
+      "started_ms": 867.31675,
+      "latency_ms": 0.254458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 869,
+      "started_ms": 869.403542,
+      "latency_ms": 60.486666,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 872,
+      "started_ms": 872.640292,
+      "latency_ms": 0.242666,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 875,
+      "started_ms": 875.584083,
+      "latency_ms": 0.284042,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 877,
+      "started_ms": 877.332083,
+      "latency_ms": 0.26825,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 879,
+      "started_ms": 879.394958,
+      "latency_ms": 0.245542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 882,
+      "started_ms": 882.646833,
+      "latency_ms": 0.280709,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 885,
+      "started_ms": 885.565083,
+      "latency_ms": 0.237709,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 887,
+      "started_ms": 887.36975,
+      "latency_ms": 0.259917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 889,
+      "started_ms": 889.415167,
+      "latency_ms": 0.250166,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 892,
+      "started_ms": 892.624125,
+      "latency_ms": 0.249792,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 895,
+      "started_ms": 895.198583,
+      "latency_ms": 0.224959,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 897,
+      "started_ms": 897.434833,
+      "latency_ms": 0.238125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 899,
+      "started_ms": 899.380375,
+      "latency_ms": 0.237458,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 902,
+      "started_ms": 902.582042,
+      "latency_ms": 0.248833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 905,
+      "started_ms": 905.169,
+      "latency_ms": 0.133542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 907,
+      "started_ms": 907.536833,
+      "latency_ms": 0.399334,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 909,
+      "started_ms": 909.299167,
+      "latency_ms": 0.293333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 912,
+      "started_ms": 912.697792,
+      "latency_ms": 0.238791,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 915,
+      "started_ms": 915.506167,
+      "latency_ms": 60.436125,
+      "status": 404,
+      "outcome": "origin-response"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 917,
+      "started_ms": 917.341833,
+      "latency_ms": 0.249167,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 919,
+      "started_ms": 919.392417,
+      "latency_ms": 0.175625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 922,
+      "started_ms": 922.676625,
+      "latency_ms": 0.269833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 924,
+      "started_ms": 924.321667,
+      "latency_ms": 60.885208,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 925,
+      "started_ms": 925.151583,
+      "latency_ms": 0.157167,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 927,
+      "started_ms": 927.506292,
+      "latency_ms": 0.15125,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 927,
+      "started_ms": 927.488542,
+      "latency_ms": 60.586583,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 929,
+      "started_ms": 929.361208,
+      "latency_ms": 0.157334,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 930,
+      "started_ms": 930.063333,
+      "latency_ms": 60.661792,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 932,
+      "started_ms": 932.469875,
+      "latency_ms": 0.14375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 935,
+      "started_ms": 935.644958,
+      "latency_ms": 0.166042,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 937,
+      "started_ms": 937.329167,
+      "latency_ms": 0.152375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 939,
+      "started_ms": 939.40525,
+      "latency_ms": 0.1535,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 942,
+      "started_ms": 942.5735,
+      "latency_ms": 0.204542,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 945,
+      "started_ms": 945.59675,
+      "latency_ms": 1.301583,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 947,
+      "started_ms": 947.09475,
+      "latency_ms": 0.288583,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 949,
+      "started_ms": 949.480417,
+      "latency_ms": 0.272333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 952,
+      "started_ms": 952.629375,
+      "latency_ms": 0.248375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 955,
+      "started_ms": 955.592167,
+      "latency_ms": 0.280833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 957,
+      "started_ms": 957.086458,
+      "latency_ms": 0.262917,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 959,
+      "started_ms": 959.463667,
+      "latency_ms": 0.132416,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 962,
+      "started_ms": 962.666333,
+      "latency_ms": 0.26525,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 964,
+      "started_ms": 964.314,
+      "latency_ms": 0.1405,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 965,
+      "started_ms": 965.161125,
+      "latency_ms": 0.105625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 967,
+      "started_ms": 967.5305,
+      "latency_ms": 0.142333,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 967,
+      "started_ms": 967.507333,
+      "latency_ms": 0.128834,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 969,
+      "started_ms": 969.367667,
+      "latency_ms": 0.111083,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 970,
+      "started_ms": 970.17025,
+      "latency_ms": 0.119583,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 972,
+      "started_ms": 972.460375,
+      "latency_ms": 0.159375,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 975,
+      "started_ms": 975.676292,
+      "latency_ms": 0.131833,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 977,
+      "started_ms": 977.298708,
+      "latency_ms": 0.139959,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 979,
+      "started_ms": 979.438833,
+      "latency_ms": 0.1475,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 982,
+      "started_ms": 982.633708,
+      "latency_ms": 0.182042,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 985,
+      "started_ms": 985.029625,
+      "latency_ms": 0.178417,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 987,
+      "started_ms": 987.113333,
+      "latency_ms": 0.174959,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 989,
+      "started_ms": 989.2775,
+      "latency_ms": 0.259417,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-east",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 992,
+      "started_ms": 992.364208,
+      "latency_ms": 0.234584,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 994,
+      "started_ms": 994.395417,
+      "latency_ms": 60.97925,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-west",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 995,
+      "started_ms": 995.111667,
+      "latency_ms": 0.248625,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "abuse-north",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 997,
+      "started_ms": 997.492583,
+      "latency_ms": 0.246042,
+      "status": 429,
+      "outcome": "limited"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 997,
+      "started_ms": 997.4615,
+      "latency_ms": 61.2265,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "abuse-south",
+      "class": "abuse",
+      "path": "/v1/missing",
+      "scheduled_ms": 999,
+      "started_ms": 999.390625,
+      "latency_ms": 0.2535,
+      "status": 429,
+      "outcome": "limited"
+    }
+  ],
+  "origin_requests": 50,
+  "peak_origin_inflight": 4,
+  "final_state": {
+    "policy": {
+      "mode": "adaptive",
+      "algorithm": "token",
+      "rate": 20,
+      "burst": 12
+    },
+    "version": 1,
+    "clients": [
+      {
+        "id": "abuse-east",
+        "attempts": 92,
+        "success": 0,
+        "limited": 73,
+        "capacity_rejected": 12,
+        "client_errors": 7,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0.7902848,
+        "pressure": 1,
+        "unknown_share": 1,
+        "score": 0.8951424000000001,
+        "multiplier": 0.19437183999999988,
+        "effective_rate": 3.8874367999999975,
+        "reason": "client errors or unknown endpoint mix"
+      },
+      {
+        "id": "abuse-north",
+        "attempts": 89,
+        "success": 0,
+        "limited": 69,
+        "capacity_rejected": 16,
+        "client_errors": 4,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0.5904,
+        "pressure": 1,
+        "unknown_share": 1,
+        "score": 0.7952,
+        "multiplier": 0.28431999999999996,
+        "effective_rate": 5.686399999999999,
+        "reason": "client errors or unknown endpoint mix"
+      },
+      {
+        "id": "abuse-south",
+        "attempts": 100,
+        "success": 0,
+        "limited": 81,
+        "capacity_rejected": 12,
+        "client_errors": 7,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0.7902848,
+        "pressure": 1,
+        "unknown_share": 1,
+        "score": 0.8951424000000001,
+        "multiplier": 0.19437183999999988,
+        "effective_rate": 3.8874367999999975,
+        "reason": "client errors or unknown endpoint mix"
+      },
+      {
+        "id": "abuse-west",
+        "attempts": 83,
+        "success": 0,
+        "limited": 65,
+        "capacity_rejected": 9,
+        "client_errors": 9,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0.8657822720000001,
+        "pressure": 1,
+        "unknown_share": 1,
+        "score": 0.9328911360000001,
+        "multiplier": 0.1603979775999999,
+        "effective_rate": 3.2079595519999984,
+        "reason": "client errors or unknown endpoint mix"
+      },
+      {
+        "id": "legit-amber",
+        "attempts": 11,
+        "success": 5,
+        "limited": 0,
+        "capacity_rejected": 6,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      },
+      {
+        "id": "legit-birch",
+        "attempts": 9,
+        "success": 7,
+        "limited": 0,
+        "capacity_rejected": 2,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      },
+      {
+        "id": "legit-coral",
+        "attempts": 12,
+        "success": 3,
+        "limited": 0,
+        "capacity_rejected": 9,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      },
+      {
+        "id": "legit-dune",
+        "attempts": 12,
+        "success": 8,
+        "limited": 0,
+        "capacity_rejected": 4,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      }
+    ],
+    "events": [
+      {
+        "at": 1792716372318,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008708
+      },
+      {
+        "at": 1792716372319,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009291
+      },
+      {
+        "at": 1792716372323,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004625
+      },
+      {
+        "at": 1792716372326,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.01
+      },
+      {
+        "at": 1792716372328,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0045
+      },
+      {
+        "at": 1792716372330,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.00825
+      },
+      {
+        "at": 1792716372333,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004916
+      },
+      {
+        "at": 1792716372336,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009209
+      },
+      {
+        "at": 1792716372338,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.011167
+      },
+      {
+        "at": 1792716372340,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009
+      },
+      {
+        "at": 1792716372343,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.262958
+      },
+      {
+        "at": 1792716372343,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008666
+      },
+      {
+        "at": 1792716372346,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.00875
+      },
+      {
+        "at": 1792716372348,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010292
+      },
+      {
+        "at": 1792716372350,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009416
+      },
+      {
+        "at": 1792716372353,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009
+      },
+      {
+        "at": 1792716372356,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.011375
+      },
+      {
+        "at": 1792716372357,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.897125
+      },
+      {
+        "at": 1792716372360,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005917
+      },
+      {
+        "at": 1792716372363,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007083
+      },
+      {
+        "at": 1792716372366,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008459
+      },
+      {
+        "at": 1792716372368,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006833
+      },
+      {
+        "at": 1792716372370,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010292
+      },
+      {
+        "at": 1792716372373,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009167
+      },
+      {
+        "at": 1792716372376,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008625
+      },
+      {
+        "at": 1792716372378,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009833
+      },
+      {
+        "at": 1792716372380,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007708
+      },
+      {
+        "at": 1792716372383,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009042
+      },
+      {
+        "at": 1792716372385,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009042
+      },
+      {
+        "at": 1792716372388,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009625
+      },
+      {
+        "at": 1792716372390,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.011042
+      },
+      {
+        "at": 1792716372393,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.01025
+      },
+      {
+        "at": 1792716372395,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008042
+      },
+      {
+        "at": 1792716372398,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008917
+      },
+      {
+        "at": 1792716372400,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008542
+      },
+      {
+        "at": 1792716372403,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009333
+      },
+      {
+        "at": 1792716372406,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006292
+      },
+      {
+        "at": 1792716372408,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004583
+      },
+      {
+        "at": 1792716372410,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.007209
+      },
+      {
+        "at": 1792716372413,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009292
+      },
+      {
+        "at": 1792716372415,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008584
+      },
+      {
+        "at": 1792716372417,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008875
+      },
+      {
+        "at": 1792716372418,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.217625
+      },
+      {
+        "at": 1792716372420,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008416
+      },
+      {
+        "at": 1792716372424,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.004833
+      },
+      {
+        "at": 1792716372425,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005625
+      },
+      {
+        "at": 1792716372428,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.009417
+      },
+      {
+        "at": 1792716372428,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006542
+      },
+      {
+        "at": 1792716372430,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007667
+      },
+      {
+        "at": 1792716372430,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.006541
+      },
+      {
+        "at": 1792716372433,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005875
+      },
+      {
+        "at": 1792716372436,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004333
+      },
+      {
+        "at": 1792716372438,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005333
+      },
+      {
+        "at": 1792716372440,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004334
+      },
+      {
+        "at": 1792716372443,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009541
+      },
+      {
+        "at": 1792716372445,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.670208
+      },
+      {
+        "at": 1792716372445,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009416
+      },
+      {
+        "at": 1792716372448,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008791
+      },
+      {
+        "at": 1792716372448,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.353583
+      },
+      {
+        "at": 1792716372450,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.035458
+      },
+      {
+        "at": 1792716372451,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.469875
+      },
+      {
+        "at": 1792716372453,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0105
+      },
+      {
+        "at": 1792716372458,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010042
+      },
+      {
+        "at": 1792716372460,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010041
+      },
+      {
+        "at": 1792716372460,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.008792
+      },
+      {
+        "at": 1792716372463,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009208
+      },
+      {
+        "at": 1792716372466,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.011375
+      },
+      {
+        "at": 1792716372468,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010084
+      },
+      {
+        "at": 1792716372470,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009875
+      },
+      {
+        "at": 1792716372473,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.013041
+      },
+      {
+        "at": 1792716372476,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009459
+      },
+      {
+        "at": 1792716372478,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.008541
+      },
+      {
+        "at": 1792716372480,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005625
+      },
+      {
+        "at": 1792716372483,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005709
+      },
+      {
+        "at": 1792716372483,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.277333
+      },
+      {
+        "at": 1792716372486,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007375
+      },
+      {
+        "at": 1792716372488,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006834
+      },
+      {
+        "at": 1792716372490,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.066459
+      },
+      {
+        "at": 1792716372493,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009917
+      },
+      {
+        "at": 1792716372496,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010917
+      },
+      {
+        "at": 1792716372498,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010125
+      },
+      {
+        "at": 1792716372500,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.00825
+      },
+      {
+        "at": 1792716372503,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007833
+      },
+      {
+        "at": 1792716372505,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008625
+      },
+      {
+        "at": 1792716372508,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.011959
+      },
+      {
+        "at": 1792716372510,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006541
+      },
+      {
+        "at": 1792716372513,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005667
+      },
+      {
+        "at": 1792716372515,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.291084
+      },
+      {
+        "at": 1792716372515,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0045
+      },
+      {
+        "at": 1792716372516,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.302375
+      },
+      {
+        "at": 1792716372518,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005542
+      },
+      {
+        "at": 1792716372518,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.288291
+      },
+      {
+        "at": 1792716372519,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010292
+      },
+      {
+        "at": 1792716372522,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007292
+      },
+      {
+        "at": 1792716372526,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005083
+      },
+      {
+        "at": 1792716372528,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006041
+      },
+      {
+        "at": 1792716372530,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005
+      },
+      {
+        "at": 1792716372533,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006917
+      },
+      {
+        "at": 1792716372536,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008083
+      },
+      {
+        "at": 1792716372538,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009708
+      },
+      {
+        "at": 1792716372540,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009333
+      },
+      {
+        "at": 1792716372543,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009167
+      },
+      {
+        "at": 1792716372546,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0095
+      },
+      {
+        "at": 1792716372548,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010042
+      },
+      {
+        "at": 1792716372550,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009792
+      },
+      {
+        "at": 1792716372553,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009292
+      },
+      {
+        "at": 1792716372556,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008458
+      },
+      {
+        "at": 1792716372558,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009041
+      },
+      {
+        "at": 1792716372560,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010083
+      },
+      {
+        "at": 1792716372563,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009167
+      },
+      {
+        "at": 1792716372566,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007875
+      },
+      {
+        "at": 1792716372568,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0095
+      },
+      {
+        "at": 1792716372570,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009375
+      },
+      {
+        "at": 1792716372573,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008375
+      },
+      {
+        "at": 1792716372575,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.704083
+      },
+      {
+        "at": 1792716372575,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007791
+      },
+      {
+        "at": 1792716372578,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008541
+      },
+      {
+        "at": 1792716372578,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.233542
+      },
+      {
+        "at": 1792716372580,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009042
+      },
+      {
+        "at": 1792716372581,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.443792
+      },
+      {
+        "at": 1792716372583,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008458
+      },
+      {
+        "at": 1792716372586,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009916
+      },
+      {
+        "at": 1792716372588,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.01025
+      },
+      {
+        "at": 1792716372590,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009041
+      },
+      {
+        "at": 1792716372593,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.01
+      },
+      {
+        "at": 1792716372595,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009667
+      },
+      {
+        "at": 1792716372598,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007667
+      },
+      {
+        "at": 1792716372600,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008917
+      },
+      {
+        "at": 1792716372603,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.00925
+      },
+      {
+        "at": 1792716372606,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0095
+      },
+      {
+        "at": 1792716372610,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0085
+      },
+      {
+        "at": 1792716372616,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009
+      },
+      {
+        "at": 1792716372618,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009333
+      },
+      {
+        "at": 1792716372620,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009792
+      },
+      {
+        "at": 1792716372623,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009375
+      },
+      {
+        "at": 1792716372626,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009875
+      },
+      {
+        "at": 1792716372628,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007792
+      },
+      {
+        "at": 1792716372633,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009
+      },
+      {
+        "at": 1792716372636,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009333
+      },
+      {
+        "at": 1792716372638,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009917
+      },
+      {
+        "at": 1792716372640,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008792
+      },
+      {
+        "at": 1792716372643,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010291
+      },
+      {
+        "at": 1792716372646,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009458
+      },
+      {
+        "at": 1792716372648,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008958
+      },
+      {
+        "at": 1792716372650,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009375
+      },
+      {
+        "at": 1792716372653,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008875
+      },
+      {
+        "at": 1792716372655,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007875
+      },
+      {
+        "at": 1792716372658,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007917
+      },
+      {
+        "at": 1792716372660,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008208
+      },
+      {
+        "at": 1792716372663,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009916
+      },
+      {
+        "at": 1792716372665,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005208
+      },
+      {
+        "at": 1792716372668,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.012459
+      },
+      {
+        "at": 1792716372668,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.472
+      },
+      {
+        "at": 1792716372670,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010416
+      },
+      {
+        "at": 1792716372673,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009166
+      },
+      {
+        "at": 1792716372673,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.232375
+      },
+      {
+        "at": 1792716372678,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008916
+      },
+      {
+        "at": 1792716372680,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.003584
+      },
+      {
+        "at": 1792716372683,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.011125
+      },
+      {
+        "at": 1792716372685,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0095
+      },
+      {
+        "at": 1792716372688,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.00575
+      },
+      {
+        "at": 1792716372690,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006458
+      },
+      {
+        "at": 1792716372690,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.276209
+      },
+      {
+        "at": 1792716372693,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010792
+      },
+      {
+        "at": 1792716372696,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006709
+      },
+      {
+        "at": 1792716372698,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005625
+      },
+      {
+        "at": 1792716372700,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008083
+      },
+      {
+        "at": 1792716372703,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006834
+      },
+      {
+        "at": 1792716372707,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.012958
+      },
+      {
+        "at": 1792716372707,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.011333
+      },
+      {
+        "at": 1792716372710,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009834
+      },
+      {
+        "at": 1792716372713,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009667
+      },
+      {
+        "at": 1792716372716,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010208
+      },
+      {
+        "at": 1792716372717,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009709
+      },
+      {
+        "at": 1792716372720,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004708
+      },
+      {
+        "at": 1792716372723,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010541
+      },
+      {
+        "at": 1792716372724,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.0095
+      },
+      {
+        "at": 1792716372725,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004958
+      },
+      {
+        "at": 1792716372728,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.004625
+      },
+      {
+        "at": 1792716372728,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004959
+      },
+      {
+        "at": 1792716372730,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.003708
+      },
+      {
+        "at": 1792716372730,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.004333
+      },
+      {
+        "at": 1792716372733,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004875
+      },
+      {
+        "at": 1792716372736,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.004708
+      },
+      {
+        "at": 1792716372736,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "client_error",
+        "status": 404,
+        "latency_ms": 60.236584
+      },
+      {
+        "at": 1792716372737,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.005875
+      },
+      {
+        "at": 1792716372740,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.0055
+      },
+      {
+        "at": 1792716372743,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006333
+      },
+      {
+        "at": 1792716372745,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.007209
+      },
+      {
+        "at": 1792716372745,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.702958
+      },
+      {
+        "at": 1792716372747,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.006542
+      },
+      {
+        "at": 1792716372748,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.381125
+      },
+      {
+        "at": 1792716372750,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010083
+      },
+      {
+        "at": 1792716372751,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.469125
+      },
+      {
+        "at": 1792716372753,
+        "client": "abuse-east",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.00925
+      },
+      {
+        "at": 1792716372755,
+        "client": "abuse-west",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.010167
+      },
+      {
+        "at": 1792716372758,
+        "client": "abuse-north",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.009042
+      },
+      {
+        "at": 1792716372760,
+        "client": "abuse-south",
+        "endpoint": "unknown",
+        "outcome": "limited",
+        "status": 429,
+        "latency_ms": 0.008083
+      },
+      {
+        "at": 1792716372815,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.645167
+      },
+      {
+        "at": 1792716372819,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.984791
+      }
+    ],
+    "timeline": [
+      {
+        "second": 1792716313,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716314,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716315,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716316,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716317,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716318,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716319,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716320,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716321,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716322,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716323,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716324,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716325,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716326,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716327,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716328,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716329,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716330,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716331,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716332,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716333,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716334,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716335,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716336,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716337,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716338,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716339,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716340,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716341,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716342,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716343,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716344,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716345,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716346,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716347,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716348,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716349,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716350,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716351,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716352,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716353,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716354,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716355,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716356,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716357,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716358,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716359,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716360,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716361,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716362,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716363,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716364,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716365,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716366,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716367,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716368,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716369,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716370,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716371,
+        "success": 4,
+        "limited": 11,
+        "capacity": 44,
+        "failed": 8
+      },
+      {
+        "second": 1792716372,
+        "success": 19,
+        "limited": 277,
+        "capacity": 26,
+        "failed": 19
+      }
+    ]
+  }
+}

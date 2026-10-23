@@ -1,0 +1,1045 @@
+{
+  "mode": "fixed",
+  "algorithm": "token",
+  "scenario": "unclassified",
+  "trial": 0,
+  "seed": 52017,
+  "duration_ms": 1000,
+  "elapsed_ms": 1024,
+  "classes": {
+    "legitimate": {
+      "offered": 25,
+      "success": 25,
+      "limited": 0,
+      "capacity": 0,
+      "other": 0,
+      "success_rate": 1,
+      "p99_ms": 63.740625
+    }
+  },
+  "receipts": [
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 0,
+      "started_ms": 0.198458,
+      "latency_ms": 63.703542,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 40,
+      "started_ms": 42.062583,
+      "latency_ms": 63.740625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 80,
+      "started_ms": 81.92925,
+      "latency_ms": 62.795375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 120,
+      "started_ms": 120.236083,
+      "latency_ms": 63.086875,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 160,
+      "started_ms": 161.890208,
+      "latency_ms": 63.104084,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 200,
+      "started_ms": 202.092292,
+      "latency_ms": 61.80125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 240,
+      "started_ms": 241.650708,
+      "latency_ms": 61.406292,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 280,
+      "started_ms": 282.075542,
+      "latency_ms": 63.190625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 320,
+      "started_ms": 322.0865,
+      "latency_ms": 63.211458,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 360,
+      "started_ms": 360.302375,
+      "latency_ms": 61.324208,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 400,
+      "started_ms": 401.708625,
+      "latency_ms": 61.572875,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 440,
+      "started_ms": 442.093583,
+      "latency_ms": 61.69375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 480,
+      "started_ms": 482.105292,
+      "latency_ms": 61.932625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 520,
+      "started_ms": 520.305375,
+      "latency_ms": 63.208708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 560,
+      "started_ms": 562.083667,
+      "latency_ms": 63.216208,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 600,
+      "started_ms": 600.846792,
+      "latency_ms": 62.666791,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 640,
+      "started_ms": 640.188042,
+      "latency_ms": 62.618833,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 680,
+      "started_ms": 682.104542,
+      "latency_ms": 62.717791,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 720,
+      "started_ms": 722.098292,
+      "latency_ms": 62.524208,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 760,
+      "started_ms": 762.109417,
+      "latency_ms": 63.19525,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 800,
+      "started_ms": 802.128667,
+      "latency_ms": 61.416125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 840,
+      "started_ms": 840.446292,
+      "latency_ms": 62.255083,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 880,
+      "started_ms": 882.064708,
+      "latency_ms": 62.914875,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 920,
+      "started_ms": 922.063583,
+      "latency_ms": 61.459542,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/preview",
+      "scheduled_ms": 960,
+      "started_ms": 960.624083,
+      "latency_ms": 63.480667,
+      "status": 200,
+      "outcome": "success"
+    }
+  ],
+  "origin_requests": 25,
+  "peak_origin_inflight": 2,
+  "final_state": {
+    "policy": {
+      "mode": "fixed",
+      "algorithm": "token",
+      "rate": 20,
+      "burst": 12
+    },
+    "version": 1,
+    "clients": [
+      {
+        "id": "abuse-east",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "abuse-north",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "abuse-south",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "abuse-west",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "legit-amber",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "legit-birch",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "legit-coral",
+        "attempts": 25,
+        "success": 25,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0.06666666666666665,
+        "unknown_share": 1,
+        "score": 0.3133333333333333,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "fixed budget"
+      },
+      {
+        "id": "legit-dune",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      }
+    ],
+    "events": [
+      {
+        "at": 1792716379046,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.747167
+      },
+      {
+        "at": 1792716379088,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 63.012875
+      },
+      {
+        "at": 1792716379127,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.31025
+      },
+      {
+        "at": 1792716379165,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.661958
+      },
+      {
+        "at": 1792716379207,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.513875
+      },
+      {
+        "at": 1792716379246,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.263541
+      },
+      {
+        "at": 1792716379285,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.871208
+      },
+      {
+        "at": 1792716379327,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.663125
+      },
+      {
+        "at": 1792716379367,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.669791
+      },
+      {
+        "at": 1792716379403,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.833625
+      },
+      {
+        "at": 1792716379445,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.144542
+      },
+      {
+        "at": 1792716379486,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.104416
+      },
+      {
+        "at": 1792716379526,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.434625
+      },
+      {
+        "at": 1792716379565,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.647375
+      },
+      {
+        "at": 1792716379607,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.610625
+      },
+      {
+        "at": 1792716379645,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.136833
+      },
+      {
+        "at": 1792716379685,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.058209
+      },
+      {
+        "at": 1792716379727,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.155041
+      },
+      {
+        "at": 1792716379766,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.959792
+      },
+      {
+        "at": 1792716379807,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.598416
+      },
+      {
+        "at": 1792716379845,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.887667
+      },
+      {
+        "at": 1792716379885,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.881875
+      },
+      {
+        "at": 1792716379927,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.515875
+      },
+      {
+        "at": 1792716379965,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.077792
+      },
+      {
+        "at": 1792716380006,
+        "client": "legit-coral",
+        "endpoint": "unknown",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.841291
+      }
+    ],
+    "timeline": [
+      {
+        "second": 1792716321,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716322,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716323,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716324,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716325,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716326,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716327,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716328,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716329,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716330,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716331,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716332,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716333,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716334,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716335,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716336,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716337,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716338,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716339,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716340,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716341,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716342,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716343,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716344,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716345,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716346,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716347,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716348,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716349,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716350,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716351,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716352,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716353,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716354,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716355,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716356,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716357,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716358,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716359,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716360,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716361,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716362,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716363,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716364,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716365,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716366,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716367,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716368,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716369,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716370,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716371,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716372,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716373,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716374,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716375,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716376,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716377,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716378,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716379,
+        "success": 24,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792716380,
+        "success": 1,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      }
+    ]
+  }
+}

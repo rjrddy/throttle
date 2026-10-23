@@ -1,0 +1,32 @@
+go build -trimpath -o bin/throttle ./cmd/throttle
+npm run build --prefix apps/web
+
+> throttle-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-qUnvX9io.css   14.13 kB │ gzip:  3.49 kB
+dist/assets/index-5CpXuAuI.js   208.14 kB │ gzip: 65.29 kB
+✓ built in 496ms
+python3 scripts/check_go_format.py
+go vet ./...
+.venv/bin/ruff check scripts
+All checks passed!
+.venv/bin/ruff format --check scripts
+4 files already formatted
+npm run lint --prefix apps/web
+
+> throttle-console@0.1.0 lint
+> tsc --noEmit
+
+npm exec --prefix apps/web -- prettier --check apps/web/src
+Checking formatting...
+All matched files use Prettier code style!
+go test -race -count=1 -json ./... > docs/results/tests.jsonl
+python3 scripts/summarize_tests.py
+{"passed_tests_including_subtests": 24, "failed": [], "tests": ["github.com/rjrddy/throttle/internal/gateway/TestBreakerFencesStaleCompletionsAndSingleProbe", "github.com/rjrddy/throttle/internal/gateway/TestCancelledHalfOpenProbeCanBeRetried", "github.com/rjrddy/throttle/internal/gateway/TestBurstAloneNeverTriggersPenalty", "github.com/rjrddy/throttle/internal/gateway/TestExplainablePenaltyAndHealthyRecovery", "github.com/rjrddy/throttle/internal/gateway/TestServerErrorsDoNotBlameClient", "github.com/rjrddy/throttle/internal/gateway/TestHealthyUnclassifiedEndpointPenaltyIsVisible", "github.com/rjrddy/throttle/internal/gateway/TestFixedModeAndPolicyValidation", "github.com/rjrddy/throttle/internal/gateway/TestConcurrentHotIdentityNeverOvershootsBurst", "github.com/rjrddy/throttle/internal/gateway/TestRegistryAndMetricsBounds", "github.com/rjrddy/throttle/internal/gateway/TestTokenBucketBoundaries", "github.com/rjrddy/throttle/internal/gateway/TestSlidingWindowBoundaryAndReducedLimit", "github.com/rjrddy/throttle/internal/gateway/TestGCRABurstAndDebt", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope/token", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope/sliding", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope/gcra", "github.com/rjrddy/throttle/internal/gateway/TestRandomizedAdmissionEnvelope", "github.com/rjrddy/throttle/internal/gateway/TestLimiterRejectNegativeControl", "github.com/rjrddy/throttle/internal/gateway/TestRealProxyAuthenticationHeadersAndBodyBounds", "github.com/rjrddy/throttle/internal/campaign/TestSeededPlanAndRealHTTPReconciliation", "github.com/rjrddy/throttle/internal/gateway/TestRealProxyTimeoutCircuitAndRecovery", "github.com/rjrddy/throttle/internal/gateway/TestRealCapacityBoundAndRejection", "github.com/rjrddy/throttle/internal/gateway/TestRealRateLimitAndValidatedControl", "github.com/rjrddy/throttle/internal/gateway/TestServerConfigurationRejectsUnsafeOriginsAndSecrets", "github.com/rjrddy/throttle/internal/gateway/TestTruncatedOriginBodyReleasesHalfOpenProbe"]}

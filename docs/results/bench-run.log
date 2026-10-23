@@ -1,0 +1,18 @@
+go build -trimpath -o bin/throttle ./cmd/throttle
+npm run build --prefix apps/web
+
+> throttle-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-qUnvX9io.css   14.13 kB │ gzip:  3.50 kB
+dist/assets/index-5CpXuAuI.js   208.14 kB │ gzip: 65.19 kB
+✓ built in 412ms
+go test ./internal/gateway -run '^$' -bench BenchmarkAdmission -benchmem -benchtime=200ms -count=5 > docs/results/admission-bench.txt
+./bin/throttle --bench --out docs/results/campaign > docs/results/campaign-run.log
+python3 scripts/render_readme.py

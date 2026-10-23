@@ -6,7 +6,7 @@
 | One-command fresh-clone run | Pending independent clone check |
 | Live React behavior | PASS: docs/results/browser/verification.json; actual policy/load/fault/recovery, responsive layouts, keyboard client selection |
 | Unit + integration + property/chaos | PASS: race-test JSON; limiter envelopes, concurrent hot identity, actual HTTP auth/overload/timeout/truncated-body cases |
-| Benchmark numbers saved | Final isolated comparisons running; pilot retained separately |
+| Benchmark numbers saved | PASS: full repeated actual HTTP campaigns and admission-core Go benchmarks; docs/results/report.json and raw files |
 | Demonstrated caught failure | Actual HTTP rate/capacity/body/timeout and truncated-response fault logs |
 | ADRs | PASS: docs/adr/ |
 | INTERVIEW.md and DRILL.md | PASS: code-grounded explanation and explicit unfavorable case |

@@ -1,0 +1,2731 @@
+{
+  "raw_file": "healthy-burst-token-adaptive-t1.json",
+  "mode": "adaptive",
+  "algorithm": "token",
+  "scenario": "healthy-burst",
+  "trial": 1,
+  "seed": 52017,
+  "duration_ms": 4000,
+  "elapsed_ms": 3845,
+  "classes": {
+    "legitimate": {
+      "offered": 140,
+      "success": 84,
+      "limited": 0,
+      "capacity": 56,
+      "other": 0,
+      "success_rate": 0.6,
+      "p99_ms": 63.498167
+    }
+  },
+  "receipts": [
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 9,
+      "started_ms": 9.964042,
+      "latency_ms": 63.888916,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 12,
+      "started_ms": 12.23075,
+      "latency_ms": 61.64375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 15,
+      "started_ms": 15.543417,
+      "latency_ms": 61.527458,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 18,
+      "started_ms": 18.477958,
+      "latency_ms": 61.529417,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 21,
+      "started_ms": 21.481833,
+      "latency_ms": 0.453042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 82,
+      "started_ms": 82.175417,
+      "latency_ms": 61.510833,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 85,
+      "started_ms": 85.303,
+      "latency_ms": 61.297625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 88,
+      "started_ms": 88.580292,
+      "latency_ms": 61.061666,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 91,
+      "started_ms": 91.556583,
+      "latency_ms": 61.205667,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 94,
+      "started_ms": 94.595958,
+      "latency_ms": 0.222042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 117,
+      "started_ms": 119.082625,
+      "latency_ms": 0.518833,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 120,
+      "started_ms": 120.14875,
+      "latency_ms": 0.172083,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 123,
+      "started_ms": 123.701,
+      "latency_ms": 0.173833,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 126,
+      "started_ms": 126.569958,
+      "latency_ms": 0.161584,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 129,
+      "started_ms": 129.623583,
+      "latency_ms": 0.1665,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 175,
+      "started_ms": 175.189875,
+      "latency_ms": 62.027708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 178,
+      "started_ms": 178.217042,
+      "latency_ms": 60.78275,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 181,
+      "started_ms": 181.456292,
+      "latency_ms": 61.098583,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 184,
+      "started_ms": 184.62625,
+      "latency_ms": 60.978708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 187,
+      "started_ms": 187.541417,
+      "latency_ms": 0.195583,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 609,
+      "started_ms": 610.106,
+      "latency_ms": 63.498167,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 612,
+      "started_ms": 612.337083,
+      "latency_ms": 61.168542,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 615,
+      "started_ms": 615.058333,
+      "latency_ms": 61.146667,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 618,
+      "started_ms": 618.754958,
+      "latency_ms": 61.623042,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 621,
+      "started_ms": 621.456667,
+      "latency_ms": 0.264208,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 682,
+      "started_ms": 682.454875,
+      "latency_ms": 61.912,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 685,
+      "started_ms": 685.217083,
+      "latency_ms": 60.884375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 688,
+      "started_ms": 688.692375,
+      "latency_ms": 61.518458,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 691,
+      "started_ms": 691.425375,
+      "latency_ms": 60.975708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 694,
+      "started_ms": 694.605083,
+      "latency_ms": 0.235167,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 717,
+      "started_ms": 719.128958,
+      "latency_ms": 0.485459,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 720,
+      "started_ms": 720.158208,
+      "latency_ms": 0.202959,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 723,
+      "started_ms": 723.7665,
+      "latency_ms": 0.407167,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 726,
+      "started_ms": 726.343542,
+      "latency_ms": 0.2725,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 729,
+      "started_ms": 729.654292,
+      "latency_ms": 0.410166,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 775,
+      "started_ms": 775.433667,
+      "latency_ms": 62.870625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 778,
+      "started_ms": 778.575708,
+      "latency_ms": 60.876167,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 781,
+      "started_ms": 781.557542,
+      "latency_ms": 60.406125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 784,
+      "started_ms": 784.622917,
+      "latency_ms": 61.352541,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 787,
+      "started_ms": 787.111917,
+      "latency_ms": 0.245083,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1209,
+      "started_ms": 1211.115958,
+      "latency_ms": 63.080125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1212,
+      "started_ms": 1212.155583,
+      "latency_ms": 61.999,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1215,
+      "started_ms": 1215.672458,
+      "latency_ms": 60.710375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1218,
+      "started_ms": 1218.557583,
+      "latency_ms": 61.594709,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1221,
+      "started_ms": 1221.538708,
+      "latency_ms": 0.246,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1282,
+      "started_ms": 1282.543667,
+      "latency_ms": 63.125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1285,
+      "started_ms": 1285.130542,
+      "latency_ms": 60.669958,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1288,
+      "started_ms": 1288.668208,
+      "latency_ms": 61.5205,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1291,
+      "started_ms": 1291.154083,
+      "latency_ms": 60.802417,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1294,
+      "started_ms": 1294.718083,
+      "latency_ms": 0.385042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1317,
+      "started_ms": 1318.478875,
+      "latency_ms": 0.554583,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1320,
+      "started_ms": 1320.287375,
+      "latency_ms": 0.397625,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1323,
+      "started_ms": 1323.648917,
+      "latency_ms": 0.383125,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1326,
+      "started_ms": 1326.136542,
+      "latency_ms": 0.247291,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1329,
+      "started_ms": 1329.720208,
+      "latency_ms": 0.384042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1375,
+      "started_ms": 1377.03275,
+      "latency_ms": 61.385125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1378,
+      "started_ms": 1378.132083,
+      "latency_ms": 60.591542,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1381,
+      "started_ms": 1381.393833,
+      "latency_ms": 61.673959,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1384,
+      "started_ms": 1384.171125,
+      "latency_ms": 60.957958,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1387,
+      "started_ms": 1387.681,
+      "latency_ms": 0.299375,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1809,
+      "started_ms": 1811.092625,
+      "latency_ms": 61.966667,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1812,
+      "started_ms": 1812.150833,
+      "latency_ms": 60.845125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1815,
+      "started_ms": 1815.688917,
+      "latency_ms": 61.223708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1818,
+      "started_ms": 1818.559167,
+      "latency_ms": 61.0455,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1821,
+      "started_ms": 1821.55925,
+      "latency_ms": 0.24525,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1882,
+      "started_ms": 1882.707167,
+      "latency_ms": 61.622416,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1885,
+      "started_ms": 1885.509583,
+      "latency_ms": 60.906375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1888,
+      "started_ms": 1888.576375,
+      "latency_ms": 61.142083,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1891,
+      "started_ms": 1891.58775,
+      "latency_ms": 61.218375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1894,
+      "started_ms": 1894.528958,
+      "latency_ms": 0.301167,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1917,
+      "started_ms": 1919.112708,
+      "latency_ms": 0.536334,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1920,
+      "started_ms": 1920.129792,
+      "latency_ms": 0.167666,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1923,
+      "started_ms": 1923.718625,
+      "latency_ms": 0.176958,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1926,
+      "started_ms": 1926.438875,
+      "latency_ms": 0.155208,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1929,
+      "started_ms": 1929.652125,
+      "latency_ms": 0.173042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1975,
+      "started_ms": 1975.392375,
+      "latency_ms": 62.499208,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1978,
+      "started_ms": 1978.492625,
+      "latency_ms": 60.818708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1981,
+      "started_ms": 1981.612458,
+      "latency_ms": 61.215917,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 1984,
+      "started_ms": 1984.584417,
+      "latency_ms": 61.232375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 1987,
+      "started_ms": 1987.550792,
+      "latency_ms": 0.288375,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2409,
+      "started_ms": 2410.119958,
+      "latency_ms": 61.688792,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2412,
+      "started_ms": 2412.361792,
+      "latency_ms": 60.68225,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2415,
+      "started_ms": 2415.626333,
+      "latency_ms": 61.169542,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2418,
+      "started_ms": 2418.462292,
+      "latency_ms": 60.9745,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2421,
+      "started_ms": 2421.565167,
+      "latency_ms": 0.238083,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2482,
+      "started_ms": 2482.69025,
+      "latency_ms": 62.786375,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2485,
+      "started_ms": 2485.383292,
+      "latency_ms": 61.245416,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2488,
+      "started_ms": 2488.635042,
+      "latency_ms": 60.518875,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2491,
+      "started_ms": 2491.584542,
+      "latency_ms": 61.035583,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2494,
+      "started_ms": 2494.205458,
+      "latency_ms": 0.198417,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2517,
+      "started_ms": 2519.081542,
+      "latency_ms": 0.535458,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2520,
+      "started_ms": 2520.131708,
+      "latency_ms": 0.256709,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2523,
+      "started_ms": 2523.693083,
+      "latency_ms": 0.250334,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2526,
+      "started_ms": 2526.554375,
+      "latency_ms": 0.24325,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2529,
+      "started_ms": 2529.589417,
+      "latency_ms": 0.256666,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2575,
+      "started_ms": 2576.773917,
+      "latency_ms": 61.41825,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2578,
+      "started_ms": 2578.216792,
+      "latency_ms": 60.550416,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2581,
+      "started_ms": 2581.535625,
+      "latency_ms": 61.53475,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 2584,
+      "started_ms": 2584.55925,
+      "latency_ms": 60.778292,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 2587,
+      "started_ms": 2587.615542,
+      "latency_ms": 0.396583,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3009,
+      "started_ms": 3010.187083,
+      "latency_ms": 63.351042,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3012,
+      "started_ms": 3012.356583,
+      "latency_ms": 61.123334,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3015,
+      "started_ms": 3015.6355,
+      "latency_ms": 61.354708,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3018,
+      "started_ms": 3018.656083,
+      "latency_ms": 60.803834,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3021,
+      "started_ms": 3021.557667,
+      "latency_ms": 0.294166,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3082,
+      "started_ms": 3082.726917,
+      "latency_ms": 61.464666,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3085,
+      "started_ms": 3085.292792,
+      "latency_ms": 61.186666,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3088,
+      "started_ms": 3088.636083,
+      "latency_ms": 61.335584,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3091,
+      "started_ms": 3091.410833,
+      "latency_ms": 61.168875,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3094,
+      "started_ms": 3094.656583,
+      "latency_ms": 0.431292,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3117,
+      "started_ms": 3119.032458,
+      "latency_ms": 0.469875,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3120,
+      "started_ms": 3120.174667,
+      "latency_ms": 0.198625,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3123,
+      "started_ms": 3123.699833,
+      "latency_ms": 0.204917,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3126,
+      "started_ms": 3126.570875,
+      "latency_ms": 0.194542,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3129,
+      "started_ms": 3129.619417,
+      "latency_ms": 0.42625,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3175,
+      "started_ms": 3175.430333,
+      "latency_ms": 61.932709,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3178,
+      "started_ms": 3178.564833,
+      "latency_ms": 60.725125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3181,
+      "started_ms": 3181.553875,
+      "latency_ms": 61.15075,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3184,
+      "started_ms": 3184.605292,
+      "latency_ms": 61.168916,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3187,
+      "started_ms": 3187.546958,
+      "latency_ms": 0.266834,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3609,
+      "started_ms": 3611.116667,
+      "latency_ms": 62.022458,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3612,
+      "started_ms": 3612.15225,
+      "latency_ms": 60.93275,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3615,
+      "started_ms": 3615.712458,
+      "latency_ms": 61.529459,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3618,
+      "started_ms": 3618.563625,
+      "latency_ms": 61.154,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-coral",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3621,
+      "started_ms": 3621.57175,
+      "latency_ms": 0.381333,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3682,
+      "started_ms": 3682.656458,
+      "latency_ms": 62.865292,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3685,
+      "started_ms": 3685.374583,
+      "latency_ms": 60.515584,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3688,
+      "started_ms": 3688.657125,
+      "latency_ms": 60.686417,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3691,
+      "started_ms": 3691.46025,
+      "latency_ms": 61.430292,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-amber",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3694,
+      "started_ms": 3694.587458,
+      "latency_ms": 0.233042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3717,
+      "started_ms": 3718.045917,
+      "latency_ms": 0.445958,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3720,
+      "started_ms": 3720.441083,
+      "latency_ms": 0.190292,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3723,
+      "started_ms": 3723.188708,
+      "latency_ms": 0.220584,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3726,
+      "started_ms": 3726.527042,
+      "latency_ms": 0.175416,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-birch",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3729,
+      "started_ms": 3729.598083,
+      "latency_ms": 0.156042,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3775,
+      "started_ms": 3776.812208,
+      "latency_ms": 62.242625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3778,
+      "started_ms": 3778.218667,
+      "latency_ms": 60.90125,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3781,
+      "started_ms": 3781.689042,
+      "latency_ms": 61.58625,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/search",
+      "scheduled_ms": 3784,
+      "started_ms": 3784.192458,
+      "latency_ms": 60.939667,
+      "status": 200,
+      "outcome": "success"
+    },
+    {
+      "client": "legit-dune",
+      "class": "legitimate",
+      "path": "/v1/read",
+      "scheduled_ms": 3787,
+      "started_ms": 3787.667125,
+      "latency_ms": 0.33,
+      "status": 503,
+      "outcome": "capacity-or-circuit"
+    }
+  ],
+  "origin_requests": 84,
+  "peak_origin_inflight": 4,
+  "final_state": {
+    "policy": {
+      "mode": "adaptive",
+      "algorithm": "token",
+      "rate": 20,
+      "burst": 12
+    },
+    "version": 1,
+    "clients": [
+      {
+        "id": "abuse-east",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "abuse-north",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "abuse-south",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "abuse-west",
+        "attempts": 0,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 0,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "warming up"
+      },
+      {
+        "id": "legit-amber",
+        "attempts": 35,
+        "success": 28,
+        "limited": 0,
+        "capacity_rejected": 7,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      },
+      {
+        "id": "legit-birch",
+        "attempts": 35,
+        "success": 0,
+        "limited": 0,
+        "capacity_rejected": 35,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      },
+      {
+        "id": "legit-coral",
+        "attempts": 35,
+        "success": 28,
+        "limited": 0,
+        "capacity_rejected": 7,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      },
+      {
+        "id": "legit-dune",
+        "attempts": 35,
+        "success": 28,
+        "limited": 0,
+        "capacity_rejected": 7,
+        "client_errors": 0,
+        "circuit_rejected": 0,
+        "origin_errors": 0,
+        "error_ewma": 0,
+        "pressure": 0,
+        "unknown_share": 0,
+        "score": 0,
+        "multiplier": 1,
+        "effective_rate": 20,
+        "reason": "healthy mix; bursts alone are not penalized"
+      }
+    ],
+    "events": [
+      {
+        "at": 1792717270042,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.006292
+      },
+      {
+        "at": 1792717270094,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.150667
+      },
+      {
+        "at": 1792717270094,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 63.119667
+      },
+      {
+        "at": 1792717270098,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.11275
+      },
+      {
+        "at": 1792717270101,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.966792
+      },
+      {
+        "at": 1792717270115,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.008416
+      },
+      {
+        "at": 1792717270140,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.024125
+      },
+      {
+        "at": 1792717270141,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.005208
+      },
+      {
+        "at": 1792717270144,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.009
+      },
+      {
+        "at": 1792717270147,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.005583
+      },
+      {
+        "at": 1792717270150,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.00575
+      },
+      {
+        "at": 1792717270164,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.191416
+      },
+      {
+        "at": 1792717270167,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.8795
+      },
+      {
+        "at": 1792717270170,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.831833
+      },
+      {
+        "at": 1792717270173,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.98925
+      },
+      {
+        "at": 1792717270208,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.007375
+      },
+      {
+        "at": 1792717270258,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.642708
+      },
+      {
+        "at": 1792717270260,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.570167
+      },
+      {
+        "at": 1792717270263,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.892125
+      },
+      {
+        "at": 1792717270266,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.67225
+      },
+      {
+        "at": 1792717270642,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.01175
+      },
+      {
+        "at": 1792717270694,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.807458
+      },
+      {
+        "at": 1792717270694,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.685542
+      },
+      {
+        "at": 1792717270697,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.800208
+      },
+      {
+        "at": 1792717270701,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.23275
+      },
+      {
+        "at": 1792717270715,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.0105
+      },
+      {
+        "at": 1792717270740,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.008084
+      },
+      {
+        "at": 1792717270741,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.005916
+      },
+      {
+        "at": 1792717270745,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.015208
+      },
+      {
+        "at": 1792717270747,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.009417
+      },
+      {
+        "at": 1792717270751,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.013417
+      },
+      {
+        "at": 1792717270765,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.628208
+      },
+      {
+        "at": 1792717270767,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.633375
+      },
+      {
+        "at": 1792717270771,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.166333
+      },
+      {
+        "at": 1792717270773,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.689959
+      },
+      {
+        "at": 1792717270808,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.009167
+      },
+      {
+        "at": 1792717270858,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.737875
+      },
+      {
+        "at": 1792717270860,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.555875
+      },
+      {
+        "at": 1792717270863,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.197958
+      },
+      {
+        "at": 1792717270867,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.007625
+      },
+      {
+        "at": 1792717271242,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.007834
+      },
+      {
+        "at": 1792717271295,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.749
+      },
+      {
+        "at": 1792717271295,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.595208
+      },
+      {
+        "at": 1792717271297,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.456709
+      },
+      {
+        "at": 1792717271301,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.13275
+      },
+      {
+        "at": 1792717271316,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.015
+      },
+      {
+        "at": 1792717271340,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.020708
+      },
+      {
+        "at": 1792717271341,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.012833
+      },
+      {
+        "at": 1792717271345,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.013583
+      },
+      {
+        "at": 1792717271347,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.010167
+      },
+      {
+        "at": 1792717271351,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.012958
+      },
+      {
+        "at": 1792717271366,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.652834
+      },
+      {
+        "at": 1792717271366,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.343875
+      },
+      {
+        "at": 1792717271371,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.246708
+      },
+      {
+        "at": 1792717271373,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.606958
+      },
+      {
+        "at": 1792717271409,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.012666
+      },
+      {
+        "at": 1792717271459,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.80825
+      },
+      {
+        "at": 1792717271459,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.275292
+      },
+      {
+        "at": 1792717271464,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.139875
+      },
+      {
+        "at": 1792717271466,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.646
+      },
+      {
+        "at": 1792717271842,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.008708
+      },
+      {
+        "at": 1792717271894,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.598
+      },
+      {
+        "at": 1792717271894,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.480167
+      },
+      {
+        "at": 1792717271897,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.989875
+      },
+      {
+        "at": 1792717271900,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.732459
+      },
+      {
+        "at": 1792717271915,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.013125
+      },
+      {
+        "at": 1792717271940,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.018125
+      },
+      {
+        "at": 1792717271941,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.005542
+      },
+      {
+        "at": 1792717271945,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.006084
+      },
+      {
+        "at": 1792717271947,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.005083
+      },
+      {
+        "at": 1792717271950,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.006625
+      },
+      {
+        "at": 1792717271965,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.21625
+      },
+      {
+        "at": 1792717271967,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.637583
+      },
+      {
+        "at": 1792717271970,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.903125
+      },
+      {
+        "at": 1792717271973,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.970417
+      },
+      {
+        "at": 1792717272008,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.011042
+      },
+      {
+        "at": 1792717272058,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.031291
+      },
+      {
+        "at": 1792717272060,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.579542
+      },
+      {
+        "at": 1792717272063,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.975542
+      },
+      {
+        "at": 1792717272066,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.912041
+      },
+      {
+        "at": 1792717272442,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.010917
+      },
+      {
+        "at": 1792717272492,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.130959
+      },
+      {
+        "at": 1792717272494,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.445083
+      },
+      {
+        "at": 1792717272497,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.950667
+      },
+      {
+        "at": 1792717272500,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.633917
+      },
+      {
+        "at": 1792717272515,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.007792
+      },
+      {
+        "at": 1792717272540,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.017416
+      },
+      {
+        "at": 1792717272541,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.006
+      },
+      {
+        "at": 1792717272545,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.006333
+      },
+      {
+        "at": 1792717272547,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.007625
+      },
+      {
+        "at": 1792717272550,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.004334
+      },
+      {
+        "at": 1792717272566,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.494041
+      },
+      {
+        "at": 1792717272567,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.562625
+      },
+      {
+        "at": 1792717272570,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.338834
+      },
+      {
+        "at": 1792717272573,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.858916
+      },
+      {
+        "at": 1792717272609,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.013625
+      },
+      {
+        "at": 1792717272659,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.946708
+      },
+      {
+        "at": 1792717272659,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.328042
+      },
+      {
+        "at": 1792717272664,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.146625
+      },
+      {
+        "at": 1792717272666,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.4655
+      },
+      {
+        "at": 1792717273042,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.012542
+      },
+      {
+        "at": 1792717273094,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.803458
+      },
+      {
+        "at": 1792717273094,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.771375
+      },
+      {
+        "at": 1792717273098,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.033458
+      },
+      {
+        "at": 1792717273100,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.504042
+      },
+      {
+        "at": 1792717273116,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.017583
+      },
+      {
+        "at": 1792717273140,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.013833
+      },
+      {
+        "at": 1792717273141,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.008
+      },
+      {
+        "at": 1792717273145,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.00575
+      },
+      {
+        "at": 1792717273147,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.005875
+      },
+      {
+        "at": 1792717273151,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.012209
+      },
+      {
+        "at": 1792717273165,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.001417
+      },
+      {
+        "at": 1792717273167,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.799958
+      },
+      {
+        "at": 1792717273171,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.970792
+      },
+      {
+        "at": 1792717273173,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.889916
+      },
+      {
+        "at": 1792717273208,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.010791
+      },
+      {
+        "at": 1792717273258,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.40525
+      },
+      {
+        "at": 1792717273260,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.318042
+      },
+      {
+        "at": 1792717273263,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.907542
+      },
+      {
+        "at": 1792717273266,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.893708
+      },
+      {
+        "at": 1792717273642,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.015375
+      },
+      {
+        "at": 1792717273694,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.582916
+      },
+      {
+        "at": 1792717273694,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.474959
+      },
+      {
+        "at": 1792717273698,
+        "client": "legit-coral",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.205708
+      },
+      {
+        "at": 1792717273700,
+        "client": "legit-coral",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.816792
+      },
+      {
+        "at": 1792717273715,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.009
+      },
+      {
+        "at": 1792717273739,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.01475
+      },
+      {
+        "at": 1792717273741,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.00525
+      },
+      {
+        "at": 1792717273744,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.007458
+      },
+      {
+        "at": 1792717273747,
+        "client": "legit-birch",
+        "endpoint": "search",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.005875
+      },
+      {
+        "at": 1792717273750,
+        "client": "legit-birch",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.00525
+      },
+      {
+        "at": 1792717273766,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 62.485042
+      },
+      {
+        "at": 1792717273766,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.273666
+      },
+      {
+        "at": 1792717273770,
+        "client": "legit-amber",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.387084
+      },
+      {
+        "at": 1792717273773,
+        "client": "legit-amber",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.076791
+      },
+      {
+        "at": 1792717273809,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "capacity",
+        "status": 503,
+        "latency_ms": 0.012625
+      },
+      {
+        "at": 1792717273860,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.765542
+      },
+      {
+        "at": 1792717273860,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.578625
+      },
+      {
+        "at": 1792717273864,
+        "client": "legit-dune",
+        "endpoint": "read",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 61.16175
+      },
+      {
+        "at": 1792717273866,
+        "client": "legit-dune",
+        "endpoint": "search",
+        "outcome": "success",
+        "status": 200,
+        "latency_ms": 60.678125
+      }
+    ],
+    "timeline": [
+      {
+        "second": 1792717269,
+        "success": 0,
+        "limited": 0,
+        "capacity": 0,
+        "failed": 0
+      },
+      {
+        "second": 1792717270,
+        "success": 24,
+        "limited": 0,
+        "capacity": 16,
+        "failed": 0
+      },
+      {
+        "second": 1792717271,
+        "success": 20,
+        "limited": 0,
+        "capacity": 15,
+        "failed": 0
+      },
+      {
+        "second": 1792717272,
+        "success": 16,
+        "limited": 0,
+        "capacity": 9,
+        "failed": 0
+      },
+      {
+        "second": 1792717273,
+        "success": 24,
+        "limited": 0,
+        "capacity": 16,
+        "failed": 0
+      }
+    ]
+  }
+}

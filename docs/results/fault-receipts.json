@@ -1,0 +1,51 @@
+[
+  {
+    "Time": "2026-10-22T19:59:32.156629-05:00",
+    "Action": "output",
+    "Package": "github.com/rjrddy/throttle/internal/gateway",
+    "Test": "TestRealProxyAuthenticationHeadersAndBodyBounds",
+    "Output": "    server_test.go:87: caught oversized body: HTTP 413; origin requests remained 1\n"
+  },
+  {
+    "Time": "2026-10-22T19:59:32.414462-05:00",
+    "Action": "output",
+    "Package": "github.com/rjrddy/throttle/internal/gateway",
+    "Test": "TestRealProxyTimeoutCircuitAndRecovery",
+    "Output": "    server_test.go:136: caught origin timeout: HTTP 502\n"
+  },
+  {
+    "Time": "2026-10-22T19:59:32.669526-05:00",
+    "Action": "output",
+    "Package": "github.com/rjrddy/throttle/internal/gateway",
+    "Test": "TestRealProxyTimeoutCircuitAndRecovery",
+    "Output": "    server_test.go:136: caught origin timeout: HTTP 502\n"
+  },
+  {
+    "Time": "2026-10-22T19:59:32.922182-05:00",
+    "Action": "output",
+    "Package": "github.com/rjrddy/throttle/internal/gateway",
+    "Test": "TestRealProxyTimeoutCircuitAndRecovery",
+    "Output": "    server_test.go:136: caught origin timeout: HTTP 502\n"
+  },
+  {
+    "Time": "2026-10-22T19:59:33.982899-05:00",
+    "Action": "output",
+    "Package": "github.com/rjrddy/throttle/internal/gateway",
+    "Test": "TestRealCapacityBoundAndRejection",
+    "Output": "    server_test.go:182: caught capacity overload: HTTP 503, active leases 4\n"
+  },
+  {
+    "Time": "2026-10-22T19:59:33.98768-05:00",
+    "Action": "output",
+    "Package": "github.com/rjrddy/throttle/internal/gateway",
+    "Test": "TestRealRateLimitAndValidatedControl",
+    "Output": "    server_test.go:202: caught per-client excess: HTTP 429, Retry-After 1\n"
+  },
+  {
+    "Time": "2026-10-22T19:59:33.993737-05:00",
+    "Action": "output",
+    "Package": "github.com/rjrddy/throttle/internal/gateway",
+    "Test": "TestTruncatedOriginBodyReleasesHalfOpenProbe",
+    "Output": "    server_test.go:261: caught truncated body: Get \"http://127.0.0.1:52316/proxy/v1/read\": EOF; breaker reopened and capacity released\n"
+  }
+]

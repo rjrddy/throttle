@@ -1,0 +1,477 @@
+{
+  "real_http_gateway": true,
+  "viewports_no_overflow": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "page_errors": [],
+  "campaigns": [
+    {
+      "mode": "fixed",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1206,
+          "capacity": 225,
+          "other": 133,
+          "success_rate": 0,
+          "p99_ms": 60.692208
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 84,
+          "limited": 0,
+          "capacity": 80,
+          "other": 0,
+          "success_rate": 0.5121951219512195,
+          "p99_ms": 63.56225
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1450,
+          "capacity": 63,
+          "other": 51,
+          "success_rate": 0,
+          "p99_ms": 60.635834
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 112,
+          "limited": 0,
+          "capacity": 52,
+          "other": 0,
+          "success_rate": 0.6829268292682927,
+          "p99_ms": 61.661917
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "sliding",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1455,
+          "capacity": 67,
+          "other": 42,
+          "success_rate": 0,
+          "p99_ms": 60.595083
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 116,
+          "limited": 0,
+          "capacity": 48,
+          "other": 0,
+          "success_rate": 0.7073170731707317,
+          "p99_ms": 62.625833
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "gcra",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1466,
+          "capacity": 47,
+          "other": 51,
+          "success_rate": 0,
+          "p99_ms": 60.644375
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 115,
+          "limited": 0,
+          "capacity": 49,
+          "other": 0,
+          "success_rate": 0.7012195121951219,
+          "p99_ms": 61.771542
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1453,
+          "capacity": 57,
+          "other": 54,
+          "success_rate": 0,
+          "p99_ms": 60.56625
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 112,
+          "limited": 0,
+          "capacity": 52,
+          "other": 0,
+          "success_rate": 0.6829268292682927,
+          "p99_ms": 61.661459
+        }
+      }
+    },
+    {
+      "mode": "fixed",
+      "algorithm": "sliding",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1244,
+          "capacity": 243,
+          "other": 77,
+          "success_rate": 0,
+          "p99_ms": 60.75875
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 97,
+          "limited": 0,
+          "capacity": 67,
+          "other": 0,
+          "success_rate": 0.5914634146341463,
+          "p99_ms": 61.945334
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "gcra",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1467,
+          "capacity": 44,
+          "other": 53,
+          "success_rate": 0,
+          "p99_ms": 60.539
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 115,
+          "limited": 0,
+          "capacity": 49,
+          "other": 0,
+          "success_rate": 0.7012195121951219,
+          "p99_ms": 62.458042
+        }
+      }
+    },
+    {
+      "mode": "fixed",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1206,
+          "capacity": 235,
+          "other": 123,
+          "success_rate": 0,
+          "p99_ms": 60.743
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 95,
+          "limited": 0,
+          "capacity": 69,
+          "other": 0,
+          "success_rate": 0.5792682926829268,
+          "p99_ms": 61.762
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "sliding",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1455,
+          "capacity": 68,
+          "other": 41,
+          "success_rate": 0,
+          "p99_ms": 60.673791
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 118,
+          "limited": 0,
+          "capacity": 46,
+          "other": 0,
+          "success_rate": 0.7195121951219512,
+          "p99_ms": 62.136375
+        }
+      }
+    },
+    {
+      "mode": "fixed",
+      "algorithm": "gcra",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1206,
+          "capacity": 232,
+          "other": 126,
+          "success_rate": 0,
+          "p99_ms": 60.678875
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 91,
+          "limited": 0,
+          "capacity": 73,
+          "other": 0,
+          "success_rate": 0.5548780487804879,
+          "p99_ms": 61.63875
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1452,
+          "capacity": 59,
+          "other": 53,
+          "success_rate": 0,
+          "p99_ms": 60.641084
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 115,
+          "limited": 0,
+          "capacity": 49,
+          "other": 0,
+          "success_rate": 0.7012195121951219,
+          "p99_ms": 62.810375
+        }
+      }
+    },
+    {
+      "mode": "fixed",
+      "algorithm": "sliding",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1244,
+          "capacity": 242,
+          "other": 78,
+          "success_rate": 0,
+          "p99_ms": 60.690542
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 96,
+          "limited": 0,
+          "capacity": 68,
+          "other": 0,
+          "success_rate": 0.5853658536585366,
+          "p99_ms": 61.304333
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "gcra",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1467,
+          "capacity": 45,
+          "other": 52,
+          "success_rate": 0,
+          "p99_ms": 60.536334
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 116,
+          "limited": 0,
+          "capacity": 48,
+          "other": 0,
+          "success_rate": 0.7073170731707317,
+          "p99_ms": 61.889958
+        }
+      }
+    },
+    {
+      "mode": "fixed",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1206,
+          "capacity": 234,
+          "other": 124,
+          "success_rate": 0,
+          "p99_ms": 60.713542
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 94,
+          "limited": 0,
+          "capacity": 70,
+          "other": 0,
+          "success_rate": 0.573170731707317,
+          "p99_ms": 62.713667
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "sliding",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1455,
+          "capacity": 68,
+          "other": 41,
+          "success_rate": 0,
+          "p99_ms": 60.632333
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 117,
+          "limited": 0,
+          "capacity": 47,
+          "other": 0,
+          "success_rate": 0.7134146341463414,
+          "p99_ms": 62.551917
+        }
+      }
+    },
+    {
+      "mode": "fixed",
+      "algorithm": "gcra",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1206,
+          "capacity": 235,
+          "other": 123,
+          "success_rate": 0,
+          "p99_ms": 60.666167
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 94,
+          "limited": 0,
+          "capacity": 70,
+          "other": 0,
+          "success_rate": 0.573170731707317,
+          "p99_ms": 61.966417
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1450,
+          "capacity": 58,
+          "other": 56,
+          "success_rate": 0,
+          "p99_ms": 60.527625
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 111,
+          "limited": 0,
+          "capacity": 53,
+          "other": 0,
+          "success_rate": 0.676829268292683,
+          "p99_ms": 62.375875
+        }
+      }
+    },
+    {
+      "mode": "fixed",
+      "algorithm": "sliding",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1244,
+          "capacity": 241,
+          "other": 79,
+          "success_rate": 0,
+          "p99_ms": 60.558875
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 96,
+          "limited": 0,
+          "capacity": 68,
+          "other": 0,
+          "success_rate": 0.5853658536585366,
+          "p99_ms": 61.993417
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "gcra",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1468,
+          "capacity": 44,
+          "other": 52,
+          "success_rate": 0,
+          "p99_ms": 60.544833
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 114,
+          "limited": 0,
+          "capacity": 50,
+          "other": 0,
+          "success_rate": 0.6951219512195121,
+          "p99_ms": 61.67625
+        }
+      }
+    }
+  ],
+  "actual_origin_fault_statuses": [
+    503,
+    503,
+    503
+  ],
+  "fault_breaker": "open",
+  "healthy_probe_recovered": true,
+  "keyboard_client_selection": true,
+  "video": "docs/results/browser/demo.webm"
+}

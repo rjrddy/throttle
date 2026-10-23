@@ -1,0 +1,14 @@
+python3 scripts/check_go_format.py
+go vet ./...
+.venv/bin/ruff check scripts
+All checks passed!
+.venv/bin/ruff format --check scripts
+5 files already formatted
+npm run lint --prefix apps/web
+
+> throttle-console@0.1.0 lint
+> tsc --noEmit
+
+npm exec --prefix apps/web -- prettier --check apps/web/src
+Checking formatting...
+All matched files use Prettier code style!
