@@ -1,0 +1,7 @@
+.git
+.cache
+.venv
+bin
+**/node_modules
+**/dist
+docs

@@ -1,0 +1,8 @@
+services:
+  throttle:
+    build: .
+    ports:
+      - "127.0.0.1:8086:8086"
+    environment:
+      THROTTLE_ADMIN_TOKEN: ${THROTTLE_ADMIN_TOKEN:?Supply your own admin token with at least 24 characters}
+    stop_grace_period: 10s

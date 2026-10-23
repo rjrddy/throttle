@@ -1,0 +1,14 @@
+# Prepared only; do not activate/deploy without owner approval.
+services:
+  - type: web
+    name: throttle
+    runtime: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8086
+      - key: THROTTLE_ADMIN_TOKEN
+        generateValue: true
+# Synthetic demo origin and API keys only. Limits reset on process replacement.

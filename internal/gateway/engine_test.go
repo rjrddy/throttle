@@ -154,9 +154,13 @@ func BenchmarkAdmission(b *testing.B) {
 					}
 					b.ReportAllocs()
 					b.ResetTimer()
+					allowed := 0
 					for i := 0; i < b.N; i++ {
-						e.Admit("neutral", path, base.Add(time.Duration(i)*time.Millisecond))
+						if e.Admit("neutral", path, base.Add(time.Duration(i)*time.Millisecond)).Allowed {
+							allowed++
+						}
 					}
+					b.ReportMetric(100*float64(allowed)/float64(b.N), "allowed_pct")
 				})
 			}
 		}

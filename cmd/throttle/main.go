@@ -148,9 +148,13 @@ func benchmark(out string, duration time.Duration, trials int) error {
 					}
 					result.Trial = trial
 					path := filepath.Join(out, fmt.Sprintf("%s-%s-%s-t%d.json", scenario, algorithm, mode, trial))
+					result.RawFile = filepath.Base(path)
 					if err := campaign.Write(path, result); err != nil {
 						return err
 					}
+					result.Receipts = nil
+					result.FinalState.Events = nil
+					result.FinalState.Timeline = nil
 					results = append(results, result)
 					fmt.Printf("%s %s %s t%d legitimate success %d/%d peak origin %d\n", scenario, algorithm, mode, trial, result.Classes["legitimate"].Success, result.Classes["legitimate"].Offered, result.PeakOriginInflight)
 				}

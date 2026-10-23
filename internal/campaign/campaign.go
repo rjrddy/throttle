@@ -43,6 +43,7 @@ type ClassResult struct {
 	P99MS       float64 `json:"p99_ms"`
 }
 type Result struct {
+	RawFile            string                 `json:"raw_file,omitempty"`
 	Mode               string                 `json:"mode"`
 	Algorithm          gateway.Algorithm      `json:"algorithm"`
 	Scenario           string                 `json:"scenario"`

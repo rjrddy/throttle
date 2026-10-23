@@ -1,0 +1,29 @@
+name: Throttle gates
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: make setup build lint test scan
+      - name: Real nonroot image and fault/circuit smoke
+        run: make container-test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: throttle-gate-evidence
+          path: docs/results/
