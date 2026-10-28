@@ -1,0 +1,17 @@
+{
+  "project": "throttle",
+  "motion_profile": "Admission valve detents",
+  "source_sha256": {
+    "apps/web/src/motion.ts": "a5457092fe482355c587d21bcef03bc8a52e4587261c1d6a3487b333c6cc770c",
+    "apps/web/src/style.css": "9e2a69b22e7ea83a1193be9dde6eaeccd2d2ee9b57e39784513c03a399496cc5"
+  },
+  "frontend_build_lint": "passed",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "passed",
+  "showcase_contract": "not applicable",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}

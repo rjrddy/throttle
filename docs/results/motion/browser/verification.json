@@ -1,0 +1,117 @@
+{
+  "real_http_gateway": true,
+  "viewports_no_overflow": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "page_errors": [],
+  "campaigns": [
+    {
+      "mode": "fixed",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1206,
+          "capacity": 232,
+          "other": 126,
+          "success_rate": 0,
+          "p99_ms": 60.450167
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 91,
+          "limited": 0,
+          "capacity": 73,
+          "other": 0,
+          "success_rate": 0.5548780487804879,
+          "p99_ms": 61.25725
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "token",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1450,
+          "capacity": 59,
+          "other": 55,
+          "success_rate": 0,
+          "p99_ms": 60.424333
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 108,
+          "limited": 0,
+          "capacity": 56,
+          "other": 0,
+          "success_rate": 0.6585365853658537,
+          "p99_ms": 60.976541
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "sliding",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1456,
+          "capacity": 67,
+          "other": 41,
+          "success_rate": 0,
+          "p99_ms": 60.3625
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 116,
+          "limited": 0,
+          "capacity": 48,
+          "other": 0,
+          "success_rate": 0.7073170731707317,
+          "p99_ms": 61.279958
+        }
+      }
+    },
+    {
+      "mode": "adaptive",
+      "algorithm": "gcra",
+      "classes": {
+        "abuse": {
+          "offered": 1564,
+          "success": 0,
+          "limited": 1468,
+          "capacity": 46,
+          "other": 50,
+          "success_rate": 0,
+          "p99_ms": 60.39675
+        },
+        "legitimate": {
+          "offered": 164,
+          "success": 115,
+          "limited": 0,
+          "capacity": 49,
+          "other": 0,
+          "success_rate": 0.7012195121951219,
+          "p99_ms": 61.617833
+        }
+      }
+    }
+  ],
+  "actual_origin_fault_statuses": [
+    503,
+    503,
+    503
+  ],
+  "fault_breaker": "open",
+  "healthy_probe_recovered": true,
+  "keyboard_client_selection": true,
+  "video": null
+}

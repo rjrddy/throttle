@@ -1,0 +1,20 @@
+src/motion.ts 56ms
+src/main.tsx 52ms (unchanged)
+src/style.css 56ms (unchanged)
+
+> throttle-console@0.1.0 lint
+> tsc --noEmit
+
+
+> throttle-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-CTVEBvNQ.css   14.27 kB │ gzip:  3.57 kB
+dist/assets/index-Ddt52NmW.js   211.78 kB │ gzip: 66.64 kB
+✓ built in 543ms

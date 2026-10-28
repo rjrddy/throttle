@@ -1,0 +1,15 @@
+{
+  "surface": "throttle",
+  "source": "throttle/apps/web/dist",
+  "scope": "Actual built UI/control/reduced-motion smoke; backend unavailable for static console previews except Fit. Separate live workflows verify ten backends.",
+  "controlResponse": false,
+  "offlineActionsRemainDisabled": true,
+  "liveReducedMotion": true,
+  "pageErrors": [],
+  "mobileOverflow": false,
+  "widths": [
+    1440,
+    390
+  ],
+  "animations": []
+}

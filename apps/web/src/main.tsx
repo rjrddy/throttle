@@ -1,3 +1,4 @@
+import "./motion";
 import { useCallback, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";

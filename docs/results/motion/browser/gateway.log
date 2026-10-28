@@ -1,0 +1,9 @@
+{"time":"2026-10-27T20:58:57.199639-05:00","level":"INFO","msg":"ready","url":"http://127.0.0.1:51920","demo":true,"policy":"adaptive","algorithm":"token"}
+{"time":"2026-10-27T20:58:59.38385-05:00","level":"INFO","msg":"policy_changed","mode":"fixed","algorithm":"token"}
+{"time":"2026-10-27T20:59:03.708246-05:00","level":"INFO","msg":"campaign_finished","error":false}
+{"time":"2026-10-27T20:59:04.685628-05:00","level":"INFO","msg":"policy_changed","mode":"adaptive","algorithm":"token"}
+{"time":"2026-10-27T20:59:09.021516-05:00","level":"INFO","msg":"campaign_finished","error":false}
+{"time":"2026-10-27T20:59:09.662795-05:00","level":"INFO","msg":"policy_changed","mode":"adaptive","algorithm":"sliding"}
+{"time":"2026-10-27T20:59:14.002766-05:00","level":"INFO","msg":"campaign_finished","error":false}
+{"time":"2026-10-27T20:59:14.478458-05:00","level":"INFO","msg":"policy_changed","mode":"adaptive","algorithm":"gcra"}
+{"time":"2026-10-27T20:59:18.816602-05:00","level":"INFO","msg":"campaign_finished","error":false}
