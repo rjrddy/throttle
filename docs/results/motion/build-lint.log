@@ -1,6 +1,6 @@
-src/motion.ts 56ms
-src/main.tsx 52ms (unchanged)
-src/style.css 56ms (unchanged)
+src/motion.ts 59ms
+src/main.tsx 53ms (unchanged)
+src/style.css 70ms (unchanged)
 
 > throttle-console@0.1.0 lint
 > tsc --noEmit
@@ -16,5 +16,5 @@ rendering chunks...
 computing gzip size...
 dist/index.html                   0.41 kB │ gzip:  0.29 kB
 dist/assets/index-CTVEBvNQ.css   14.27 kB │ gzip:  3.57 kB
-dist/assets/index-Ddt52NmW.js   211.78 kB │ gzip: 66.64 kB
-✓ built in 543ms
+dist/assets/index-C98YmZbU.js   211.79 kB │ gzip: 66.66 kB
+✓ built in 578ms

@@ -15,20 +15,20 @@
         "abuse": {
           "offered": 1564,
           "success": 0,
-          "limited": 1206,
-          "capacity": 232,
-          "other": 126,
+          "limited": 1204,
+          "capacity": 251,
+          "other": 109,
           "success_rate": 0,
-          "p99_ms": 60.450167
+          "p99_ms": 61.470958
         },
         "legitimate": {
           "offered": 164,
-          "success": 91,
+          "success": 100,
           "limited": 0,
-          "capacity": 73,
+          "capacity": 64,
           "other": 0,
-          "success_rate": 0.5548780487804879,
-          "p99_ms": 61.25725
+          "success_rate": 0.6097560975609756,
+          "p99_ms": 104.595833
         }
       }
     },
@@ -40,19 +40,19 @@
           "offered": 1564,
           "success": 0,
           "limited": 1450,
-          "capacity": 59,
-          "other": 55,
+          "capacity": 60,
+          "other": 54,
           "success_rate": 0,
-          "p99_ms": 60.424333
+          "p99_ms": 60.707708
         },
         "legitimate": {
           "offered": 164,
-          "success": 108,
+          "success": 112,
           "limited": 0,
-          "capacity": 56,
+          "capacity": 52,
           "other": 0,
-          "success_rate": 0.6585365853658537,
-          "p99_ms": 60.976541
+          "success_rate": 0.6829268292682927,
+          "p99_ms": 63.486167
         }
       }
     },
@@ -63,20 +63,20 @@
         "abuse": {
           "offered": 1564,
           "success": 0,
-          "limited": 1456,
+          "limited": 1455,
           "capacity": 67,
-          "other": 41,
+          "other": 42,
           "success_rate": 0,
-          "p99_ms": 60.3625
+          "p99_ms": 60.876084
         },
         "legitimate": {
           "offered": 164,
-          "success": 116,
+          "success": 115,
           "limited": 0,
-          "capacity": 48,
+          "capacity": 49,
           "other": 0,
-          "success_rate": 0.7073170731707317,
-          "p99_ms": 61.279958
+          "success_rate": 0.7012195121951219,
+          "p99_ms": 81.789916
         }
       }
     },
@@ -87,20 +87,20 @@
         "abuse": {
           "offered": 1564,
           "success": 0,
-          "limited": 1468,
-          "capacity": 46,
+          "limited": 1467,
+          "capacity": 47,
           "other": 50,
           "success_rate": 0,
-          "p99_ms": 60.39675
+          "p99_ms": 60.752708
         },
         "legitimate": {
           "offered": 164,
-          "success": 115,
+          "success": 113,
           "limited": 0,
-          "capacity": 49,
+          "capacity": 51,
           "other": 0,
-          "success_rate": 0.7012195121951219,
-          "p99_ms": 61.617833
+          "success_rate": 0.6890243902439024,
+          "p99_ms": 62.501292
         }
       }
     }

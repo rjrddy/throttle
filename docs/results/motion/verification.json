@@ -2,7 +2,7 @@
   "project": "throttle",
   "motion_profile": "Admission valve detents",
   "source_sha256": {
-    "apps/web/src/motion.ts": "a5457092fe482355c587d21bcef03bc8a52e4587261c1d6a3487b333c6cc770c",
+    "apps/web/src/motion.ts": "ecf10c5ffa9774b913eceadf2ee3a6c636291d03920176b1ada953441d3e6eab",
     "apps/web/src/style.css": "9e2a69b22e7ea83a1193be9dde6eaeccd2d2ee9b57e39784513c03a399496cc5"
   },
   "frontend_build_lint": "passed",

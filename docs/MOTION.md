@@ -19,3 +19,5 @@ Accessibility reference: [W3C SCR40](https://www.w3.org/WAI/WCAG21/Techniques/cl
 The existing real-service browser workflow was also rerun; see `docs/results/motion/live-browser.log` and `browser/`. Those tests exercise the application’s real backend, separate from the synthetic motion contract.
 
 Button feedback begins when click targeting is committed, so the first press does not shrink a hitbox underneath the pointer. Editable/dragging surfaces are excluded. Backend APIs, ranking/math policies, measurements, and document source data were not changed.
+
+Connected controls recoil only with their immediate previous/next matching siblings. The left sibling moves left, the right moves right; distant controls do not react. The runtime reads sibling references, not geometry.
